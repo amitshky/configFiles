@@ -67,8 +67,8 @@ function prompt
 	$admin     = "$bg;$red $(if ($isAdmin){ "$fg;$black  Admin " })$bg;$gray$fg;$red"
 	$directory = "$bg;$gray$fg;$blue  $path $fg;$gray$bg;$green"
 	$gitBranch = "$fg;$black$bg;$green$(if ($gitBranch) { "  $gitBranch " })$reset$fg;$green"
-	$end       = "└─[$fg;$green$elapsedTime$fg;$lightGray]$reset"
+	$end       = "`n$fg;$lightGray└─[$fg;$green$elapsedTime$fg;$lightGray]$reset"
 
 	#Write-Host "" # for initial newline
-	return "$start$admin$directory$gitBranch`n$fg;$lightGray$end "
+	return "$start$admin$directory$gitBranch$end "
 }
