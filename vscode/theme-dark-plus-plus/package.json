@@ -1,0 +1,27 @@
+{
+	"name": "theme-dark-plus-plus",
+	"displayName": "%displayName%",
+	"description": "%description%",
+	"version": "1.0.0",
+	"publisher": "vscode",
+	"license": "MIT",
+	"engines": {
+		"vscode": "*"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"id": "Dark++ VX",
+				"label": "%darkPlusPlusVXThemeLabel%",
+				"uiTheme": "vs-dark",
+				"path": "./themes/dark-plus-plus-vx-theme.json"
+			},
+			{
+				"id": "Dark++ One",
+				"label": "%darkPlusPlusOneThemeLabel%",
+				"uiTheme": "vs-dark",
+				"path": "./themes/dark-plus-plus-one-theme.json"
+			}
+		]
+	}
+}

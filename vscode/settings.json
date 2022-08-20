@@ -1,0 +1,112 @@
+{
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": false,
+    "editor.fontSize": 16,
+    "editor.insertSpaces": false,
+    "php.validate.executablePath": "C:\\_MyFiles\\xampp\\php\\php.exe",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            //"source": "PowerShell",
+            "icon": "terminal-powershell",
+            "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+            "args": [
+                "-NoLogo"
+            ]
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "window.menuBarVisibility": "visible",
+    "update.enableWindowsBackgroundUpdates": false,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "workbench.startupEditor": "none",
+    "python.showStartPage": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "update.mode": "manual",
+    "explorer.confirmDelete": false,
+    "cmake.configureOnOpen": false,
+    "editor.comments.insertSpace": false,
+    "extensions.autoUpdate": false,
+    "latex-workshop.bibtex-format.tab": "tab",
+    "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.message.error.show": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "explorer.confirmDragAndDrop": false,
+    "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "[dart]": {
+        "editor.formatOnSave": false,
+        "editor.formatOnType": false,
+        "editor.rulers": [],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false,
+        "editor.tabSize": 2,
+        "editor.insertSpaces": false
+    },
+    "dart.analyzerSshHost": null,
+    "dart.runPubGetOnPubspecChanges": false,
+    "python.defaultInterpreterPath": "%localappdata%\\Programs\\Python\\Python37\\python.exe",
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.iconTheme": "material-icon-theme",
+    "dart.showTodos": false,
+    "explorer.sortOrder": "type",
+    "editor.unicodeHighlight.allowedCharacters": {
+        " ": true
+    },
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "terminal.integrated.enablePersistentSessions": false,
+    "liveServer.settings.CustomBrowser": "chrome",
+    "comments.openView": "never",
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "[ ]",
+        "[x]",
+        "NOTE",
+        "WARNING"
+    ],
+    "files.autoSave": "onWindowChange",
+    //"C_Cpp.default.includePath": [
+    //    "C:\\VulkanSDK\\1.3.211.0\\Include",
+    //    "${workspaceFolder}/lib/**"
+    //],
+    "cmake.configureOnEdit": false,
+    "clangd.path": "%appdata%\\Code\\User\\globalStorage\\llvm-vs-code-extensions.vscode-clangd\\install\\14.0.3\\clangd_14.0.3\\bin\\clangd.exe",
+    "clangd.arguments": [
+        "-log=verbose",
+        "-pretty",
+        "-background-index",
+        "--compile-commands-dir=${workspaceFolder}",
+        "-header-insertion=never"
+    ],
+    "workbench.colorTheme": "Dark++ VX",
+    "editor.bracketPairColorization.enabled": false,
+    "C_Cpp.default.intelliSenseMode": "clang-x64",
+    "C_Cpp.default.compilerPath": "C:\\Program Files\\LLVM\\bin\\clang++.exe",
+    "workbench.layoutControl.enabled": false,
+    "cmake.generator": "C:\\Program Files\\ninja\\ninja.exe",
+    "C_Cpp.intelliSenseEngine": "Disabled",
+    "terminal.integrated.fontFamily": "Consolas NF",
+    "editor.fontFamily": "'Consolas NF', Consolas, 'Courier New', monospace"
+}

@@ -1,0 +1,363 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+	{
+		"key": "ctrl+d",
+		"command": "editor.action.copyLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "shift+alt+down",
+		"command": "-editor.action.copyLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "shift+alt+up",
+		"command": "-editor.action.copyLinesUpAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "shift+alt+up",
+		"command": "editor.action.insertCursorAbove",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+alt+up",
+		"command": "-editor.action.insertCursorAbove",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "shift+alt+down",
+		"command": "editor.action.insertCursorBelow",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+alt+down",
+		"command": "-editor.action.insertCursorBelow",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "shift+alt+s",
+		"command": "workbench.action.files.saveAs"
+	},
+	{
+		"key": "ctrl+shift+s",
+		"command": "-workbench.action.files.saveAs"
+	},
+	{
+		"key": "alt+s",
+		"command": "workbench.action.files.saveLocalFile",
+		"when": "remoteFileDialogVisible"
+	},
+	{
+		"key": "ctrl+shift+s",
+		"command": "-workbench.action.files.saveLocalFile",
+		"when": "remoteFileDialogVisible"
+	},
+	{
+		"key": "ctrl+shift+s",
+		"command": "workbench.action.files.saveAll"
+	},
+	{
+		"key": "ctrl+k s",
+		"command": "-workbench.action.files.saveAll"
+	},
+	{
+		"key": "ctrl+f1",
+		"command": "workbench.action.showCommands"
+	},
+	{
+		"key": "f1",
+		"command": "-workbench.action.showCommands"
+	},
+	{
+		"key": "f1",
+		"command": "latex-workshop.build",
+		"when": "!config.latex-workshop.bind.altKeymap.enabled && editorLangId =~ /latex|rsweave|jlweave/"
+	},
+	{
+		"key": "ctrl+alt+b",
+		"command": "-latex-workshop.build",
+		"when": "!config.latex-workshop.bind.altKeymap.enabled && editorLangId =~ /latex|rsweave|jlweave/"
+	},
+	{
+		"key": "alt+a",
+		"command": "editor.action.replaceAll",
+		"when": "editorFocus && findWidgetVisible"
+	},
+	{
+		"key": "ctrl+alt+enter",
+		"command": "-editor.action.replaceAll",
+		"when": "editorFocus && findWidgetVisible"
+	},
+	{
+		"key": "ctrl+shift+alt+t",
+		"command": "editor.action.indentationToTabs"
+	},
+	{
+		"key": "ctrl+shift+alt+o",
+		"command": "editor.action.organizeImports",
+		"when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
+	},
+	{
+		"key": "shift+alt+o",
+		"command": "-editor.action.organizeImports",
+		"when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
+	},
+	{
+		"key": "shift+alt+o",
+		"command": "workbench.action.quickOpen"
+	},
+	{
+		"key": "ctrl+p",
+		"command": "-workbench.action.quickOpen"
+	},
+	{
+		"key": "shift+alt+o",
+		"command": "workbench.action.quickOpenNavigateNextInFilePicker",
+		"when": "inFilesPicker && inQuickOpen"
+	},
+	{
+		"key": "ctrl+p",
+		"command": "-workbench.action.quickOpenNavigateNextInFilePicker",
+		"when": "inFilesPicker && inQuickOpen"
+	},
+	{
+		"key": "alt+q",
+		"command": "workbench.action.pinEditor",
+		"when": "!activeEditorIsPinned"
+	},
+	{
+		"key": "ctrl+k shift+enter",
+		"command": "-workbench.action.pinEditor",
+		"when": "!activeEditorIsPinned"
+	},
+	{
+		"key": "alt+q",
+		"command": "workbench.action.unpinEditor",
+		"when": "activeEditorIsPinned"
+	},
+	{
+		"key": "ctrl+k shift+enter",
+		"command": "-workbench.action.unpinEditor",
+		"when": "activeEditorIsPinned"
+	},
+	{
+		"key": "ctrl+shift+alt+w",
+		"command": "workbench.action.closeWindow"
+	},
+	{
+		"key": "ctrl+shift+w",
+		"command": "-workbench.action.closeWindow"
+	},
+	{
+		"key": "ctrl+shift+w",
+		"command": "workbench.action.closeEditorsInOtherGroups"
+	},
+	{
+		"key": "ctrl+shift+w",
+		"command": "workbench.action.closeOtherEditors"
+	},
+	{
+		"key": "shift+alt+e",
+		"command": "remote-wsl.revealInExplorer",
+		"when": "editorFocus && remoteName == 'wsl'"
+	},
+	{
+		"key": "shift+alt+r",
+		"command": "-remote-wsl.revealInExplorer",
+		"when": "editorFocus && remoteName == 'wsl'"
+	},
+	{
+		"key": "shift+alt+e",
+		"command": "revealFileInOS",
+		"when": "!editorFocus"
+	},
+	{
+		"key": "shift+alt+r",
+		"command": "-revealFileInOS",
+		"when": "!editorFocus"
+	},
+	{
+		"key": "ctrl+f2",
+		"command": "editor.action.changeAll",
+		"when": "editorTextFocus && editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+f2",
+		"command": "-editor.action.changeAll",
+		"when": "editorTextFocus && editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "shift+alt+r",
+		"command": "editor.action.rename",
+		"when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "f2",
+		"command": "-editor.action.rename",
+		"when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "alt+m",
+		"command": "workbench.action.gotoSymbol"
+	},
+	{
+		"key": "ctrl+shift+o",
+		"command": "-workbench.action.gotoSymbol"
+	},
+	{
+		"key": "ctrl+tab",
+		"command": "workbench.action.nextEditor"
+	},
+	{
+		"key": "ctrl+shift+tab",
+		"command": "workbench.action.previousEditor"
+	},
+	{
+		"key": "shift+alt+z",
+		"command": "latex-workshop.view",
+		"when": "config.latex-workshop.bind.altKeymap.enabled && editorLangId =~ /latex|rsweave|jlweave/"
+	},
+	{
+		"key": "ctrl+l alt+v",
+		"command": "-latex-workshop.view",
+		"when": "config.latex-workshop.bind.altKeymap.enabled && editorLangId =~ /latex|rsweave|jlweave/"
+	},
+	{
+		"key": "shift+alt+z",
+		"command": "latex-workshop.tab"
+	},
+	{
+		"key": "ctrl+alt+up",
+		"command": "workbench.action.terminal.resizePaneUp"
+	},
+	{
+		"key": "ctrl+alt+down",
+		"command": "workbench.action.terminal.resizePaneDown"
+	},
+	{
+		"key": "alt+f",
+		"command": "extension.formatJSON"
+	},
+	{
+		"key": "alt+f",
+		"command": "editor.action.formatDocument",
+		"when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+	},
+	{
+		"key": "shift+alt+f",
+		"command": "-editor.action.formatDocument",
+		"when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+	},
+	{
+		"key": "alt+f",
+		"command": "editor.action.formatDocument.none",
+		"when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+	},
+	{
+		"key": "shift+alt+f",
+		"command": "-editor.action.formatDocument.none",
+		"when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+	},
+	{
+		"key": "ctrl+alt+enter",
+		"command": "workbench.action.toggleMaximizedPanel"
+	},
+	{
+		"key": "ctrl+f5",
+		"command": "workbench.action.debug.run",
+		"when": "debuggersAvailable && debugState != 'initializing'"
+	},
+	{
+		"key": "ctrl+f5",
+		"command": "-workbench.action.debug.run",
+		"when": "debuggersAvailable && debugState != 'initializing'"
+	},
+	{
+		"key": "ctrl+shift+a",
+		"command": "workbench.action.tasks.runTask"
+	},
+	{
+		"key": "ctrl+alt+b",
+		"command": "-latex-workshop.build",
+		"when": "!config.latex-workshop.bind.altKeymap.enabled && !virtualWorkspace && editorLangId =~ /latex|rsweave|jlweave/"
+	},
+	{
+		"key": "ctrl+alt+i",
+		"command": "C_Cpp.RestartIntelliSenseForFile"
+	},
+	{
+		"key": "ctrl+shift+alt+i",
+		"command": "C_Cpp.ResetDatabase"
+	},
+	{
+		"key": "ctrl+shift+q",
+		"command": "-workbench.action.quickOpenNavigatePreviousInViewPicker",
+		"when": "inQuickOpen && inViewsPicker"
+	},
+	{
+		"key": "ctrl+shift+q",
+		"command": "workbench.view.extension.todo-tree-container"
+	},
+	{
+		"key": "ctrl+m ctrl+l",
+		"command": "editor.foldAll",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "ctrl+k ctrl+0",
+		"command": "-editor.foldAll",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "ctrl+m ctrl+k",
+		"command": "editor.unfoldAll",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "ctrl+k ctrl+j",
+		"command": "-editor.unfoldAll",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "ctrl+shift+f1",
+		"command": "flutter.launchEmulator"
+	},
+	{
+		"key": "ctrl+shift+alt+n",
+		"command": "workbench.action.duplicateWorkspaceInNewWindow"
+	},
+	{
+		"key": "ctrl+shift+d",
+		"command": "-workbench.view.debug",
+		"when": "viewContainer.workbench.view.debug.enabled"
+	},
+	{
+		"key": "shift+alt+d",
+		"command": "editor.action.addSelectionToNextFindMatch",
+		"when": "editorFocus"
+	},
+	{
+		"key": "ctrl+d",
+		"command": "-editor.action.addSelectionToNextFindMatch",
+		"when": "editorFocus"
+	},
+	{
+		"key": "shift+alt+d",
+		"command": "-editor.detectLanguage",
+		"when": "editorTextFocus && !notebookEditable"
+	},
+	{
+		"key": "shift+alt+d",
+		"command": "-notebook.cell.detectLanguage",
+		"when": "notebookCellEditable && notebookEditable"
+	},
+	{
+		"key": "ctrl+shift+d",
+		"command": "workbench.view.debug"
+	},
+	{
+		"key": "ctrl+k",
+		"command": "workbench.action.toggleAuxiliaryBar"
+	}
+]

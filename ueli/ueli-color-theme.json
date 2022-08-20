@@ -1,0 +1,13 @@
+{
+	"name": "Dark",
+	"userInputBackgroundColor": "#000000E3",
+	"userInputTextColor": "#fff",
+	"searchResultsBackgroundColor": "#000000C9",
+	"searchResultsItemActiveBackgroundColor": "#3d4452",
+	"searchResultsItemActiveDescriptionColor": "#ccc",
+	"searchResultsItemActiveTextColor": "#fff",
+	"searchResultsItemDescriptionTextColor": "#ccc",
+	"searchResultsItemNameTextcolor": "#fff",
+	"scrollbarBackgroundColor": "#222",
+	"scrollbarForegroundColor": "#444"
+}
