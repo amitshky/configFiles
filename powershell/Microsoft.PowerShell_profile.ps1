@@ -70,5 +70,6 @@ function prompt
 	$end       = "`n$fg;$lightGray└─[$fg;$green$elapsedTime$fg;$lightGray]$reset"
 
 	#Write-Host "" # for initial newline
-	return "$start$admin$directory$gitBranch$end "
+	Write-Host $start -NoNewline # so that python virtualenv prefix doesn't break the customized prompt  
+	return "$admin$directory$gitBranch$end "
 }
