@@ -42,7 +42,7 @@ function prompt
 		#filter out any blank entries which might happen if the path ends with the delimiter
 		$split = $path -split "\\" | Where-Object { $_ -match "\S+" }
 		#reconstruct a shorted path
-		$path = "...\$($split[-3])\$($split[-2])\$($split[-1])"
+		$path = "…\$($split[-3])\$($split[-2])\$($split[-1])"
 	}
 
 	# ref: https://www.commandline.ninja/customize-pscmdprompt/
