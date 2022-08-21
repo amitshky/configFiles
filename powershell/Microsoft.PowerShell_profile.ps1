@@ -14,7 +14,7 @@
 
 function prompt
 {
-	$len = 33 # maximum length of the path before you begin truncating
+	$len = 40 # maximum length of the path before you begin truncating
 	$path = $executionContext.SessionState.Path.CurrentLocation.path
 	$host.ui.RawUI.WindowTitle = $path # display in the title bar
 
