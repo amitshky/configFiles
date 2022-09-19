@@ -1,0 +1,1 @@
+`%appdata%\Roaming\flameshot`
