@@ -1,0 +1,18 @@
+{
+  "MaxResult": 100,
+  "QuickAccessLinks": [],
+  "QuickFolderAccessLinks": [],
+  "UseWindowsIndexForDirectorySearch": true,
+  "IndexSearchExcludedSubdirectoryPaths": [],
+  "SearchActionKeyword": "f:",
+  "SearchActionKeywordEnabled": true,
+  "FileContentSearchActionKeyword": "*",
+  "FileContentSearchKeywordEnabled": false,
+  "PathSearchActionKeyword": "*",
+  "PathSearchKeywordEnabled": false,
+  "IndexSearchActionKeyword": "*",
+  "IndexSearchKeywordEnabled": false,
+  "QuickAccessActionKeyword": "*",
+  "QuickAccessKeywordEnabled": false,
+  "WarnWindowsSearchServiceOff": true
+}

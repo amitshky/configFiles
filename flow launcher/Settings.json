@@ -91,7 +91,7 @@
   "WindowLeft": 670,
   "WindowTop": 246.5,
   "MaxResultsToShow": 5,
-  "ActivateTimes": 237,
+  "ActivateTimes": 350,
   "CustomPluginHotkeys": [],
   "DontPromptUpdateMsg": false,
   "EnableUpdateLog": false,
@@ -144,7 +144,7 @@
           "*",
           "f:"
         ],
-        "Priority": 1,
+        "Priority": 0,
         "Disabled": true
       },
       "6A122269676E40EB86EB543B945932B9": {

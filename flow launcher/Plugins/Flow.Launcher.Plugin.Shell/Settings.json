@@ -1,0 +1,12 @@
+{
+  "Shell": 1,
+  "ReplaceWinR": false,
+  "LeaveShellOpen": false,
+  "RunAsAdministrator": false,
+  "ShowOnlyMostUsedCMDs": true,
+  "ShowOnlyMostUsedCMDsNumber": 5,
+  "CommandHistory": {
+    "ping google.com": 1,
+    "powershell --version": 1
+  }
+}
