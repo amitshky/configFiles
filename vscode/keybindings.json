@@ -359,5 +359,23 @@
 	{
 		"key": "ctrl+k",
 		"command": "workbench.action.toggleAuxiliaryBar"
+	},
+	{
+		"key": "ctrl+shift+alt+d",
+		"command": "editor.action.moveSelectionToPreviousFindMatch"
+	},
+	{
+		"key": "alt+e",
+		"command": "wwm.aligncode"
+	},
+	{
+		"key": "shift+alt+enter",
+		"command": "editor.toggleFold",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "ctrl+k ctrl+l",
+		"command": "-editor.toggleFold",
+		"when": "editorTextFocus && foldingEnabled"
 	}
 ]

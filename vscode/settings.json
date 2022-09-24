@@ -11,7 +11,7 @@
             "icon": "terminal-powershell",
             "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
             "args": [
-                "-NoLogo"
+                "-NoLogo",
             ]
         },
         "Command Prompt": {
@@ -63,7 +63,7 @@
     },
     "dart.analyzerSshHost": null,
     "dart.runPubGetOnPubspecChanges": false,
-    "python.defaultInterpreterPath": "%localappdata%\\Programs\\Python\\Python37\\python.exe",
+    "python.defaultInterpreterPath": "C:\\Users\\a7shk\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
     "security.workspace.trust.untrustedFiles": "open",
     "workbench.iconTheme": "material-icon-theme",
     "dart.showTodos": false,
@@ -92,7 +92,7 @@
     //    "${workspaceFolder}/lib/**"
     //],
     "cmake.configureOnEdit": false,
-    "clangd.path": "%appdata%\\Code\\User\\globalStorage\\llvm-vs-code-extensions.vscode-clangd\\install\\14.0.3\\clangd_14.0.3\\bin\\clangd.exe",
+    "clangd.path": "c:\\Users\\a7shk\\AppData\\Roaming\\Code\\User\\globalStorage\\llvm-vs-code-extensions.vscode-clangd\\install\\14.0.3\\clangd_14.0.3\\bin\\clangd.exe",
     "clangd.arguments": [
         "-log=verbose",
         "-pretty",
@@ -108,5 +108,21 @@
     "cmake.generator": "C:\\Program Files\\ninja\\ninja.exe",
     "C_Cpp.intelliSenseEngine": "Disabled",
     "terminal.integrated.fontFamily": "Consolas NF",
-    "editor.fontFamily": "'Consolas NF', Consolas, 'Courier New', monospace"
+    "editor.fontFamily": "'Consolas NF', Consolas, 'Courier New', monospace",
+    "editor.inlayHints.enabled": "off",
+    "alignment.surroundSpace": {
+        "colon": [
+            0,
+            1
+        ],
+        "assignment": [
+            1,
+            1
+        ],
+        "arrow": [
+            1,
+            1
+        ],
+        "comment": -1
+    }
 }
