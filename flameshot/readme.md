@@ -1,1 +1,1 @@
-`%appdata%\Roaming\flameshot`
+`%appdata%\flameshot`
