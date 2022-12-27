@@ -169,12 +169,6 @@
         {
             "command": 
             {
-                "action": "addMark"
-            }
-        },
-        {
-            "command": 
-            {
                 "action": "moveFocus",
                 "direction": "down"
             },
@@ -213,7 +207,9 @@
                 "face": "Consolas NF",
                 "size": 11,
                 "weight": "thin"
-            }
+            },
+            "padding": "0",
+            "scrollbarState": "hidden"
         },
         "list": 
         [
@@ -228,13 +224,16 @@
                 "commandline": "C:\\Program Files\\PowerShell\\7\\pwsh.exe -NoLogo",
                 "font": 
                 {
-                    "face": "Consolas NF"
+                    "face": "Consolas NF",
+                    "weight": "thin"
                 },
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
                 "name": "PowerShell",
+                "opacity": 100,
                 "source": "Windows.Terminal.PowershellCore",
-                "startingDirectory": "."
+                "startingDirectory": ".",
+                "useAcrylic": false
             },
             {
                 "colorScheme": "Campbell",
