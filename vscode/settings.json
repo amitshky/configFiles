@@ -2,7 +2,6 @@
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "all",
     "editor.renderControlCharacters": false,
-    "editor.fontSize": 16,
     "editor.insertSpaces": false,
     "php.validate.executablePath": "C:\\_MyFiles\\xampp\\php\\php.exe",
     "terminal.integrated.profiles.windows": {
@@ -100,15 +99,15 @@
         "--compile-commands-dir=${workspaceFolder}",
         "-header-insertion=never"
     ],
-    "workbench.colorTheme": "Dark++ VX",
+    "workbench.colorTheme": "Dark++ Gruvbox",
     "editor.bracketPairColorization.enabled": false,
     "C_Cpp.default.intelliSenseMode": "clang-x64",
     "C_Cpp.default.compilerPath": "C:\\Program Files\\LLVM\\bin\\clang++.exe",
     "workbench.layoutControl.enabled": false,
     "cmake.generator": "C:\\Program Files\\ninja\\ninja.exe",
-    "C_Cpp.intelliSenseEngine": "Disabled",
-    "terminal.integrated.fontFamily": "Consolas NF",
-    "editor.fontFamily": "'Consolas NF', Consolas, 'Courier New', monospace",
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "terminal.integrated.fontFamily": "'CodeNewRoman Nerd Font Mono'",
+    "editor.fontFamily": "'CodeNewRoman Nerd Font Mono'",
     "editor.inlayHints.enabled": "off",
     "alignment.surroundSpace": {
         "colon": [
@@ -124,5 +123,6 @@
             1
         ],
         "comment": -1
-    }
+    },
+    "editor.fontSize": 15
 }

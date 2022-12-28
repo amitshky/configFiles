@@ -21,6 +21,12 @@
 				"label": "%darkPlusPlusOneThemeLabel%",
 				"uiTheme": "vs-dark",
 				"path": "./themes/dark-plus-plus-one-theme.json"
+			},
+			{
+				"id": "Dark++ Gruvbox",
+				"label": "%darkPlusPlusGruvboxThemeLabel%",
+				"uiTheme": "vs-dark",
+				"path": "./themes/dark-plus-plus-gruvbox.json"
 			}
 		]
 	}
