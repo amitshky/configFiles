@@ -252,7 +252,7 @@
 		"when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
 	},
 	{
-		"key": "ctrl+alt+enter",
+		"key": "alt+enter",
 		"command": "workbench.action.toggleMaximizedPanel"
 	},
 	{
@@ -473,5 +473,40 @@
 		"key": "tab",
 		"command": "-acceptSelectedSuggestion",
 		"when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+	},
+	{
+		"key": "ctrl+shift+9",
+		"command": "editor.action.jumpToBracket",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+shift+\\",
+		"command": "-editor.action.jumpToBracket",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+shift+\\",
+		"command": "workbench.action.splitEditor"
+	},
+	{
+		"key": "ctrl+\\",
+		"command": "-workbench.action.splitEditor"
+	},
+	{
+		"key": "ctrl+shift+-",
+		"command": "workbench.action.splitEditorOrthogonal"
+	},
+	{
+		"key": "ctrl+k ctrl+\\",
+		"command": "-workbench.action.splitEditorOrthogonal"
+	},
+	{
+		"key": "ctrl+shift+\\",
+		"command": "-workbench.action.terminal.focusTabs",
+		"when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
+	},
+	{
+		"key": "ctrl+shift+-",
+		"command": "-workbench.action.zoomOut"
 	}
 ]
