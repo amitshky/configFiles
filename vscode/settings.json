@@ -127,5 +127,7 @@
     "editor.fontSize": 15,
     "editor.tabCompletion": "on",
     "explorer.autoReveal": false,
-    "todo-tree.highlights.highlightDelay": 200
+    "todo-tree.highlights.highlightDelay": 0,
+    "editor.find.autoFindInSelection": "multiline",
+    "workbench.activityBar.visible": false
 }

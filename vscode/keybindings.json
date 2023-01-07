@@ -105,14 +105,6 @@
 	},
 	{
 		"key": "shift+alt+o",
-		"command": "workbench.action.quickOpen"
-	},
-	{
-		"key": "ctrl+p",
-		"command": "-workbench.action.quickOpen"
-	},
-	{
-		"key": "shift+alt+o",
 		"command": "workbench.action.quickOpenNavigateNextInFilePicker",
 		"when": "inFilesPicker && inQuickOpen"
 	},
@@ -508,5 +500,33 @@
 	{
 		"key": "ctrl+shift+-",
 		"command": "-workbench.action.zoomOut"
+	},
+	{
+		"key": "alt+w",
+		"command": "-toggleSearchEditorWholeWord",
+		"when": "inSearchEditor && searchInputBoxFocus"
+	},
+	{
+		"key": "alt+w",
+		"command": "-workbench.action.terminal.toggleFindWholeWord",
+		"when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "alt+w",
+		"command": "-toggleFindWholeWord",
+		"when": "editorFocus"
+	},
+	{
+		"key": "alt+w",
+		"command": "-toggleSearchWholeWord",
+		"when": "searchViewletFocus"
+	},
+	{
+		"key": "shift+alt+o",
+		"command": "workbench.action.quickOpen"
+	},
+	{
+		"key": "ctrl+e",
+		"command": "-workbench.action.quickOpen"
 	}
 ]
