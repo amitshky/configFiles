@@ -124,7 +124,7 @@
         ],
         "comment": -1
     },
-    "editor.fontSize": 15,
+    "editor.fontSize": 13.8,
     "editor.tabCompletion": "on",
     "explorer.autoReveal": false,
     "todo-tree.highlights.highlightDelay": 0,
