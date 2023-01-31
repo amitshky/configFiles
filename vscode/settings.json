@@ -99,7 +99,6 @@
         "--compile-commands-dir=${workspaceFolder}",
         "-header-insertion=never"
     ],
-    "workbench.colorTheme": "Dark++ VX",
     "editor.bracketPairColorization.enabled": false,
     "C_Cpp.default.intelliSenseMode": "clang-x64",
     "C_Cpp.default.compilerPath": "C:\\Program Files\\LLVM\\bin\\clang++.exe",
@@ -124,10 +123,12 @@
         ],
         "comment": -1
     },
-    "editor.fontSize": 13.8,
+    "editor.fontSize": 14,
     "editor.tabCompletion": "on",
     "explorer.autoReveal": false,
     "todo-tree.highlights.highlightDelay": 0,
     "editor.find.autoFindInSelection": "multiline",
-    "workbench.activityBar.visible": false
+    "editor.lineNumbers": "on",
+    "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "Dark++ VX",
 }
