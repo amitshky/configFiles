@@ -198,14 +198,6 @@
 		"command": "-workbench.action.gotoSymbol"
 	},
 	{
-		"key": "ctrl+tab",
-		"command": "workbench.action.nextEditor"
-	},
-	{
-		"key": "ctrl+shift+tab",
-		"command": "workbench.action.previousEditor"
-	},
-	{
 		"key": "shift+alt+z",
 		"command": "latex-workshop.view",
 		"when": "config.latex-workshop.bind.altKeymap.enabled && editorLangId =~ /latex|rsweave|jlweave/"
@@ -347,10 +339,6 @@
 	{
 		"key": "ctrl+shift+alt+d",
 		"command": "editor.action.moveSelectionToPreviousFindMatch"
-	},
-	{
-		"key": "alt+e",
-		"command": "wwm.aligncode"
 	},
 	{
 		"key": "shift+alt+enter",
@@ -528,5 +516,100 @@
 	{
 		"key": "ctrl+e",
 		"command": "-workbench.action.quickOpen"
+	},
+	{
+		"key": "ctrl+shift+tab",
+		"command": "-workbench.action.quickOpenLeastRecentlyUsedEditorInGroup",
+		"when": "!activeEditorGroupEmpty"
+	},
+	{
+		"key": "ctrl+tab",
+		"command": "-workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
+		"when": "!activeEditorGroupEmpty"
+	},
+	{
+		"key": "ctrl+tab",
+		"command": "-workbench.action.quickOpenNavigateNextInEditorPicker",
+		"when": "inEditorsPicker && inQuickOpen"
+	},
+	{
+		"key": "ctrl+shift+tab",
+		"command": "-workbench.action.quickOpenNavigatePreviousInEditorPicker",
+		"when": "inEditorsPicker && inQuickOpen"
+	},
+	{
+		"key": "alt+e",
+		"command": "vscode-better-align.align",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "alt+a",
+		"command": "-vscode-better-align.align",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "alt+w",
+		"command": "workbench.action.closeEditorsAndGroup"
+	},
+	{
+		"key": "ctrl+shift+v",
+		"command": "-markdown.showPreview",
+		"when": "!notebookEditorFocused && editorLangId == 'markdown'"
+	},
+	{
+		"key": "ctrl+alt+m",
+		"command": "markdown.showPreviewToSide",
+		"when": "!notebookEditorFocused && editorLangId == 'markdown'"
+	},
+	{
+		"key": "ctrl+k v",
+		"command": "-markdown.showPreviewToSide",
+		"when": "!notebookEditorFocused && editorLangId == 'markdown'"
+	},
+	{
+		"key": "ctrl+tab",
+		"command": "workbench.action.nextEditorInGroup"
+	},
+	{
+		"key": "ctrl+k ctrl+pagedown",
+		"command": "-workbench.action.nextEditorInGroup"
+	},
+	{
+		"key": "ctrl+shift+tab",
+		"command": "workbench.action.previousEditorInGroup"
+	},
+	{
+		"key": "ctrl+k ctrl+pageup",
+		"command": "-workbench.action.previousEditorInGroup"
+	},
+	{
+		"key": "f1",
+		"command": "editor.action.showHover",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+k ctrl+i",
+		"command": "-editor.action.showHover",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "f1",
+		"command": "editor.debug.action.showDebugHover",
+		"when": "editorTextFocus && inDebugMode"
+	},
+	{
+		"key": "ctrl+k ctrl+i",
+		"command": "-editor.debug.action.showDebugHover",
+		"when": "editorTextFocus && inDebugMode"
+	},
+	{
+		"key": "alt+o",
+		"command": "-clangd.switchheadersource",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "alt+o",
+		"command": "clangd.switchheadersource",
+		"when": "editorTextFocus && editorLangId == 'c' || editorTextFocus && editorLangId == 'cpp' || editorTextFocus && editorLangId == 'cuda-cpp'"
 	}
 ]

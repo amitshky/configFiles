@@ -26,7 +26,6 @@
         }
     },
     "terminal.integrated.defaultProfile.windows": "PowerShell",
-    "window.menuBarVisibility": "visible",
     "update.enableWindowsBackgroundUpdates": false,
     "latex-workshop.view.pdf.viewer": "tab",
     "workbench.startupEditor": "none",
@@ -37,7 +36,6 @@
     "update.mode": "manual",
     "explorer.confirmDelete": false,
     "cmake.configureOnOpen": false,
-    "editor.comments.insertSpace": false,
     "extensions.autoUpdate": false,
     "latex-workshop.bibtex-format.tab": "tab",
     "latex-workshop.latex.autoBuild.run": "never",
@@ -93,11 +91,12 @@
     "cmake.configureOnEdit": false,
     "clangd.path": "c:\\Users\\a7shk\\AppData\\Roaming\\Code\\User\\globalStorage\\llvm-vs-code-extensions.vscode-clangd\\install\\14.0.3\\clangd_14.0.3\\bin\\clangd.exe",
     "clangd.arguments": [
-        "-log=verbose",
-        "-pretty",
-        "-background-index",
+        "--log=verbose",
+        "--pretty",
+        "--background-index",
         "--compile-commands-dir=${workspaceFolder}",
-        "-header-insertion=never"
+        "--header-insertion=never",
+        "-j=8"
     ],
     "editor.bracketPairColorization.enabled": false,
     "C_Cpp.default.intelliSenseMode": "clang-x64",
@@ -108,7 +107,16 @@
     "terminal.integrated.fontFamily": "'CodeNewRoman Nerd Font Mono'",
     "editor.fontFamily": "'CodeNewRoman Nerd Font Mono'",
     "editor.inlayHints.enabled": "off",
-    "alignment.surroundSpace": {
+    "editor.tabCompletion": "on",
+    "explorer.autoReveal": false,
+    "todo-tree.highlights.highlightDelay": 0,
+    "editor.find.autoFindInSelection": "multiline",
+    "editor.lineNumbers": "on",
+    "workbench.colorTheme": "Dark++ VX",
+    "window.menuBarVisibility": "visible",
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "betterAlign.surroundSpace": {
         "colon": [
             0,
             1
@@ -123,12 +131,15 @@
         ],
         "comment": -1
     },
-    "editor.fontSize": 14,
-    "editor.tabCompletion": "on",
-    "explorer.autoReveal": false,
-    "todo-tree.highlights.highlightDelay": 0,
-    "editor.find.autoFindInSelection": "multiline",
-    "editor.lineNumbers": "on",
-    "workbench.activityBar.visible": false,
-    "workbench.colorTheme": "Dark++ VX",
+    "editor.fontSize": 15,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.formatOnSave": true,
+    "clang-format.executable": "C:\\Program Files\\LLVM\\bin\\clang-format.exe",
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "debug.onTaskErrors": "abort",
+    "clang-format.fallbackStyle": "Microsoft",
+    "window.zoomLevel": -1,
+    "workbench.editor.revealIfOpen": true,
 }
