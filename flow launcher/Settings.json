@@ -5,7 +5,7 @@
   "ShowOpenResultHotkey": true,
   "WindowSize": 580,
   "Language": "en",
-  "Theme": "BlurBlack",
+  "Theme": "BlackAndWhite",
   "UseDropShadowEffect": false,
   "QueryBoxFont": "Segoe UI",
   "QueryBoxFontStyle": "Normal",
@@ -88,10 +88,10 @@
   "ShouldUsePinyin": false,
   "QuerySearchPrecision": "Regular",
   "AutoUpdates": false,
-  "WindowLeft": 670,
-  "WindowTop": 246.5,
+  "WindowLeft": 638,
+  "WindowTop": 302,
   "MaxResultsToShow": 5,
-  "ActivateTimes": 350,
+  "ActivateTimes": 3509,
   "CustomPluginHotkeys": [],
   "DontPromptUpdateMsg": false,
   "EnableUpdateLog": false,
@@ -100,7 +100,7 @@
   "HideNotifyIcon": false,
   "LeaveCmdOpen": false,
   "HideWhenDeactive": true,
-  "RememberLastLaunchLocation": false,
+  "RememberLastLaunchLocation": true,
   "IgnoreHotkeysOnFullscreen": false,
   "Proxy": {
     "Enabled": false,
@@ -204,7 +204,7 @@
         "ActionKeywords": [
           "*"
         ],
-        "Priority": 0,
+        "Priority": 1,
         "Disabled": false
       },
       "0308FD86DE0A4DEE8D62B9B535370992": {
@@ -243,7 +243,7 @@
         "Name": "Everything",
         "Version": "1.7.3",
         "ActionKeywords": [
-          "es?"
+          "/"
         ],
         "Priority": 0,
         "Disabled": false
