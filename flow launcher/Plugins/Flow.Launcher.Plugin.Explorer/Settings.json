@@ -1,13 +1,22 @@
 {
   "MaxResult": 100,
-  "QuickAccessLinks": [],
+  "QuickAccessLinks": [
+    {
+      "Path": "D:\\dev\\dev-cpp\\vkTemplate",
+      "Type": 1
+    },
+    {
+      "Path": "D:\\dev\\dev-cpp\\vulkanPbr",
+      "Type": 1
+    }
+  ],
   "IndexSearchExcludedSubdirectoryPaths": [],
   "EditorPath": "",
   "FolderEditorPath": "",
   "ShellPath": "pwsh",
   "UseLocationAsWorkingDir": false,
   "ShowWindowsContextMenu": true,
-  "DefaultOpenFolderInFileManager": false,
+  "DefaultOpenFolderInFileManager": true,
   "SearchActionKeyword": "/",
   "SearchActionKeywordEnabled": true,
   "FileContentSearchActionKeyword": "doc:",
