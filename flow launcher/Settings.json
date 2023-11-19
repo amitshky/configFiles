@@ -4,21 +4,31 @@
   "ColorScheme": "Dark",
   "ShowOpenResultHotkey": true,
   "WindowSize": 580,
+  "PreviewHotkey": "F1",
   "Language": "en",
-  "Theme": "BlackAndWhite",
-  "UseDropShadowEffect": false,
-  "QueryBoxFont": "Segoe UI",
-  "QueryBoxFontStyle": "Normal",
-  "QueryBoxFontWeight": "Normal",
-  "QueryBoxFontStretch": "Normal",
-  "ResultFont": "Segoe UI",
-  "ResultFontStyle": "Normal",
-  "ResultFontWeight": "Light",
-  "ResultFontStretch": "Normal",
+  "Theme": "Win11Dark",
+  "UseDropShadowEffect": true,
+  "QueryBoxFont": "Microsoft Sans Serif",
+  "QueryBoxFontStyle": null,
+  "QueryBoxFontWeight": null,
+  "QueryBoxFontStretch": null,
+  "ResultFont": "Microsoft Sans Serif",
+  "ResultFontStyle": null,
+  "ResultFontWeight": null,
+  "ResultFontStretch": null,
   "UseGlyphIcons": true,
   "UseAnimation": false,
   "UseSound": false,
+  "UseClock": true,
+  "UseDate": false,
+  "TimeFormat": "hh:mm tt",
+  "DateFormat": "MM\u0027/\u0027dd ddd",
   "FirstLaunch": false,
+  "SettingWindowWidth": 1936,
+  "SettingWindowHeight": 1050,
+  "SettingWindowTop": 0,
+  "SettingWindowLeft": 0,
+  "SettingWindowState": 2,
   "CustomExplorerIndex": 0,
   "CustomExplorerList": [
     {
@@ -86,21 +96,28 @@
     }
   ],
   "ShouldUsePinyin": false,
+  "AlwaysPreview": false,
+  "AlwaysStartEn": false,
   "QuerySearchPrecision": "Regular",
   "AutoUpdates": false,
-  "WindowLeft": 638,
-  "WindowTop": 302,
+  "WindowLeft": 670,
+  "WindowTop": 248,
+  "CustomWindowLeft": 0,
+  "CustomWindowTop": 0,
   "MaxResultsToShow": 5,
-  "ActivateTimes": 3509,
+  "ActivateTimes": 27,
   "CustomPluginHotkeys": [],
+  "CustomShortcuts": [],
   "DontPromptUpdateMsg": false,
   "EnableUpdateLog": false,
   "StartFlowLauncherOnSystemStartup": true,
   "HideOnStartup": true,
   "HideNotifyIcon": false,
   "LeaveCmdOpen": false,
-  "HideWhenDeactive": true,
-  "RememberLastLaunchLocation": true,
+  "HideWhenDeactivated": true,
+  "SearchWindowScreen": "Primary",
+  "SearchWindowAlign": "Center",
+  "CustomScreenNumber": 1,
   "IgnoreHotkeysOnFullscreen": false,
   "Proxy": {
     "Enabled": false,
@@ -110,13 +127,16 @@
     "Password": null
   },
   "LastQueryMode": "Empty",
+  "AnimationSpeed": "Medium",
+  "CustomAnimationLength": 360,
   "PluginSettings": {
-    "PythonDirectory": null,
+    "PythonExecutablePath": "",
+    "NodeExecutablePath": "",
     "Plugins": {
       "0ECADE17459B49F587BF81DC3A125110": {
         "ID": "0ECADE17459B49F587BF81DC3A125110",
         "Name": "Browser Bookmarks",
-        "Version": "1.6.2",
+        "Version": "3.1.4",
         "ActionKeywords": [
           "b"
         ],
@@ -126,53 +146,54 @@
       "CEA0FDFC6D3B4085823D60DC76F28855": {
         "ID": "CEA0FDFC6D3B4085823D60DC76F28855",
         "Name": "Calculator",
-        "Version": "1.1.10",
+        "Version": "3.0.3",
         "ActionKeywords": [
           "*"
         ],
-        "Priority": 2,
+        "Priority": 0,
         "Disabled": false
       },
       "572be03c74c642baae319fc283e561a8": {
         "ID": "572be03c74c642baae319fc283e561a8",
         "Name": "Explorer",
-        "Version": "1.11.1",
+        "Version": "3.1.3",
         "ActionKeywords": [
+          "doc:",
           "*",
           "*",
           "*",
-          "*",
-          "f:"
+          "/",
+          "*"
         ],
         "Priority": 0,
-        "Disabled": true
+        "Disabled": false
       },
       "6A122269676E40EB86EB543B945932B9": {
         "ID": "6A122269676E40EB86EB543B945932B9",
         "Name": "Plugin Indicator",
-        "Version": "1.1.3",
+        "Version": "3.0.2",
         "ActionKeywords": [
-          "*"
+          "?"
         ],
         "Priority": 0,
-        "Disabled": true
+        "Disabled": false
       },
       "9f8f9b14-2518-4907-b211-35ab6290dee7": {
         "ID": "9f8f9b14-2518-4907-b211-35ab6290dee7",
         "Name": "Plugins Manager",
-        "Version": "1.11.2",
+        "Version": "3.0.5",
         "ActionKeywords": [
           "pm"
         ],
         "Priority": 0,
-        "Disabled": true
+        "Disabled": false
       },
       "b64d0a79-329a-48b0-b53f-d658318a1bf6": {
         "ID": "b64d0a79-329a-48b0-b53f-d658318a1bf6",
         "Name": "Process Killer",
-        "Version": "1.2.4",
+        "Version": "3.0.3",
         "ActionKeywords": [
-          "kill:"
+          "kill"
         ],
         "Priority": 0,
         "Disabled": false
@@ -180,17 +201,17 @@
       "791FC278BA414111B8D1886DFE447410": {
         "ID": "791FC278BA414111B8D1886DFE447410",
         "Name": "Program",
-        "Version": "1.8.1",
+        "Version": "3.1.3",
         "ActionKeywords": [
           "*"
         ],
-        "Priority": 1,
+        "Priority": 0,
         "Disabled": false
       },
       "D409510CD0D2481F853690A07E6DC426": {
         "ID": "D409510CD0D2481F853690A07E6DC426",
         "Name": "Shell",
-        "Version": "1.4.9",
+        "Version": "3.1.1",
         "ActionKeywords": [
           "\u003E"
         ],
@@ -200,17 +221,17 @@
       "CEA08895D2544B019B2E9C5009600DF4": {
         "ID": "CEA08895D2544B019B2E9C5009600DF4",
         "Name": "System Commands",
-        "Version": "1.6.1",
+        "Version": "3.0.3",
         "ActionKeywords": [
           "*"
         ],
-        "Priority": 1,
+        "Priority": 0,
         "Disabled": false
       },
       "0308FD86DE0A4DEE8D62B9B535370992": {
         "ID": "0308FD86DE0A4DEE8D62B9B535370992",
         "Name": "URL",
-        "Version": "1.2.1",
+        "Version": "3.0.3",
         "ActionKeywords": [
           "*"
         ],
@@ -220,10 +241,29 @@
       "565B73353DBF4806919830B9202EE3BF": {
         "ID": "565B73353DBF4806919830B9202EE3BF",
         "Name": "Web Searches",
-        "Version": "1.5.2",
+        "Version": "3.0.5",
         "ActionKeywords": [
-          "google: ",
-          "youtube: "
+          "*",
+          "sc",
+          "wiki",
+          "findicon",
+          "facebook",
+          "twitter",
+          "maps",
+          "translate",
+          "duckduckgo",
+          "github",
+          "gist",
+          "gmail",
+          "drive",
+          "wolframalpha",
+          "stackoverflow",
+          "lucky",
+          "image",
+          "youtube",
+          "bing",
+          "yahoo",
+          "bd"
         ],
         "Priority": 0,
         "Disabled": true
@@ -231,29 +271,9 @@
       "5043CETYU6A748679OPA02D27D99677A": {
         "ID": "5043CETYU6A748679OPA02D27D99677A",
         "Name": "Windows Settings",
-        "Version": "2.0.2",
+        "Version": "4.0.5",
         "ActionKeywords": [
-          "*"
-        ],
-        "Priority": 0,
-        "Disabled": false
-      },
-      "D2D2C23B084D411DB66FE0C79D6C2A6E": {
-        "ID": "D2D2C23B084D411DB66FE0C79D6C2A6E",
-        "Name": "Everything",
-        "Version": "1.7.3",
-        "ActionKeywords": [
-          "/"
-        ],
-        "Priority": 0,
-        "Disabled": false
-      },
-      "9B36CE6181FC47FBB597AA2C29CD9B0A": {
-        "ID": "9B36CE6181FC47FBB597AA2C29CD9B0A",
-        "Name": "Colors",
-        "Version": "2.0.1",
-        "ActionKeywords": [
-          "*"
+          "s"
         ],
         "Priority": 0,
         "Disabled": false
