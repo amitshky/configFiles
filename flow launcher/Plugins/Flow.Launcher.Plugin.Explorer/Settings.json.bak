@@ -8,6 +8,10 @@
     {
       "Path": "D:\\dev\\dev-cpp\\vulkanPbr",
       "Type": 1
+    },
+    {
+      "Path": "D:\\dev",
+      "Type": 1
     }
   ],
   "IndexSearchExcludedSubdirectoryPaths": [],

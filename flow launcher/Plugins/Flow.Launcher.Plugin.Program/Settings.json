@@ -1,6 +1,13 @@
 {
-  "LastIndexTime": "2023-11-19T11:21:04.2729975+05:45",
-  "ProgramSources": [],
+  "LastIndexTime": "2023-11-19T18:58:17.4565803+05:45",
+  "ProgramSources": [
+    {
+      "Location": "D:\\Programs\\",
+      "Name": "Programs",
+      "Enabled": true,
+      "UniqueIdentifier": "d:\\programs\\"
+    }
+  ],
   "DisabledProgramSources": [],
   "CustomSuffixes": [],
   "CustomProtocols": [],
@@ -18,7 +25,7 @@
   "UseCustomProtocols": false,
   "EnableStartMenuSource": true,
   "EnableDescription": false,
-  "HideAppsPath": true,
+  "HideAppsPath": false,
   "EnableRegistrySource": true,
   "EnablePathSource": false,
   "EnableUWP": true
