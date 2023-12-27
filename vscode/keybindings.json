@@ -611,5 +611,17 @@
 		"key": "alt+o",
 		"command": "clangd.switchheadersource",
 		"when": "editorTextFocus && editorLangId == 'c' || editorTextFocus && editorLangId == 'cpp' || editorTextFocus && editorLangId == 'cuda-cpp'"
+	},
+	{
+		"key": "ctrl+shift+alt+enter",
+		"command": "workbench.action.keepEditor"
+	},
+	{
+		"key": "ctrl+k enter",
+		"command": "-workbench.action.keepEditor"
+	},
+	{
+		"key": "ctrl+shift+alt+f12",
+		"command": "editor.action.inspectTMScopes"
 	}
 ]

@@ -1,12 +1,6 @@
 {
-  "LastIndexTime": "2023-11-19T18:57:55.2142231+05:45",
+  "LastIndexTime": "2023-12-27T18:34:32.3327452+05:45",
   "ProgramSources": [
-    {
-      "Location": "D:\\Programs",
-      "Name": "Programs",
-      "Enabled": true,
-      "UniqueIdentifier": "d:\\programs"
-    },
     {
       "Location": "D:\\Programs\\",
       "Name": "Programs",

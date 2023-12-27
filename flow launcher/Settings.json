@@ -105,7 +105,7 @@
   "CustomWindowLeft": 0,
   "CustomWindowTop": 0,
   "MaxResultsToShow": 5,
-  "ActivateTimes": 67,
+  "ActivateTimes": 492,
   "CustomPluginHotkeys": [],
   "CustomShortcuts": [],
   "DontPromptUpdateMsg": false,
@@ -273,7 +273,7 @@
         "Name": "Windows Settings",
         "Version": "4.0.5",
         "ActionKeywords": [
-          "s"
+          "*"
         ],
         "Priority": 0,
         "Disabled": false
