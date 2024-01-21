@@ -36,7 +36,7 @@ function global:prompt
 	$isAdmin   = (New-Object Security.Principal.WindowsPrincipal ([Security.Principal.WindowsIdentity]::GetCurrent())).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
 
 	# ref: https://jdhitsolutions.com/blog/powershell/7149/friday-fun-taking-a-shortcut-path-in-your-powershell-prompt/
-	if ($path.length -gt $len) 
+	if ($path.length -gt $len)
 	{
 		#escape the separator character to treat it as a literal
 		#filter out any blank entries which might happen if the path ends with the delimiter
@@ -50,13 +50,13 @@ function global:prompt
 	$lastCommand = Get-History -Count 1
 	if ($lastCommand) { $runTime = ($lastCommand.EndExecutionTime - $lastCommand.StartExecutionTime).TotalSeconds }
 
-	if ($runTime -ge 60) 
+	if ($runTime -ge 60)
 	{
 		$ts = [timespan]::fromseconds($runTime)
 		$min, $sec = ($ts.ToString("mm\:ss")).Split(":")
 		$elapsedtime = "$($min)m $($sec)s"
 	}
-	else 
+	else
 	{
 		$elapsedtime = [math]::Round(($runTime), 2)
 		$elapsedtime = "$($elapsedtime)s"
@@ -65,11 +65,11 @@ function global:prompt
 	# prompt display format
 	$start     = "$fg;$lightGray┌─"
 	$admin     = "$bg;$red $(if ($isAdmin){ "$fg;$black  Admin " })$bg;$gray$fg;$red"
-	$directory = "$bg;$gray$fg;$blue  $path $fg;$gray$bg;$green"
+	$directory = "$bg;$gray$fg;$blue  $path $fg;$gray$bg;$green"
 	$gitBranch = "$fg;$black$bg;$green$(if ($gitBranch) { "  $gitBranch " })$reset$fg;$green"
-	$end       = "`n$fg;$lightGray└─[$fg;$green$elapsedTime$fg;$lightGray]$reset"
+	$end       = "`n$fg;$lightGray└─[$fg;$green$elapsedTime$fg;$lightGray]$reset"
 
 	#Write-Host "" # for initial newline
-	Write-Host $start -NoNewline # so that python virtualenv prefix doesn't break the customized prompt  
+	Write-Host $start -NoNewline # so that python virtualenv prefix doesn't break the customized prompt
 	return "$admin$directory$gitBranch$end "
 }
