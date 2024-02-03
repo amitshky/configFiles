@@ -18,6 +18,3 @@ ToolBarsMovable=Disabled
 
 [TabBar]
 CloseTabOnMiddleMouseButton=true
-
-[UiSettings]
-ColorScheme=Breeze Dark
