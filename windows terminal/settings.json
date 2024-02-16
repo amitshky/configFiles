@@ -1,10 +1,13 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions":
+    "actions": 
     [
         {
-            "command":
+            "command": "paste"
+        },
+        {
+            "command": 
             {
                 "action": "resizePane",
                 "direction": "up"
@@ -12,10 +15,7 @@
             "keys": "ctrl+alt+shift+up"
         },
         {
-            "command": "paste"
-        },
-        {
-            "command":
+            "command": 
             {
                 "action": "copy",
                 "singleLine": false
@@ -23,19 +23,7 @@
             "keys": "ctrl+c"
         },
         {
-            "command":
-            {
-                "action": "resizePane",
-                "direction": "left"
-            },
-            "keys": "ctrl+alt+shift+left"
-        },
-        {
-            "command": "find",
-            "keys": "ctrl+shift+f"
-        },
-        {
-            "command":
+            "command": 
             {
                 "action": "splitPane",
                 "split": "auto",
@@ -44,12 +32,16 @@
             "keys": "alt+shift+d"
         },
         {
-            "command":
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": 
             {
-                "action": "splitPane",
-                "split": "down"
+                "action": "resizePane",
+                "direction": "left"
             },
-            "keys": "ctrl+shift+minus"
+            "keys": "ctrl+alt+shift+left"
         },
         {
             "command": "unbound",
@@ -104,22 +96,30 @@
             "keys": "ctrl+shift+c"
         },
         {
-            "command": "closeWindow",
-            "keys": "alt+f4"
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "down"
+            },
+            "keys": "ctrl+shift+minus"
         },
         {
-            "command":
-            {
-                "action": "splitPane"
-            },
-            "keys": "ctrl+shift+\\"
+            "command": "closeWindow",
+            "keys": "alt+f4"
         },
         {
             "command": "scrollDownPage",
             "keys": "pgdn"
         },
         {
-            "command":
+            "command": 
+            {
+                "action": "splitPane"
+            },
+            "keys": "ctrl+shift+\\"
+        },
+        {
+            "command": 
             {
                 "action": "resizePane",
                 "direction": "right"
@@ -131,7 +131,14 @@
             "keys": "ctrl+alt+shift+w"
         },
         {
-            "command":
+            "command": 
+            {
+                "action": "closeTab"
+            },
+            "keys": "ctrl+shift+w"
+        },
+        {
+            "command": 
             {
                 "action": "moveFocus",
                 "direction": "right"
@@ -139,14 +146,7 @@
             "keys": "ctrl+alt+right"
         },
         {
-            "command":
-            {
-                "action": "closeTab"
-            },
-            "keys": "ctrl+shift+w"
-        },
-        {
-            "command":
+            "command": 
             {
                 "action": "newTab"
             },
@@ -156,7 +156,7 @@
             "command": "openSystemMenu"
         },
         {
-            "command":
+            "command": 
             {
                 "action": "resizePane",
                 "direction": "down"
@@ -168,7 +168,7 @@
             "keys": "f2"
         },
         {
-            "command":
+            "command": 
             {
                 "action": "clearBuffer",
                 "clear": "all"
@@ -176,7 +176,7 @@
             "keys": "ctrl+shift+l"
         },
         {
-            "command":
+            "command": 
             {
                 "action": "moveFocus",
                 "direction": "left"
@@ -184,7 +184,7 @@
             "keys": "ctrl+alt+left"
         },
         {
-            "command":
+            "command": 
             {
                 "action": "moveFocus",
                 "direction": "up"
@@ -192,7 +192,7 @@
             "keys": "ctrl+alt+up"
         },
         {
-            "command":
+            "command": 
             {
                 "action": "moveFocus",
                 "direction": "down"
@@ -202,7 +202,7 @@
         {
             "command": "scrollUpPage",
             "keys": "pgup"
-        },
+        }
     ],
     "alwaysShowTabs": true,
     "copyFormatting": "none",
@@ -210,72 +210,25 @@
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "disableAnimations": true,
     "launchMode": "maximized",
-    "newTabMenu":
+    "newTabMenu": 
     [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles":
+    "profiles": 
     {
-        "defaults":
+        "defaults": 
         {
-            "colorScheme": "Campbell Black",
-            "cursorShape": "filledBox",
-            "font":
-            {
-                "face": "CodeNewRoman Nerd Font Mono",
-                "size": 11.0,
-                "weight": "thin"
-            },
-            "padding": "0",
-            "scrollbarState": "hidden"
+            "colorScheme": "Campbell"
         },
-        "list":
+        "list": 
         [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-                "font":
-                {
-                    "face": "JetBrainsMonoNL Nerd Font",
-                    "size": 10.0,
-                    "weight": "normal"
-                },
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell",
-                "startingDirectory": "."
-            },
-            {
-                "commandline": "C:\\Program Files\\PowerShell\\7\\pwsh.exe -NoLogo",
-                "font":
-                {
-                    "face": "JetBrainsMonoNL Nerd Font",
-                    "size": 10.0,
-                    "weight": "normal"
-                },
-                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-                "hidden": false,
-                "name": "PowerShell",
-                "opacity": 100,
-                "source": "Windows.Terminal.PowershellCore",
-                "startingDirectory": ".",
-                "useAcrylic": false
-            },
-            {
-                "colorScheme": "Campbell",
-                "commandline": "C:\\Program Files\\PowerShell\\7\\pwsh.exe -NoLogo",
-                "elevate": true,
-                "font":
-                {
-                    "face": "JetBrainsMonoNL Nerd Font Mono",
-                    "size": 10.0,
-                    "weight": "normal"
-                },
-                "guid": "{e3736a51-365b-4678-952b-9f96de6dce9c}",
-                "hidden": false,
-                "icon": "ms-appx:///ProfileIcons/pwsh.png",
-                "name": "PowerShell (Admin)",
                 "startingDirectory": "."
             },
             {
@@ -292,44 +245,57 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "guid": "{1f842c1d-8722-5042-bbd8-0f68e21cb75e}",
+                "guid": "{57c0483c-bfd4-547d-b088-fb91dcd9157b}",
                 "hidden": false,
                 "name": "Developer Command Prompt for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
             },
             {
-                "guid": "{b05d5565-b187-581e-80d4-0711fb299639}",
+                "guid": "{67d78eab-fc60-58f8-aaf0-0c1866fef95a}",
                 "hidden": false,
                 "name": "Developer PowerShell for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "commandline": "\"C:\\Program Files\\PowerShell\\7\\pwsh.exe\" -NoLogo",
+                "cursorShape": "filledBox",
+                "font": 
+                {
+                    "face": "JetBrainsMonoNL Nerd Font",
+                    "size": 11.0
+                },
+                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "hidden": false,
+                "name": "PowerShell",
+                "padding": "0",
+                "scrollbarState": "hidden",
+                "source": "Windows.Terminal.PowershellCore",
+                "startingDirectory": ".",
+                "useAtlasEngine": false
+            },
+            {
+                "colorScheme": "Campbell",
+                "commandline": "\"C:\\Program Files\\PowerShell\\7\\pwsh.exe\" -NoLogo",
+                "cursorShape": "filledBox",
+                "elevate": true,
+                "font": 
+                {
+                    "face": "JetBrainsMonoNL Nerd Font",
+                    "size": 11.0
+                },
+                "guid": "{33d696a9-da73-47e4-bd93-96fe286be537}",
+                "hidden": false,
+                "icon": "ms-appx:///ProfileIcons/pwsh.png",
+                "name": "PowerShell (Admin)",
+                "padding": "0",
+                "scrollbarState": "hidden",
+                "startingDirectory": ".",
+                "useAtlasEngine": true
             }
         ]
     },
-    "schemes":
+    "schemes": 
     [
-        {
-            "background": "#0C0C0C",
-            "black": "#0C0C0C",
-            "blue": "#0037DA",
-            "brightBlack": "#767676",
-            "brightBlue": "#3B78FF",
-            "brightCyan": "#61D6D6",
-            "brightGreen": "#16C60C",
-            "brightPurple": "#B4009E",
-            "brightRed": "#E74856",
-            "brightWhite": "#F2F2F2",
-            "brightYellow": "#F9F1A5",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#3A96DD",
-            "foreground": "#CCCCCC",
-            "green": "#13A10E",
-            "name": "Campbell",
-            "purple": "#881798",
-            "red": "#C50F1F",
-            "selectionBackground": "#FFFFFF",
-            "white": "#CCCCCC",
-            "yellow": "#C19C00"
-        },
         {
             "background": "#000000",
             "black": "#000000",
@@ -346,7 +312,7 @@
             "cyan": "#3A96DD",
             "foreground": "#CCCCCC",
             "green": "#13A10E",
-            "name": "Campbell Black",
+            "name": "Campbell",
             "purple": "#881798",
             "red": "#C50F1F",
             "selectionBackground": "#FFFFFF",
@@ -418,7 +384,7 @@
             "name": "One Half Light",
             "purple": "#A626A4",
             "red": "#E45649",
-            "selectionBackground": "#FFFFFF",
+            "selectionBackground": "#4F525D",
             "white": "#FAFAFA",
             "yellow": "#C18301"
         },
@@ -464,7 +430,7 @@
             "name": "Solarized Light",
             "purple": "#D33682",
             "red": "#DC322F",
-            "selectionBackground": "#FFFFFF",
+            "selectionBackground": "#073642",
             "white": "#EEE8D5",
             "yellow": "#B58900"
         },
@@ -510,7 +476,7 @@
             "name": "Tango Light",
             "purple": "#75507B",
             "red": "#CC0000",
-            "selectionBackground": "#FFFFFF",
+            "selectionBackground": "#555753",
             "white": "#D3D7CF",
             "yellow": "#C4A000"
         },
@@ -541,7 +507,6 @@
     "showTabsInTitlebar": true,
     "showTerminalTitleInTitlebar": true,
     "tabWidthMode": "equal",
-    "theme": "dark",
     "themes": [],
     "useAcrylicInTabRow": false,
     "windowingBehavior": "useExisting"
