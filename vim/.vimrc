@@ -8,6 +8,8 @@ set noexpandtab
 set wrap
 set linebreak
 set scrolloff=0
+set hlsearch
+set ignorecase
 
 inoremap jk <esc>
 inoremap <C-h> <C-w>
