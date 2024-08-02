@@ -1,6 +1,3 @@
 [submodule "lvimConfig"]
 	path = lvimConfig
 	url = https://github.com/amitshky/lvimConfig
-[submodule "nvim-minimal"]
-	path = nvim-minimal
-	url = https://github.com/amitshky/nvim-minimal
