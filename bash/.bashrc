@@ -25,7 +25,8 @@ fi
 unset rc
 
 alias ll="ls -al"
-alias mvim="NVIM_APPNAME=nvim-minimal nvim" # minimal nvim config
+alias mvim="nvim --clean -u ~/.config/nvim/minimal.lua" # minimal nvim config
+alias lg="lazygit"
 
 # customizing prompt
 git_branch_for_prompt() {
