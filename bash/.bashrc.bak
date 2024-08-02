@@ -24,18 +24,14 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
-# if [ -f /etc/bash_completion ]; then
-#   . /etc/bash_completion
-# fi
-
 alias ll="ls -al"
-
-# vulkan env variables
-source ~/VulkanSDK/1.3.275.0/setup-env.sh
+alias mvim="nvim --clean -u ~/.config/nvim/minimal.lua" # minimal nvim config
+alias kvim="nvim --clean -u ~/.config/nvim/kickstart.lua"
+alias lg="lazygit"
 
 # customizing prompt
 git_branch_for_prompt() {
-	git rev-parse --abbrev-ref HEAD 2> /dev/null
+    git rev-parse --abbrev-ref HEAD 2> /dev/null
 }
 
 PROMPT_PURPLE='\[\033[0;35m'
@@ -43,3 +39,8 @@ PROMPT_GREEN='\[\033[0;32m'
 PROMPT_CLEAR_COLOR='\[\033[0m\]'
 PS1="${PROMPT_PURPLE}[ \\w]${PROMPT_GREEN}( \$(git_branch_for_prompt))\\n\\$ ${PROMPT_CLEAR_COLOR}"
 
+# vulkan env variables
+source ~/VulkanSDK/1.3.275.0/setup-env.sh
+
+export MOZ_ENABLE_WAYLAND=1
+. "$HOME/.cargo/env"
