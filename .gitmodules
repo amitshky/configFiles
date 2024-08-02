@@ -1,3 +1,6 @@
 [submodule "lvimConfig"]
 	path = lvimConfig
 	url = https://github.com/amitshky/lvimConfig
+[submodule "nvimConfig"]
+	path = nvimConfig
+	url = https://github.com/amitshky/nvimConfig
