@@ -1,0 +1,21 @@
+! Jun 15, 2024 https://www.partitionwizard.com
+||www.minitool.com/promotions/images/banner/special-campaogn-season/special-en.png$image
+||www.minitool.com/promotions/images/banner/special-campaogn-season/special-en.png$image
+||www.minitool.com/promotions/images/banner/special-campaogn-season/special-en.png$image
+
+! Jun 30, 2024 https://www.bestbuy.com
+||pisces.bbystatic.com/image2/BestBuy_US/dam/darian-f8915ffb-eb41-4a93-be67-97a338b9eb55.png$image
+||pisces.bbystatic.com/image2/BestBuy_US/dam/darian-f8915ffb-eb41-4a93-be67-97a338b9eb55.png$image
+
+! Jul 12, 2024 https://one.google.com
+one.google.com##.jc8pSb.iJjyLd.GRI55b
+
+! Jul 31, 2024 https://www.youtube.com
+||i.ytimg.com/vi_webp/BAOeleDkRHs/maxresdefault.webp$image
+||i.ytimg.com/vi_webp/BAOeleDkRHs/maxresdefault.webp$image
+
+! Block "Sign in with Google" iframe in top right corner of websites 
+||id.google.com^
+||accounts.google.com/gsi/$3p
+||smartlock.google.com^
+||accounts.google.com/gsi/iframe
