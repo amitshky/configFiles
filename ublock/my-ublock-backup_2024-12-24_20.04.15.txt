@@ -1,0 +1,33 @@
+{
+  "timeStamp": 1735049955114,
+  "version": "1.61.2",
+  "userSettings": {
+    "importedLists": [],
+    "popupPanelSections": 63
+  },
+  "selectedFilterLists": [
+    "user-filters",
+    "ublock-filters",
+    "ublock-badware",
+    "ublock-privacy",
+    "ublock-quick-fixes",
+    "ublock-unbreak",
+    "easylist",
+    "easyprivacy",
+    "urlhaus-1",
+    "plowe-0",
+    "fanboy-cookiemonster",
+    "ublock-cookies-easylist",
+    "adguard-cookies",
+    "ublock-cookies-adguard"
+  ],
+  "hiddenSettings": {},
+  "whitelist": [
+    "chrome-extension-scheme",
+    "moz-extension-scheme"
+  ],
+  "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop",
+  "urlFilteringString": "",
+  "hostnameSwitchesString": "no-large-media: behind-the-scene false\nno-csp-reports: * true",
+  "userFilters": "! Jun 15, 2024 https://www.partitionwizard.com\n||www.minitool.com/promotions/images/banner/special-campaogn-season/special-en.png$image\n||www.minitool.com/promotions/images/banner/special-campaogn-season/special-en.png$image\n||www.minitool.com/promotions/images/banner/special-campaogn-season/special-en.png$image\n\n! Jun 30, 2024 https://www.bestbuy.com\n||pisces.bbystatic.com/image2/BestBuy_US/dam/darian-f8915ffb-eb41-4a93-be67-97a338b9eb55.png$image\n||pisces.bbystatic.com/image2/BestBuy_US/dam/darian-f8915ffb-eb41-4a93-be67-97a338b9eb55.png$image\n\n! Jul 12, 2024 https://one.google.com\none.google.com##.jc8pSb.iJjyLd.GRI55b\n\n! Jul 31, 2024 https://www.youtube.com\n||i.ytimg.com/vi_webp/BAOeleDkRHs/maxresdefault.webp$image\n||i.ytimg.com/vi_webp/BAOeleDkRHs/maxresdefault.webp$image\n\n! Block \"Sign in with Google\" iframe in top right corner of websites \n||id.google.com^\n||accounts.google.com/gsi/$3p\n||smartlock.google.com^\n||accounts.google.com/gsi/iframe\n\n! Nov 11, 2024 https://www.reddit.com\nwww.reddit.com##xpromo-nsfw-blocking-modal-desktop\nwww.reddit.com##.transform-none.overflow-hidden.fixed.w-\\[300px\\].shadow-none.bottom-\\[60px\\].right-\\[74px\\].top-\\[unset\\].left-\\[unset\\].rounded-lg"
+}
