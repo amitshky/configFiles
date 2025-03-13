@@ -3,7 +3,6 @@
     "editor.renderWhitespace": "all",
     "editor.renderControlCharacters": false,
     "editor.insertSpaces": false,
-    "php.validate.executablePath": "C:\\_MyFiles\\xampp\\php\\php.exe",
     "terminal.integrated.profiles.windows": {
         "PowerShell": {
             //"source": "PowerShell",
@@ -25,7 +24,7 @@
             "source": "Git Bash"
         }
     },
-    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
     "update.enableWindowsBackgroundUpdates": false,
     "latex-workshop.view.pdf.viewer": "tab",
     "workbench.startupEditor": "none",
@@ -54,7 +53,7 @@
         "editor.suggest.snippetsPreventQuickSuggestions": false,
         "editor.suggestSelection": "first",
         "editor.tabCompletion": "onlySnippets",
-        "editor.wordBasedSuggestions": false,
+        "editor.wordBasedSuggestions": "off",
         "editor.tabSize": 2,
         "editor.insertSpaces": false
     },
@@ -103,15 +102,13 @@
     "C_Cpp.default.compilerPath": "C:\\Program Files\\LLVM\\bin\\clang++.exe",
     "cmake.generator": "C:\\Program Files\\ninja\\ninja.exe",
     "C_Cpp.intelliSenseEngine": "disabled",
-    "terminal.integrated.fontFamily": "'Consolas Nf', 'JetBrainsMonoNL Nerd Font Mono', 'CodeNewRoman Nerd Font Mono', Consolas",
-    "editor.fontFamily": "'Consolas Nf', 'JetBrainsMonoNL Nerd Font Mono', 'CodeNewRoman Nerd Font Mono', Consolas",
+    "terminal.integrated.fontFamily": "'JetBrainsMonoNL Nerd Font', 'Consolas NF', 'CodeNewRoman Nerd Font Mono', Consolas",
+    "editor.fontFamily": "'JetBrainsMonoNL Nerd Font', 'Consolas NF',  'CodeNewRoman Nerd Font Mono', Consolas",
     "editor.inlayHints.enabled": "off",
     "editor.tabCompletion": "on",
     "explorer.autoReveal": false,
     "todo-tree.highlights.highlightDelay": 0,
     "editor.find.autoFindInSelection": "multiline",
-    "editor.lineNumbers": "on",
-    "workbench.colorTheme": "Dark++ VX",
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
     "diffEditor.ignoreTrimWhitespace": false,
@@ -126,14 +123,100 @@
     "window.commandCenter": false,
     "workbench.layoutControl.enabled": false,
     "glsllint.glslangValidatorPath": "C:/VulkanSDK/1.3.243.0/Bin/glslangValidator.exe",
-    "editor.cursorStyle": "block",
-    "editor.cursorBlinking": "solid",
-    "editor.fontSize": 17,
     "git.confirmSync": false,
     "editor.formatOnSave": false,
     "C_Cpp.clang_format_fallbackStyle": "none",
     "clang-format.language.cuda.fallbackStyle": "none",
     "clang-format.language.glsl.enable": false,
-    "window.zoomLevel": -1,
     "editor.tabSize": 2,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1,
+        "vscodevim.vim": 1,
+    },
+    "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": false,
+    "dotnet.backgroundAnalysis.analyzerDiagnosticsScope": "fullSolution",
+    "dotnet.codeLens.enableReferencesCodeLens": false,
+    "editor.fontSize": 16,
+    "terminal.integrated.fontSize": 16,
+    "editor.lineNumbers": "relative",
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.timeout": 500,
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        },
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "w"],
+            "commands": [":w"],
+            "silent": true,
+        },
+        {
+            "before": ["<leader>", "W"],
+            "commands": [":wa"],
+            "silent": true,
+        },
+        {
+            "before": ["<leader>", "q"],
+            "commands": [":q"],
+            "silent": true,
+        },
+        {
+            "before": ["<leader>", "Q"],
+            "commands": [":qa"],
+            "silent": true,
+        },
+        {
+            "before": ["<leader>", "h"],
+            "commands": [":nohl"],
+            "silent": true,
+        },
+        {
+            "before": ["U"],
+            "after": ["<C-r>"],
+            "silent": true,
+        },
+        {
+            "before": ["<C-r>"],
+            "after": ["U"],
+            "silent": true,
+        },
+        {
+            "before": ["<S-h>"],
+            "commands": [":bprev"],
+            "silent": true,
+        },
+        {
+            "before": ["<S-L>"],
+            "commands": [":bnext"],
+            "silent": true,
+        },
+        {
+            // prevents the delete operation to pollute the unnamed buffer
+            "before": ["d", "d"],
+            "commands": ["editor.action.deleteLines"],
+            "silent": true,
+        },
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            // prevents the delete operation to pollute the unnamed buffer
+            "before": ["p"],
+            "after": ["P"],
+            "silent": false,
+        },
+    ],
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never",
 }

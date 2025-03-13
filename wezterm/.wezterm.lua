@@ -3,7 +3,7 @@ local config = wezterm.config_builder()
 
 -- if windows
 if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
-  config.default_prog = { "sh.exe" } -- open git-bash by default
+  config.default_prog = { "C:\\Program Files\\Git\\bin\\bash.exe" } -- open git-bash by default
 end
 
 config.font = wezterm.font('JetBrainsMonoNL Nerd Font')
