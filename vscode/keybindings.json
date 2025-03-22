@@ -510,8 +510,9 @@
 		"when": "searchViewletFocus"
 	},
 	{
-		"key": "shift+alt+o",
-		"command": "workbench.action.quickOpen"
+		"key": "ctrl+p",
+		"command": "workbench.action.quickOpen",
+		"when": "!terminalFocus"
 	},
 	{
 		"key": "ctrl+e",
@@ -716,5 +717,19 @@
 		"key": "alt+j",
 		"command": "editor.action.moveLinesDownAction",
 		"when": "editorTextFocus && !editorReadonly && (vim.mode == 'Insert' || vim.mode == 'Normal' || vim.mode == 'VisualLine)"
+	},
+	{
+		"key": "ctrl+p",
+		"command": "workbench.action.terminal.selectPrevSuggestion",
+		"when": "terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible"
+	},
+	{
+		"key": "ctrl+n",
+		"command": "workbench.action.terminal.selectNextSuggestion",
+		"when": "terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible"
+	},
+	{
+		"key": "ctrl+p",
+		"command": "-workbench.action.quickOpen"
 	}
 ]

@@ -2,7 +2,6 @@
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "all",
     "editor.renderControlCharacters": false,
-    "editor.insertSpaces": false,
     "terminal.integrated.profiles.windows": {
         "PowerShell": {
             //"source": "PowerShell",
@@ -128,7 +127,6 @@
     "C_Cpp.clang_format_fallbackStyle": "none",
     "clang-format.language.cuda.fallbackStyle": "none",
     "clang-format.language.glsl.enable": false,
-    "editor.tabSize": 2,
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1,
         "vscodevim.vim": 1,
@@ -148,7 +146,12 @@
     "vim.leader": "<space>",
     "vim.handleKeys": {
         "<C-a>": false,
-        "<C-f>": false
+        "<C-f>": false,
+        "<C-p>": false,
+        "<C-n>": false,
+        "<C-w>": false,
+        "<C-j>": false,
+        "<C-k>": false,
     },
     "vim.insertModeKeyBindingsNonRecursive": [
         {
@@ -208,6 +211,31 @@
             "commands": ["editor.action.deleteLines"],
             "silent": true,
         },
+        {
+            "before": ["<S-k>"],
+            "commands": ["editor.action.showHover"],
+            "silent": true,
+        },
+        {
+            "before": ["g", "l"],
+            "commands": ["editor.action.marker.nextInFiles"],
+            "silent": true,
+        },
+        {
+            "before": ["g", "L"],
+            "commands": ["editor.action.marker.prevInFiles"],
+            "silent": true,
+        },
+        {
+            "before": ["g", "r"],
+            "commands": ["editor.action.goToReferences"],
+            "silent": true,
+        },
+        {
+            "before": ["<leader>", "f", "f"],
+            "commands": ["workbench.action.quickOpen"],
+            "silent": true,
+        },
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
         {
@@ -219,4 +247,9 @@
     ],
     "editor.autoClosingBrackets": "never",
     "editor.autoClosingQuotes": "never",
+    "editor.indentSize": "tabSize",
+    "settingsSync.keybindingsPerPlatform": false,
+    "lldb.suppressUpdateNotifications": true,
+    "csharp.format.enable": false,
+    "editor.acceptSuggestionOnCommitCharacter": false,
 }
