@@ -11,6 +11,7 @@ config.font_size = 12.0
 config.enable_tab_bar = true
 config.enable_scroll_bar = false
 config.check_for_updates = false
+config.window_close_confirmation = 'NeverPrompt'
 config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
 config.window_padding = {
   left = 0,
