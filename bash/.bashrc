@@ -25,9 +25,6 @@ fi
 unset rc
 
 alias ll="ls -al"
-alias mvim="nvim --clean -u ~/.config/nvim/minimal.lua" # minimal nvim config
-alias kvim="nvim --clean -u ~/.config/nvim/kickstart.lua"
-alias cvim="nvim --clean" # without any config
 alias lg="lazygit"
 alias notes="nvim ~/documents/ObsidianVaults/_Obsidian"
 
