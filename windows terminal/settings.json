@@ -1,231 +1,149 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
+    "actions":
     [
         {
-            "command": 
-            {
-                "action": "resizePane",
-                "direction": "up"
-            },
-            "id": "User.resizePane.6CD791B",
-            "keys": "ctrl+alt+shift+up"
+            "command": "closeWindow",
+            "id": "User.closeWindow"
         },
         {
             "command": "openSystemMenu",
             "id": "User.openSystemMenu"
         },
         {
-            "command": "paste",
-            "id": "User.paste",
-            "keys": "ctrl+shift+v"
-        },
-        {
-            "command": "unbound",
-            "keys": "enter"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+w"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+t"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+space"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+alt+space"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+enter"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+l"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+down"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+left"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+right"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+up"
-        },
-        {
-            "command": 
-            {
-                "action": "copy",
-                "singleLine": false
-            },
-            "id": "User.copy.644BA8F2",
-            "keys": "ctrl+c"
-        },
-        {
-            "command": 
-            {
-                "action": "copy",
-                "singleLine": false
-            },
-            "keys": "ctrl+shift+c"
-        },
-        {
-            "command": "closeWindow",
-            "id": "User.closeWindow",
-            "keys": "alt+f4"
-        },
-        {
-            "command": 
+            "command":
             {
                 "action": "splitPane",
                 "split": "down"
             },
-            "id": "User.splitPane.D5151347",
-            "keys": "ctrl+shift+minus"
+            "id": "User.splitPane.D5151347"
         },
         {
-            "command": "find",
-            "id": "User.find",
-            "keys": "ctrl+shift+f"
+            "command":
+            {
+                "action": "resizePane",
+                "direction": "up"
+            },
+            "id": "User.resizePane.6CD791B"
         },
         {
-            "command": 
+            "command":
+            {
+                "action": "newTab"
+            },
+            "id": "User.newTab.5DEADB41"
+        },
+        {
+            "command": "paste",
+            "id": "User.paste"
+        },
+        {
+            "command":
             {
                 "action": "resizePane",
                 "direction": "left"
             },
-            "id": "User.resizePane.2A0DA8E0",
-            "keys": "ctrl+alt+shift+left"
+            "id": "User.resizePane.2A0DA8E0"
         },
         {
-            "command": 
+            "command":
+            {
+                "action": "moveFocus",
+                "direction": "down"
+            },
+            "id": "User.moveFocus.F747588A"
+        },
+        {
+            "command": "find",
+            "id": "User.find"
+        },
+        {
+            "command":
             {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
             },
-            "id": "User.splitPane.A6751878",
-            "keys": "alt+shift+d"
+            "id": "User.splitPane.A6751878"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "closeTab"
             },
-            "id": "User.closeTab.0",
-            "keys": "ctrl+shift+w"
+            "id": "User.closeTab.0"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "splitPane"
             },
-            "id": "User.splitPane.91AB55B1",
-            "keys": "ctrl+shift+\\"
+            "id": "User.splitPane.91AB55B1"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "moveFocus",
                 "direction": "right"
             },
-            "id": "User.moveFocus.87C324ED",
-            "keys": "ctrl+alt+right"
+            "id": "User.moveFocus.87C324ED"
         },
         {
             "command": "scrollDownPage",
-            "id": "User.scrollDownPage",
-            "keys": "pgdn"
+            "id": "User.scrollDownPage"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "resizePane",
                 "direction": "right"
             },
-            "id": "User.resizePane.87C324ED",
-            "keys": "ctrl+alt+shift+right"
+            "id": "User.resizePane.87C324ED"
         },
         {
             "command": "closePane",
-            "id": "User.closePane",
-            "keys": "ctrl+alt+shift+w"
-        },
-        {
-            "command": 
-            {
-                "action": "newTab"
-            },
-            "id": "User.newTab.5DEADB41",
-            "keys": "ctrl+shift+t"
-        },
-        {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "down"
-            },
-            "id": "User.moveFocus.F747588A",
-            "keys": "ctrl+alt+down"
+            "id": "User.closePane"
         },
         {
             "command": "openTabRenamer",
-            "id": "User.openTabRenamer",
-            "keys": "f2"
+            "id": "User.openTabRenamer"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "resizePane",
                 "direction": "down"
             },
-            "id": "User.resizePane.F747588A",
-            "keys": "ctrl+alt+shift+down"
+            "id": "User.resizePane.F747588A"
         },
         {
-            "command": 
-            {
-                "action": "clearBuffer",
-                "clear": "all"
-            },
-            "id": "User.clearBuffer.87C324ED",
-            "keys": "ctrl+shift+l"
-        },
-        {
-            "command": 
+            "command":
             {
                 "action": "moveFocus",
                 "direction": "left"
             },
-            "id": "User.moveFocus.2A0DA8E0",
-            "keys": "ctrl+alt+left"
+            "id": "User.moveFocus.2A0DA8E0"
         },
         {
-            "command": 
+            "command":
+            {
+                "action": "clearBuffer",
+                "clear": "all"
+            },
+            "id": "User.clearBuffer.87C324ED"
+        },
+        {
+            "command":
             {
                 "action": "moveFocus",
                 "direction": "up"
             },
-            "id": "User.moveFocus.6CD791B",
-            "keys": "ctrl+alt+up"
+            "id": "User.moveFocus.6CD791B"
         },
         {
             "command": "scrollUpPage",
-            "id": "User.scrollUpPage",
-            "keys": "pgup"
+            "id": "User.scrollUpPage"
         }
     ],
     "alwaysShowTabs": true,
@@ -233,31 +151,170 @@
     "copyOnSelect": false,
     "defaultProfile": "{940260a7-4456-4988-823a-cb9f979e620d}",
     "disableAnimations": true,
+    "keybindings":
+    [
+        {
+            "id": "User.resizePane.6CD791B",
+            "keys": "ctrl+alt+shift+up"
+        },
+        {
+            "id": "User.openTabRenamer",
+            "keys": "f2"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+t"
+        },
+        {
+            "id": "User.resizePane.2A0DA8E0",
+            "keys": "ctrl+alt+shift+left"
+        },
+        {
+            "id": "User.paste",
+            "keys": "ctrl+shift+v"
+        },
+        {
+            "id": null,
+            "keys": "enter"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+w"
+        },
+        {
+            "id": "User.moveFocus.2A0DA8E0",
+            "keys": "ctrl+alt+left"
+        },
+        {
+            "id": null,
+            "keys": "alt+enter"
+        },
+        {
+            "id": null,
+            "keys": "alt+space"
+        },
+        {
+            "id": "User.splitPane.91AB55B1",
+            "keys": "ctrl+shift+\\"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+alt+space"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+l"
+        },
+        {
+            "id": "User.newTab.5DEADB41",
+            "keys": "ctrl+shift+t"
+        },
+        {
+            "id": null,
+            "keys": "alt+down"
+        },
+        {
+            "id": null,
+            "keys": "alt+left"
+        },
+        {
+            "id": null,
+            "keys": "alt+right"
+        },
+        {
+            "id": null,
+            "keys": "alt+up"
+        },
+        {
+            "id": "Terminal.CopyToClipboard",
+            "keys": "ctrl+c"
+        },
+        {
+            "id": "Terminal.CopyToClipboard",
+            "keys": "ctrl+shift+c"
+        },
+        {
+            "id": "User.closeWindow",
+            "keys": "alt+f4"
+        },
+        {
+            "id": "User.scrollUpPage",
+            "keys": "pgup"
+        },
+        {
+            "id": "User.splitPane.D5151347",
+            "keys": "ctrl+shift+minus"
+        },
+        {
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "id": "User.splitPane.A6751878",
+            "keys": "alt+shift+d"
+        },
+        {
+            "id": "User.closeTab.0",
+            "keys": "ctrl+shift+w"
+        },
+        {
+            "id": "User.moveFocus.87C324ED",
+            "keys": "ctrl+alt+right"
+        },
+        {
+            "id": "User.scrollDownPage",
+            "keys": "pgdn"
+        },
+        {
+            "id": "User.resizePane.87C324ED",
+            "keys": "ctrl+alt+shift+right"
+        },
+        {
+            "id": "User.closePane",
+            "keys": "ctrl+alt+shift+w"
+        },
+        {
+            "id": "User.moveFocus.F747588A",
+            "keys": "ctrl+alt+down"
+        },
+        {
+            "id": "User.resizePane.F747588A",
+            "keys": "ctrl+alt+shift+down"
+        },
+        {
+            "id": "User.clearBuffer.87C324ED",
+            "keys": "ctrl+shift+l"
+        },
+        {
+            "id": "User.moveFocus.6CD791B",
+            "keys": "ctrl+alt+up"
+        }
+    ],
     "launchMode": "maximized",
-    "newTabMenu": 
+    "newTabMenu":
     [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": 
+    "profiles":
     {
-        "defaults": 
+        "defaults":
         {
             "colorScheme": "Gruvbox Dark",
             "cursorShape": "filledBox",
-            "font": 
+            "font":
             {
                 "face": "JetBrainsMonoNL Nerd Font",
                 "size": 10
             }
         },
-        "list": 
+        "list":
         [
             {
                 "commandline": "\"C:\\Program Files\\PowerShell\\7\\pwsh.exe\" -NoLogo",
                 "cursorShape": "filledBox",
-                "font": 
+                "font":
                 {
                     "cellHeight": "1.2",
                     "face": "JetBrainsMonoNL Nerd Font Mono",
@@ -276,7 +333,7 @@
                 "commandline": "\"C:\\Program Files\\PowerShell\\7\\pwsh.exe\" -NoLogo",
                 "cursorShape": "filledBox",
                 "elevate": true,
-                "font": 
+                "font":
                 {
                     "face": "JetBrainsMonoNL Nerd Font",
                     "size": 11
@@ -323,7 +380,7 @@
             },
             {
                 "closeOnExit": "graceful",
-                "font": 
+                "font":
                 {
                     "face": "JetBrainsMonoNL Nerd Font",
                     "size": 11
@@ -336,7 +393,7 @@
                 "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
             },
             {
-                "font": 
+                "font":
                 {
                     "face": "JetBrainsMonoNL Nerd Font",
                     "size": 11
@@ -351,28 +408,26 @@
             {
                 "bellStyle": "none",
                 "closeOnExit": "graceful",
-                "commandline": "C:\\Program Files\\Git\\bin\\sh.exe",
+                "commandline": "C:\\Program Files\\Git\\bin\\bash.exe --login",
                 "experimental.retroTerminalEffect": false,
                 "experimental.rightClickContextMenu": false,
-                "font": 
+                "font":
                 {
-                    "size": 12
+                    "builtinGlyphs": false,
+                    "colorGlyphs": false,
+                    "face": "JetBrainsMonoNL Nerd Font",
+                    "size": 12,
+                    "weight": "normal"
                 },
                 "guid": "{940260a7-4456-4988-823a-cb9f979e620d}",
                 "hidden": false,
+                "icon": "C:\\Users\\almostblue\\dev\\configFiles\\bash\\icon\\bash16x16.png",
                 "name": "git-bash",
+                "opacity": 100,
                 "padding": "0",
                 "scrollbarState": "hidden",
-                "startingDirectory": "C:\\Users\\almostblue",
+                "startingDirectory": "%USERPROFILE%",
                 "suppressApplicationTitle": false
-            },
-            {
-                "commandline": "C:\\cygwin64\\Cygwin.bat",
-                "guid": "{7cd0182e-d0c6-4104-954f-9716cffc1641}",
-                "hidden": false,
-                "name": "Cygwin",
-                "padding": "0",
-                "scrollbarState": "hidden"
             },
             {
                 "guid": "{af3d6b37-7c99-5cab-8176-7ec84825c716}",
@@ -385,10 +440,35 @@
                 "hidden": true,
                 "name": "Developer PowerShell for VS 2019",
                 "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "bellStyle": "none",
+                "closeOnExit": "graceful",
+                "commandline": "C:\\Program Files\\Git\\bin\\bash.exe --login",
+                "elevate": true,
+                "experimental.retroTerminalEffect": false,
+                "experimental.rightClickContextMenu": false,
+                "font":
+                {
+                    "builtinGlyphs": false,
+                    "colorGlyphs": false,
+                    "face": "JetBrainsMonoNL Nerd Font",
+                    "size": 12,
+                    "weight": "normal"
+                },
+                "guid": "{776d75f5-dcf5-47a0-8998-2453eb605ad7}",
+                "hidden": false,
+                "icon": "C:\\Users\\almostblue\\dev\\configFiles\\bash\\icon\\bash16x16.png",
+                "name": "git-bash (admin)",
+                "opacity": 100,
+                "padding": "0",
+                "scrollbarState": "hidden",
+                "startingDirectory": "%USERPROFILE%",
+                "suppressApplicationTitle": false
             }
         ]
     },
-    "schemes": 
+    "schemes":
     [
         {
             "background": "#000000",
@@ -438,9 +518,10 @@
         }
     ],
     "showTabsInTitlebar": true,
-    "showTerminalTitleInTitlebar": true,
+    "showTerminalTitleInTitlebar": false,
     "tabSwitcherMode": "disabled",
     "tabWidthMode": "equal",
+    "theme": "dark",
     "themes": [],
     "useAcrylicInTabRow": false,
     "windowingBehavior": "useExisting"
