@@ -1,0 +1,23 @@
+[manager]
+prepend_keymap = [
+    { on = [ "g", "d" ], run = "cd ~/dev", desc = "cd to ~/dev" },
+    { on = [ "g", "D" ], run = "cd ~/downloads", desc = "cd to ~/downloads" },
+    { on = [ "g", "p" ], run = "cd ~/pictures", desc = "cd to ~/pictures" },
+
+    # For windows drive
+    { on = [ "g", "w", "r" ], run = "cd /mnt/windows/", desc = "cd to Windows drive root" },
+    { on = [ "g", "w", "h" ], run = "cd /mnt/windows/Users/almostblue/", desc = "cd to Windows drive home" },
+    { on = [ "g", "w", "d" ], run = "cd /mnt/windows/Users/almostblue/dev/", desc = "cd to Windows drive dev" },
+    { on = [ "g", "w", "D" ], run = "cd /mnt/windows/Users/almostblue/Downloads/", desc = "cd to Windows drive downloads" },
+    { on = [ "g", "w", "p" ], run = "cd /mnt/windows/Users/almostblue/Pictures/", desc = "cd to Windows drive pictures" },
+
+    { on = "<Enter>", run = "plugin smart-enter", desc = "Enter the child directory, or open the file" },
+    { on = "o", run = "plugin smart-enter", desc = "Enter the child directory, or open the file" },
+    { on = "F", run = "filter --smart", desc = "Filter files" },
+    { on = "f", run = "cd --interactive", desc = "Go to a directory interactively" },
+]
+
+[input]
+prepend_keymap = [
+    { on = "<Esc>", run = "close", desc = "Cancel input" },
+]
