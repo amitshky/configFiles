@@ -1,0 +1,19 @@
+[manager]
+prepend_keymap = [
+    { on = [ "g", "r" ], run = "cd ~/", desc = "cd to ~" },
+    { on = [ "g", "d" ], run = "cd ~/dev", desc = "cd to ~/dev" },
+    { on = [ "g", "D" ], run = "cd ~/downloads", desc = "cd to ~/downloads" },
+    { on = [ "g", "p" ], run = "cd ~/pictures", desc = "cd to ~/pictures" },
+    { on = [ "g", "l" ], run = "cd ~/AppData/Local/", desc = "cd to local appdata" },
+    { on = [ "g", "c" ], run = "cd ~/AppData/Roaming/", desc = "cd to appdata roaming" },
+
+    { on = "<Enter>", run = "plugin smart-enter", desc = "Enter the child directory, or open the file" },
+    { on = "o", run = "plugin smart-enter", desc = "Enter the child directory, or open the file" },
+    { on = "F", run = "filter --smart", desc = "Filter files" },
+    { on = "f", run = "cd --interactive", desc = "Go to a directory interactively" },
+]
+
+[input]
+prepend_keymap = [
+    { on = "<Esc>", run = "close", desc = "Cancel input" },
+]
