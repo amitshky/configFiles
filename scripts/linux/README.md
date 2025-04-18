@@ -1,0 +1,4 @@
+# Linux Scripts
+
+## Prerequisites
+- unclutter
