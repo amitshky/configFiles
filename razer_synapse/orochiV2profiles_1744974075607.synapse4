@@ -1,0 +1,13 @@
+{
+  "productId": 148,
+  "deviceName": "",
+  "category": "MOUSE",
+  "profiles": [
+    {
+      "name": "ALMOSTBLUE",
+      "payload": "eyJndWlkIjoiODIwNWQyMGEtZjcwMy00NGJkLTg1ODItYTA5YjcyZDU1NGRiIiwibmFtZSI6IkFMTU9TVEJMVUUtV0lORC1EZWZhdWx0IiwiZHBpIjp7IngiOjE4MDAsInkiOjE4MDB9LCJsZWRQb3dlclNldHRpbmdzIjp7ImlkbGVTdGF0ZSI6MSwiaWRsZVZhbHVlIjo2MH0sImxvd0JhdHRlcnlFZmZlY3RzIjo1LCJwb3dlclNhdmluZ1ZhbHVlIjo1LCJsb3dQb3dlck1vZGUiOjUsIm1hcHBpbmdzIjpbXSwiZHBpU3RhZ2VzIjp7InN0YWdlcyI6W3sieCI6NDAwLCJ5Ijo0MDAsImluZGVwZW5kZW50IjpmYWxzZSwidmlzaWJsZSI6dHJ1ZX0seyJ4IjoxMjAwLCJ5IjoxMjAwLCJpbmRlcGVuZGVudCI6ZmFsc2UsInZpc2libGUiOnRydWV9LHsieCI6MTYwMCwieSI6MTYwMCwiaW5kZXBlbmRlbnQiOmZhbHNlLCJ2aXNpYmxlIjpmYWxzZX0seyJ4IjozMjAwLCJ5IjozMjAwLCJpbmRlcGVuZGVudCI6ZmFsc2UsInZpc2libGUiOmZhbHNlfSx7IngiOjEyODAwLCJ5IjoxMjgwMCwiaW5kZXBlbmRlbnQiOmZhbHNlLCJ2aXNpYmxlIjp0cnVlfV0sImFjdGl2ZSI6MiwiZW5hYmxlIjp0cnVlLCJjb3VudCI6M30sInBvbGxpbmdSYXRlIjoxMDAwLCJwb2xsaW5nUmF0ZVdpcmVsZXNzIjoxMDAwLCJzaWRlUGFuZWxNYXBwaW5ncyI6e319",
+      "hash": "f4618c3a35e1a12663ae67efdef8f884"
+    }
+  ],
+  "macros": []
+}

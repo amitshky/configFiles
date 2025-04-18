@@ -2,6 +2,7 @@
 prepend_keymap = [
     { on = [ "g", "r" ], run = "cd ~/", desc = "cd to ~" },
     { on = [ "g", "d" ], run = "cd ~/dev", desc = "cd to ~/dev" },
+    { on = [ "g", "w" ], run = "cd ~/dev-work", desc = "cd to ~/dev-work" },
     { on = [ "g", "D" ], run = "cd ~/downloads", desc = "cd to ~/downloads" },
     { on = [ "g", "p" ], run = "cd ~/pictures", desc = "cd to ~/pictures" },
     { on = [ "g", "l" ], run = "cd ~/AppData/Local/", desc = "cd to local appdata" },
