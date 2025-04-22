@@ -60,7 +60,7 @@
     "dart.runPubGetOnPubspecChanges": false,
     "python.defaultInterpreterPath": "C:\\Users\\a7shk\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
     "security.workspace.trust.untrustedFiles": "open",
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.iconTheme": "vs-nomo-dark",
     "dart.showTodos": false,
     "explorer.sortOrder": "type",
     "editor.unicodeHighlight.allowedCharacters": {
@@ -137,7 +137,7 @@
     "editor.fontSize": 16,
     "terminal.integrated.fontSize": 16,
     "editor.lineNumbers": "relative",
-    "vim.easymotion": true,
+    "vim.easymotion": false,
     "vim.incsearch": true,
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
@@ -171,13 +171,13 @@
             "silent": true,
         },
         {
-            "before": ["<leader>", "q"],
+            "before": ["<leader>", "c"],
             "commands": [":q"],
             "silent": true,
         },
         {
             "before": ["<leader>", "Q"],
-            "commands": [":qa"],
+            "commands": ["workbench.action.closeWindow"],
             "silent": true,
         },
         {
@@ -194,6 +194,11 @@
             "before": ["<C-r>"],
             "after": ["U"],
             "silent": true,
+        },
+        {
+            "before": ["@", "q"],
+            "after": ["Q"],
+            "silent": false,
         },
         {
             "before": ["<S-h>"],
@@ -232,8 +237,38 @@
             "silent": true,
         },
         {
+            "before": ["<leader>", "l", "r"],
+            "commands": ["editor.action.rename"],
+            "silent": true,
+        },
+        {
+            "before": ["<leader>", "l", "s"],
+            "commands": ["workbench.action.gotoSymbol"],
+            "silent": true,
+        },
+        {
             "before": ["<leader>", "f", "f"],
             "commands": ["workbench.action.quickOpen"],
+            "silent": true,
+        },
+        {
+            "before": ["<leader>", "a", "h"],
+            "commands": ["workbench.action.focusLeftGroup"],
+            "silent": true,
+        },
+        {
+            "before": ["<leader>", "a", "l"],
+            "commands": ["workbench.action.focusRightGroup"],
+            "silent": true,
+        },
+        {
+            "before": ["<leader>", "a", "j"],
+            "commands": ["workbench.action.focusBelowGroup"],
+            "silent": true,
+        },
+        {
+            "before": ["<leader>", "a", "k"],
+            "commands": ["workbench.action.focusAboveGroup"],
             "silent": true,
         },
     ],
@@ -252,4 +287,7 @@
     "lldb.suppressUpdateNotifications": true,
     "csharp.format.enable": false,
     "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.autoClosingDelete": "never",
+    "editor.autoClosingOvertype": "never",
+    "helium-icon-theme.showWelcomeMessage": false,
 }

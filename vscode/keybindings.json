@@ -116,7 +116,7 @@
 	{
 		"key": "alt+q",
 		"command": "workbench.action.pinEditor",
-		"when": "!activeEditorIsPinned"
+		"when": "editorTextFocus && vim.active && !activeEditorIsPinned"
 	},
 	{
 		"key": "ctrl+k shift+enter",
@@ -126,7 +126,7 @@
 	{
 		"key": "alt+q",
 		"command": "workbench.action.unpinEditor",
-		"when": "activeEditorIsPinned"
+		"when": "editorTextFocus && vim.active && activeEditorIsPinned"
 	},
 	{
 		"key": "ctrl+k shift+enter",
@@ -512,7 +512,7 @@
 	{
 		"key": "ctrl+p",
 		"command": "workbench.action.quickOpen",
-		"when": "!terminalFocus"
+		"when": "!terminalFocus || !suggestWidgetVisible || !textInputFocus"
 	},
 	{
 		"key": "ctrl+e",
@@ -731,5 +731,24 @@
 	{
 		"key": "ctrl+p",
 		"command": "-workbench.action.quickOpen"
+	},
+	{
+		"key": "ctrl+n",
+		"command": "selectNextSuggestion",
+		"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+	},
+	{
+		"key": "ctrl+n",
+		"command": "-workbench.action.files.newUntitledFile"
+	},
+	{
+		"key": "ctrl+p",
+		"command": "selectPrevSuggestion",
+		"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+	},
+	{
+		"key": "ctrl+n",
+		"command": "editor.action.triggerSuggest",
+		"when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
 	}
 ]
