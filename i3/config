@@ -153,8 +153,13 @@ bindsym $mod+ctrl+Left workspace prev
 bindsym $mod+ctrl+h workspace prev
 bindsym $mod+ctrl+Right workspace next
 bindsym $mod+ctrl+l workspace next
+bindsym $mod+Tab workspace next
+bindsym $mod+shift+Tab workspace prev
 
 # move focused container to workspace
+bindsym $mod+ctrl+shift+l move container to workspace next
+bindsym $mod+ctrl+shift+h move container to workspace prev
+
 bindsym $mod+Shift+1 move container to workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2
 bindsym $mod+Shift+3 move container to workspace number $ws3
@@ -245,14 +250,16 @@ exec copyq
 exec picom
 exec unclutter -idle 1
 exec flameshot
+# exec redshift -t 5700:3500
 
 
 #### application shortcuts ####
 
 bindsym ctrl+shift+Escape exec kitty btop
 bindsym $mod+ctrl+x exec kitty btop
-bindsym ctrl+$mod+a exec nemo
-bindsym ctrl+$mod+f exec firefox
+bindsym ctrl+$mod+a exec thunar
+bindsym $mod+b exec flatpak run com.brave.Browser
+bindsym $mod+n exec kitty nvim
 
 # use xprop to get window class
 for_window [class="Gpick" instance="gpick"] floating enable
