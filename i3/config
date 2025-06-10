@@ -16,7 +16,7 @@ workspace_layout tabbed
 focus_follows_mouse no
 
 # kill command resets the split
-bindsym $mod+q kill
+bindsym $mod+Escape kill
 bindsym Ctrl+Shift+$alt+w kill
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -109,7 +109,7 @@ bindsym $mod+i split h
 bindsym $mod+o split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+bindsym F11 fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -123,7 +123,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+# bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -260,8 +260,8 @@ exec flameshot
 #### application shortcuts ####
 
 bindsym ctrl+shift+Escape exec kitty btop
-bindsym $mod+ctrl+x exec kitty btop
-bindsym ctrl+$mod+a exec thunar
+bindsym $mod+t exec kitty btop
+bindsym $mod+f exec thunar
 bindsym $mod+b exec flatpak run com.brave.Browser
 bindsym $mod+n exec kitty nvim
 
