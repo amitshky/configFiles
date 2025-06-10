@@ -24,13 +24,12 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
-# make nvim the default editor
 export EDITOR="nvim"
 export VISUAL="nvim"
 
 # customizing prompt
 git_branch_for_prompt() {
-    git rev-parse --abbrev-ref HEAD 2> /dev/null
+    git rev-parse --abbrev-ref HEAD 2>/dev/null
 }
 
 PROMPT_PURPLE='\[\033[0;35m'
@@ -39,24 +38,20 @@ PROMPT_CLEAR_COLOR='\[\033[0m\]'
 PS1="${PROMPT_PURPLE}[ \\w]${PROMPT_GREEN}( \$(git_branch_for_prompt))\\n\\$ ${PROMPT_CLEAR_COLOR}"
 
 alias ll="ls -al"
-alias lg="lazygit"
-alias notes="nvim ~/documents/ObsidianVaults/_Obsidian"
+# alias lg="lazygit"
+# alias notes="nvim ~/documents/ObsidianVaults/_Obsidian"
+alias t="tmux"
+alias n="./nvim.sh"
 
+alias spotify="flatpak run com.spotify.Client"
 
-if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-    alias nvim="~/downloads/nvim-linux-x86_64/bin/nvim" # this is temporary
-elif [[ "$OSTYPE" == "msys" ]]; then # git-bash on windows
-    alias mvim="NVIM_APPNAME=nvim-myconfig nvim --clean -u ~/AppData/Local/nvim-myconfig/minimal.lua" # minimal nvim config
-    alias kvim="NVIM_APPNAME=nvim-myconfig nvim --clean -u ~/AppData/Local/nvim-myconfig/kickstart.lua"
-    alias mynvim="NVIM_APPNAME=nvim-myconfig nvim"
-fi
-
-
-# vulkan env variables
-source ~/VulkanSDK/1.3.275.0/setup-env.sh
-
-export MOZ_ENABLE_WAYLAND=1
+# yazi
+function y() {
+    local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+    yazi "$@" --cwd-file="$tmp"
+    if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+        builtin cd -- "$cwd"
+    fi
+    rm -f -- "$tmp"
+}
 . "$HOME/.cargo/env"
-
-export DOTNET_ROOT=$HOME/.dotnet
-export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools

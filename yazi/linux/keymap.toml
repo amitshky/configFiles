@@ -1,4 +1,4 @@
-[manager]
+[mgr]
 prepend_keymap = [
     { on = [ "g", "D" ], run = "cd ~/downloads", desc = "cd to ~/downloads" },
     { on = [ "g", "d", "d" ], run = "cd ~/dev", desc = "cd to ~/dev" },
@@ -9,7 +9,8 @@ prepend_keymap = [
     # For windows drive
     { on = [ "g", "w", "r" ], run = "cd /mnt/windows/", desc = "cd to Windows drive root" },
     { on = [ "g", "w", "h" ], run = "cd /mnt/windows/Users/almostblue/", desc = "cd to Windows drive home" },
-    { on = [ "g", "w", "d" ], run = "cd /mnt/windows/Users/almostblue/dev/", desc = "cd to Windows drive dev" },
+    { on = [ "g", "w", "d", "d" ], run = "cd /mnt/windows/Users/almostblue/dev/", desc = "cd to Windows drive dev" },
+    { on = [ "g", "w", "d", "w" ], run = "cd /mnt/windows/Users/almostblue/dev-work/", desc = "cd to Windows drive dev-work" },
     { on = [ "g", "w", "D" ], run = "cd /mnt/windows/Users/almostblue/Downloads/", desc = "cd to Windows drive downloads" },
     { on = [ "g", "w", "p" ], run = "cd /mnt/windows/Users/almostblue/Pictures/", desc = "cd to Windows drive pictures" },
     { on = [ "g", "w", "l" ], run = "cd /mnt/windows/Users/almostblue/AppData/Local/", desc = "cd to windows drive local appdata" },
