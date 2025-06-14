@@ -16,7 +16,7 @@ workspace_layout tabbed
 focus_follows_mouse no
 
 # kill command resets the split
-bindsym $mod+Escape kill
+bindsym $mod+q kill
 bindsym Ctrl+Shift+$alt+w kill
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -255,6 +255,8 @@ exec picom
 exec unclutter -idle 1
 exec flameshot
 # exec redshift -t 5700:3500
+exec xfce4-power-manager
+exec source ~/dev/configFiles/scripts/linux/hivePerm.sh
 
 
 #### application shortcuts ####

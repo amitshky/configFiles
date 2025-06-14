@@ -38,9 +38,9 @@ PROMPT_CLEAR_COLOR='\[\033[0m\]'
 PS1="${PROMPT_PURPLE}[ \\w]${PROMPT_GREEN}( \$(git_branch_for_prompt))\\n\\$ ${PROMPT_CLEAR_COLOR}"
 
 alias ll="ls -al"
-# alias lg="lazygit"
+alias lg="lazygit"
 # alias notes="nvim ~/documents/ObsidianVaults/_Obsidian"
-alias t="tmux"
+alias t="./tmux.sh"
 alias n="./nvim.sh"
 
 alias spotify="flatpak run com.spotify.Client"
