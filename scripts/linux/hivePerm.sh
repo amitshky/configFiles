@@ -1,3 +1,3 @@
 #! /bin/sh
 
-chmod +rwx /home/almostblue/documents/sync/_Hive/backups/
+chmod +rwx /home/almostblue/documents/_sync/_Hive/backups/
