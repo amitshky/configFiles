@@ -109,7 +109,8 @@ bindsym $mod+i split h
 bindsym $mod+o split v
 
 # enter fullscreen mode for the focused container
-bindsym F11 fullscreen toggle
+# bindsym F11 fullscreen toggle
+bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -263,7 +264,7 @@ exec source ~/dev/configFiles/scripts/linux/hivePerm.sh
 
 bindsym ctrl+shift+Escape exec kitty btop
 bindsym $mod+t exec kitty btop
-bindsym $mod+f exec thunar
+bindsym $mod+a exec thunar
 bindsym $mod+b exec flatpak run com.brave.Browser
 bindsym $mod+n exec kitty nvim
 
