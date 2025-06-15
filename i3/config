@@ -11,6 +11,8 @@
 
 set $mod Mod4
 set $alt Mod1
+# use xev to get key code
+set $end 115
 
 workspace_layout tabbed
 focus_follows_mouse no
@@ -247,6 +249,7 @@ exec xinput set-prop "ELAN0504:01 04F3:3091 Touchpad" "libinput Tapping Enabled"
 exec xinput set-prop "ELAN0504:01 04F3:3091 Touchpad" "libinput Natural Scrolling Enabled" 1
 exec xinput set-prop "ELAN0504:01 04F3:3091 Touchpad" "libinput Scrolling Pixel Distance" 50
 
+
 # autostart
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always feh --bg-fill ~/pictures/DSC05104_02.jpg
@@ -261,21 +264,17 @@ exec source ~/dev/configFiles/scripts/linux/hivePerm.sh
 
 
 #### application shortcuts ####
-
 bindsym ctrl+shift+Escape exec kitty btop
 bindsym $mod+t exec kitty btop
 bindsym $mod+a exec thunar
 bindsym $mod+b exec flatpak run com.brave.Browser
 bindsym $mod+n exec kitty nvim
 
-# use xprop to get window class
-for_window [class="Gpick" instance="gpick"] floating enable
-for_window [class="Gpick" instance="gpick"] resize set 1000, 800
 bindsym $mod+shift+c exec gpick
 bindsym $mod+shift+p exec gpick -p
 
-for_window [class="copyq" instance="copyq"] floating enable
-for_window [class="copyq" instance="copyq"] resize set 800, 600
+bindsym $mod+c exec xcalc
+
 bindsym $mod+v exec copyq show
 bindsym $alt+v exec copyq show
 
@@ -283,3 +282,14 @@ bindsym $mod+shift+s exec flameshot gui
 bindsym Print exec flameshot gui
 bindsym shift+Print exec flameshot screen
 bindsym ctrl+Print exec flameshot full
+
+
+# window setup
+# use xprop to get window class
+for_window [class="Gpick" instance="gpick"] floating enable
+for_window [class="Gpick" instance="gpick"] resize set 1000, 800
+
+for_window [class="XCalc" instance = "xcalc"] floating enable
+
+for_window [class="copyq" instance="copyq"] resize set 800, 600
+for_window [class="copyq" instance="copyq"] floating enable
