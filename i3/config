@@ -258,7 +258,7 @@ exec copyq
 exec picom
 exec unclutter -idle 1
 exec flameshot
-# exec redshift -t 5700:3500
+exec redshift-gtk
 exec xfce4-power-manager
 exec source ~/dev/configFiles/scripts/linux/hivePerm.sh
 
@@ -293,3 +293,4 @@ for_window [class="XCalc" instance = "xcalc"] floating enable
 
 for_window [class="copyq" instance="copyq"] resize set 800, 600
 for_window [class="copyq" instance="copyq"] floating enable
+
