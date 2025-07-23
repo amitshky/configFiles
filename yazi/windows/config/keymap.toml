@@ -5,7 +5,7 @@ prepend_keymap = [
     { on = [ "g", "d", "w" ], run = "cd ~/dev-work", desc = "cd to ~/dev-work" },
     { on = [ "g", "d", "n" ], run = "cd ~/dev-not-mine", desc = "cd to ~/dev-not-mine" },
     { on = [ "g", "D" ], run = "cd ~/downloads", desc = "cd to ~/downloads" },
-    { on = [ "g", "o" ], run = "cd ~/Documents/", desc = "cd to ~/Documents/" },
+    { on = [ "g", "o", "o" ], run = "cd ~/Documents/", desc = "cd to ~/Documents/" },
     { on = [ "g", "o", "w" ], run = "cd ~/Documents/work/", desc = "cd to ~/Documents/work/" },
     { on = [ "g", "p" ], run = "cd ~/pictures", desc = "cd to ~/pictures" },
     { on = [ "g", "l" ], run = "cd ~/AppData/Local/", desc = "cd to local appdata" },
