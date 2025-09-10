@@ -42,6 +42,9 @@ alias lg="lazygit"
 # alias notes="nvim ~/documents/ObsidianVaults/_Obsidian"
 alias t="./tmux.sh"
 alias n="./nvim.sh"
+alias w="cd ~/dev-work/dgCloudAppV2/"
+alias wd="cd /mnt/windows/Users/almostblue/Documents/work/"
+alias wo="cd ~/documents/_Obsidian/"
 
 alias spotify="flatpak run com.spotify.Client"
 
