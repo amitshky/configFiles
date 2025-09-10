@@ -2,3 +2,5 @@
 
 ## Prerequisites
 - unclutter
+- tmux
+- nvim
