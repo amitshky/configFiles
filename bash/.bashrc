@@ -24,8 +24,12 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
+export PATH="/opt/NetLogo-7.0.0/bin:$PATH"
+
 export EDITOR="nvim"
 export VISUAL="nvim"
+# enable bat to colorize man pages
+export MANPAGER="sh -c 'awk '\''{ gsub(/\x1B\[[0-9;]*m/, \"\", \$0); gsub(/.\x08/, \"\", \$0); print }'\'' | bat -p -lman'"
 
 # customizing prompt
 git_branch_for_prompt() {
@@ -41,10 +45,12 @@ alias ll="ls -al"
 alias lg="lazygit"
 # alias notes="nvim ~/documents/ObsidianVaults/_Obsidian"
 alias t="./tmux.sh"
-alias n="./nvim.sh"
+alias n="nvim ."
 alias w="cd ~/dev-work/dgCloudAppV2/"
 alias wd="cd /mnt/windows/Users/almostblue/Documents/work/"
 alias wo="cd ~/documents/_Obsidian/"
+alias wu="cd ~/documents/uniNotesObsidian/"
+alias cat="bat" # use \cat to override this alias and use the actual cat command
 
 alias spotify="flatpak run com.spotify.Client"
 
