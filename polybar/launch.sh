@@ -2,9 +2,9 @@
 
 # Terminate already running bar instances
 # If all your bars have ipc enabled, you can use 
-polybar-msg cmd quit
+# polybar-msg cmd quit
 # Otherwise you can use the nuclear option:
-# killall -q polybar
+killall -q polybar
 
 # Launch bar
 echo "---" | tee -a /tmp/polybar_mybar.log
@@ -19,15 +19,15 @@ if type "xrandr"; then
   OTHERS=$(xrandr --query | grep " connected" | grep -v "primary" | cut -d" " -f1)
 
   # Launch on primary monitor
-  MONITOR=$PRIMARY polybar --reload -c $BAR_CONFIG $BAR_NAME 2>&1 | tee -a /tmp/polybar_mybar.log & disown &
+  MONITOR=$PRIMARY polybar -c $BAR_CONFIG $BAR_NAME 2>&1 | tee -a /tmp/polybar_mybar.log & disown &
   sleep 1
 
   # Launch on all other monitors
   for m in $OTHERS; do
-    MONITOR=$m polybar --reload -c $BAR_CONFIG $BAR_NAME 2>&1 | tee -a /tmp/polybar_mybar.log & disown &
+    MONITOR=$m polybar -c $BAR_CONFIG $BAR_NAME 2>&1 | tee -a /tmp/polybar_mybar.log & disown &
   done
 else
-  polybar --reload mybar &
+   polybar -c $BAR_CONFIG $BAR_NAME 2>&1 | tee -a /tmp/polybar_mybar.log & disown &
 fi
 
 echo "Bars launched..."
