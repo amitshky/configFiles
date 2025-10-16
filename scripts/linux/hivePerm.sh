@@ -1,3 +1,3 @@
-#! /bin/sh
+#! /usr/bin/env bash
 
-chmod +rwx /home/almostblue/documents/_sync/_Hive/backups/
+chmod -R 777 "/home/almostblue/documents/_sync/_Hive/backups/"
