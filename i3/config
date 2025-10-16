@@ -251,17 +251,18 @@ exec xinput set-prop "ELAN0504:01 04F3:3091 Touchpad" "libinput Scrolling Pixel 
 
 
 # autostart
+exec_always source $HOME/dev/configFiles/scripts/linux/homeSecondMonitorSetupI3.sh
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec_always feh --bg-fill ~/pictures/DSC05104_02.jpg
+exec_always feh --bg-fill ~/pictures/wallpaper.png
 exec syncthing --no-browser
 exec copyq
 exec picom
 exec unclutter -idle 1
 exec flameshot
 exec redshift-gtk
-exec xfce4-power-manager
-exec source ~/dev/configFiles/scripts/linux/hivePerm.sh
-exec_always --no-startup-id source ~/dev/configFiles/scripts/linux/homeSecondMonitorSetupI3.sh
+# exec xfce4-power-manager
+exec mate-power-manager
+exec source $HOME/dev/configFiles/scripts/linux/hivePerm.sh
 
 
 #### application shortcuts ####
@@ -293,12 +294,16 @@ bindsym ctrl+$alt+$mod+Up exec xrandr --output eDP-1 --rotate normal
 
 # window setup
 # use xprop to get window class
+# assigning programmings to specific workspaces
+assign [class="Spotify" instance="spotify"] $ws10
+assign [class="discord" instance="discord"] $ws10
+
 for_window [class="Gpick" instance="gpick"] floating enable
 for_window [class="Gpick" instance="gpick"] resize set 1000, 800
 
 for_window [class="XCalc" instance = "xcalc"] floating enable
 
-for_window [class="copyq" instance="copyq"] resize set 800, 600
+for_window [class="copyq" instance="copyq"] resize set 800, 600 move position center
 for_window [class="copyq" instance="copyq"] floating enable
 
 
