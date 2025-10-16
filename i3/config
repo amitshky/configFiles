@@ -223,10 +223,10 @@ client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
 client.background       #FFFFFF
 
 mode "exit: [l]-logout, [r]-reboot, [s]-shutdown, [x]-sleep" {
-  bindsym l exec i3-msg exit
-  bindsym r exec systemctl reboot
-  bindsym s exec systemctl poweroff
-  bindsym x exec systemctl suspend
+  bindsym l exec i3-msg exit; mode "default"
+  bindsym r exec systemctl reboot; mode "default"
+  bindsym s exec systemctl poweroff; mode "default"
+  bindsym x exec systemctl suspend; mode "default"
   bindsym Escape mode "default"
   bindsym Return mode "default"
 }
@@ -262,7 +262,7 @@ exec flameshot
 exec redshift-gtk
 # exec xfce4-power-manager
 exec mate-power-manager
-exec source $HOME/dev/configFiles/scripts/linux/hivePerm.sh
+exec_always source $HOME/dev/configFiles/scripts/linux/hivePerm.sh
 
 
 #### application shortcuts ####
@@ -284,6 +284,19 @@ bindsym $mod+shift+s exec flameshot gui
 bindsym Print exec flameshot gui
 bindsym shift+Print exec flameshot screen
 bindsym ctrl+Print exec flameshot full
+
+# change external display position
+set $external_mode "External Display: [h]-Left, [l]-Right, [k]-Top, [o]-Secondary Only, [i]-Primary Only"
+mode $external_mode {
+  bindsym h exec source $HOME/dev/configFiles/scripts/linux/externalMonitor/extendLeft.sh; mode "default"
+  bindsym l exec source $HOME/dev/configFiles/scripts/linux/externalMonitor/extendRight.sh; mode "default"
+  bindsym k exec source $HOME/dev/configFiles/scripts/linux/externalMonitor/extendTop.sh; mode "default"
+  bindsym o exec source $HOME/dev/configFiles/scripts/linux/externalMonitor/secondaryOnly.sh; mode "default"
+  bindsym i exec source $HOME/dev/configFiles/scripts/linux/externalMonitor/primaryOnly.sh; mode "default"
+  bindsym Escape mode "default"
+  bindsym Return mode "default"
+}
+bindsym $mod+p mode $external_mode
 
 
 #### other shortcuts ####
