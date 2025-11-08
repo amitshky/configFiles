@@ -260,8 +260,8 @@ exec picom
 exec unclutter -idle 1
 exec flameshot
 exec redshift-gtk
-# exec xfce4-power-manager
-exec mate-power-manager
+exec xfce4-power-manager
+# exec mate-power-manager
 exec_always source $HOME/dev/configFiles/scripts/linux/hivePerm.sh
 
 
@@ -275,7 +275,7 @@ bindsym $mod+n exec kitty nvim
 bindsym $mod+shift+c exec gpick
 bindsym $mod+shift+p exec gpick -p
 
-bindsym $mod+c exec xcalc
+bindsym $mod+c exec rofi -show calc -modi calc -no-show-match -no-sort -theme gruvbox-dark-hard -calc-command "echo -n '{result}' | xclip -sel clipboard"
 
 bindsym $mod+v exec copyq show
 bindsym $alt+v exec copyq show
