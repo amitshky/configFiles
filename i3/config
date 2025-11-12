@@ -321,8 +321,9 @@ for_window [class="Gpick" instance="gpick"] resize set 1000, 800
 
 for_window [class="XCalc" instance = "xcalc"] floating enable
 
-for_window [class="copyq" instance="copyq"] resize set 800, 600 move position center
+for_window [class="copyq" instance="copyq"] resize set 800, 600
 for_window [class="copyq" instance="copyq"] floating enable
+for_window [class="copyq" instance="copyq"] move position center
 
 
 # config qt application environment
