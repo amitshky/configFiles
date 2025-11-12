@@ -267,6 +267,7 @@ exec redshift-gtk
 exec xfce4-power-manager
 # exec mate-power-manager
 exec_always source $HOME/dev/configFiles/scripts/linux/hivePerm.sh
+exec_always source $HOME/dev/configFiles/scripts/linux/cleanup.sh
 
 
 #### application shortcuts ####
@@ -308,6 +309,8 @@ bindsym $mod+p mode $external_mode
 bindsym ctrl+$alt+$mod+Right exec xrandr --output eDP-1 --rotate right
 bindsym ctrl+$alt+$mod+Up exec xrandr --output eDP-1 --rotate normal
 
+bindsym $mod+$alt+c exec $HOME/dev/configFiles/scripts/linux/cleanup.sh
+
 
 # window setup
 # use xprop to get window class
@@ -328,3 +331,4 @@ for_window [class="copyq" instance="copyq"] move position center
 
 # config qt application environment
 # exec --no-startup-id export QT_QPA_PLATFORMTHEME=qt5ct
+
