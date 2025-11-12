@@ -24,7 +24,7 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
-export PATH="/opt/NetLogo-7.0.0/bin:$PATH"
+export PATH="/opt/NetLogo-7.0.2/bin:$PATH"
 
 export EDITOR="nvim"
 export VISUAL="nvim"
@@ -46,8 +46,7 @@ alias lg="lazygit"
 # alias notes="nvim ~/documents/ObsidianVaults/_Obsidian"
 alias t="./tmux.sh"
 alias n="nvim ."
-alias w="cd ~/dev-work/dgCloudAppV2/"
-alias wd="cd /mnt/windows/Users/almostblue/Documents/work/"
+alias wd="cd ~/dev/"
 alias wo="cd ~/documents/_Obsidian/"
 alias wu="cd ~/documents/uniNotesObsidian/"
 alias cat="bat" # use \cat to override this alias and use the actual cat command
