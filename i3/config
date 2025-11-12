@@ -314,6 +314,7 @@ bindsym ctrl+$alt+$mod+Up exec xrandr --output eDP-1 --rotate normal
 # assigning programmings to specific workspaces
 assign [class="Spotify" instance="spotify"] $ws10
 assign [class="discord" instance="discord"] $ws10
+assign [class="Slack" instance="slack"] $ws9
 
 for_window [class="Gpick" instance="gpick"] floating enable
 for_window [class="Gpick" instance="gpick"] resize set 1000, 800
@@ -325,4 +326,4 @@ for_window [class="copyq" instance="copyq"] floating enable
 
 
 # config qt application environment
-exec --no-startup-id export QT_QPA_PLATFORMTHEME=qt5ct
+# exec --no-startup-id export QT_QPA_PLATFORMTHEME=qt5ct
