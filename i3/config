@@ -256,7 +256,7 @@ exec xinput set-prop "ELAN0504:01 04F3:3091 Touchpad" "libinput Scrolling Pixel 
 
 # autostart
 exec_always source $HOME/dev/configFiles/scripts/linux/homeSecondMonitorSetupI3.sh; $HOME/.config/polybar/launch.sh
-exec_always feh --bg-fill ~/pictures/wallpaper.png
+exec_always feh --bg-fill ~/pictures/wallpaper.jpg
 exec syncthing --no-browser
 exec copyq
 exec picom
