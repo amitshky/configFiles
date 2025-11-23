@@ -38,7 +38,7 @@ git clone https://github.com/torrinfail/dwmblocks ~/dev/dwmblocks
 ## Configure dwm
 ```
 cd ~/dwm
-mv config.def.h config.h
+cp config.def.h config.h
 sudo chown -R almostblue@deiban .
 sudo make clean install
 echo "exec dwm" >> ../.xinitrc
