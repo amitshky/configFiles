@@ -58,7 +58,8 @@ git config --global credential.credentialStore gpg
 pass init "<type ur id here>"
 ```
 
-## Set up tui pin entry for git-cm
+## Set up tui pinentry for git-cm
+- include `export GPG_TTY=$(tty)` in `.bashrc`
 ```
 sudo apt install pinentry-curses
 echo "pinentry-program /usr/bin/pinentry-curses" >> ~/.gnupg/gpg-agent.conf
