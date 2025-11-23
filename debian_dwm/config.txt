@@ -1,0 +1,10 @@
+git clone https://git.suckless.org/dwm ;
+apt install st neovim vim ;
+
+cd dwm ;
+mv config.def.h config.h ;
+sudo chown -R almostblue@deiban . ;
+sudo make clean install ;
+echo "exec dwm" >> ../.xinitrc ;
+
+apt install xorg kitty firefox-esr dmenu networkmanager picom pipewire pulseaudio btop keepassxc fdisk feh
