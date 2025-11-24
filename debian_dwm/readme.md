@@ -31,7 +31,7 @@ apt install nvidia-driver firmware-misc-nonfree
 ## Download dwm and dwmblocks
 ```
 mkdir ~/dev
-git clone https://git.suckless.org/dwm
+git clone https://github.com/amitshky/dwm
 git clone https://github.com/torrinfail/dwmblocks ~/dev/dwmblocks
 ```
 
@@ -88,4 +88,9 @@ apt install kitty firefox-esr dmenu networkmanager picom pipewire pulseaudio bto
 ```
 apt install dolpin
 apt install udisks2 udiskie gvfs gvfs-backends polkit-kde-agent-1
+```
+
+## Speeding-up boot-time
+```
+sudo systemctl disable NetworkManager-wait-online.service
 ```
