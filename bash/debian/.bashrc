@@ -139,7 +139,8 @@ alias wo="cd ~/documents/_Obsidian/"
 alias wu="cd ~/documents/uniNotesObsidian/"
 # alias cat="bat" # use \cat to override this alias and use the actual cat command
 alias cdwm="cd ~/dwm/; sudo make clean install; cd -;" # compile dwm
-alias cst="cd ~/dev/st/; sudo make clean install; cd -;" # compile st
+alias cst="cd ~/st/; sudo make clean install; cd -;" # compile st
+alias cdb="cd ~/dwmblocks/; sudo make clean install; cd -;" # compile dwmblocks
 
 # alias spotify="flatpak run com.spotify.Client"
 
