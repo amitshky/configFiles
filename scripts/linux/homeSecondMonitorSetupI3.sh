@@ -1,4 +1,4 @@
-#! /usr/bin/env bash -x
+#! /usr/bin/env bash
 
 if type "xrandr"; then
   # Get the list of connected displays
