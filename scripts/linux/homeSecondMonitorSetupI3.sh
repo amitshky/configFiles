@@ -16,4 +16,6 @@ if type "xrandr"; then
     # only displays the second monitor
     xrandr --output eDP-1 --off --output HDMI-1-0 --primary --mode 1920x1080 --pos 0x0 --rotate normal
   fi
+
+feh --bg-scale ~/pictures/wallpaper.jpg
 fi
