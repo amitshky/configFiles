@@ -8,7 +8,7 @@ apt upgrade
 ## install some essential packages
 - check if build-essential is installed, if not also include "build-essential" below
 ```
-apt install xorg st neovim vim git libx11-dev libxft-dev libxinerama-dev
+apt install xorg stterm neovim vim git libx11-dev libxft-dev libxinerama-dev
 ```
 
 ## Install nvidia drivers
@@ -29,9 +29,12 @@ apt install nvidia-driver firmware-misc-nonfree
 ```
 
 ## Download dwm and dwmblocks
+- you want to build and install these 
+    - run `make clean install` from the directories
 ```
 mkdir ~/dev
-git clone https://github.com/amitshky/dwm
+git clone https://github.com/amitshky/st ~/dev/st
+git clone https://github.com/amitshky/dwm ~/dwm
 git clone https://github.com/torrinfail/dwmblocks ~/dev/dwmblocks
 ```
 
@@ -79,9 +82,22 @@ mkdir ~/.fonts/JetBrainsMono/
 fc-cache
 ```
 
+## Install rust if you want to
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+rustup update
+```
+
 ## Install rest of the packages
 ```
-apt install kitty firefox-esr dmenu networkmanager picom pipewire pulseaudio btop keepassxc fdisk feh arandr pass gnupg2 clang mpv qimgv
+apt install kitty firefox-esr dmenu networkmanager picom pipewire pulseaudio btop keepassxc fdisk feh arandr pass gnupg2 clang mpv qimgv ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick
+```
+
+## Install packages from cargo
+- yazi (you have to build it)
+    - dependencies `apt install ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick`
+```
+cargo install --force yazi-build
 ```
 
 ## If you want dolphin to detect drives
