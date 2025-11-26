@@ -28,14 +28,13 @@ apt upgrade
 apt install nvidia-driver firmware-misc-nonfree
 ```
 
-## Download dwm and dwmblocks
+## Download dwm, dwmblocks-async, and st
 - you want to build and install these 
     - run `make clean install` from the directories
 ```
-mkdir ~/dev
-git clone https://github.com/amitshky/st ~/dev/st
+git clone https://github.com/amitshky/st ~/st
 git clone https://github.com/amitshky/dwm ~/dwm
-git clone https://github.com/torrinfail/dwmblocks ~/dev/dwmblocks
+git clone https://github.com/amitshky/dwmblocks-async ~/dwmblocks-async
 ```
 
 ## Configure dwm
@@ -63,9 +62,16 @@ pass init "<type ur id here>"
 
 ## Set up tui pinentry for git-cm
 - include `export GPG_TTY=$(tty)` in `.bashrc`
+- install `pinentry-qt` (or install gtk or cli(curses) version of pinentry)
 ```
-sudo apt install pinentry-curses
-echo "pinentry-program /usr/bin/pinentry-curses" >> ~/.gnupg/gpg-agent.conf
+sudo apt install pinentry-qt
+```
+- instead of doing this you can also copy the `gpg-agent.conf` file included in this directory
+```
+echo "pinentry-program /usr/bin/pinentry-qt" >> ~/.gnupg/gpg-agent.conf
+```
+- restart the agent
+```
 gpgconf --kill gpg-agent
 gpgconf --launch gpg-agent
 ```
