@@ -8,7 +8,7 @@ apt upgrade
 ## install some essential packages
 - check if build-essential is installed, if not also include "build-essential" below
 ```
-apt install xorg stterm neovim vim git libx11-dev libxft-dev libxinerama-dev
+apt install xorg stterm neovim vim git libx11-dev libxft-dev libxinerama-dev libxcb1-dev libxcb-util-dev networkmanager
 ```
 
 ## Install nvidia drivers
@@ -53,29 +53,6 @@ cd ~
 dpkg -i gcm-linux_amd64.2.6.1.deb 
 ```
 
-## Set up git-cm
-```
-gpg --full-generate-key 
-git config --global credential.credentialStore gpg
-pass init "<type ur id here>"
-```
-
-## Set up tui pinentry for git-cm
-- include `export GPG_TTY=$(tty)` in `.bashrc`
-- install `pinentry-qt` (or install gtk or cli(curses) version of pinentry)
-```
-sudo apt install pinentry-qt
-```
-- instead of doing this you can also copy the `gpg-agent.conf` file included in this directory
-```
-echo "pinentry-program /usr/bin/pinentry-qt" >> ~/.gnupg/gpg-agent.conf
-```
-- restart the agent
-```
-gpgconf --kill gpg-agent
-gpgconf --launch gpg-agent
-```
-
 ## Install jetbrains mono nerd font
 - download jebrains mono nerd font then,
 ```
@@ -96,20 +73,38 @@ rustup update
 
 ## Install rest of the packages
 ```
-apt install kitty firefox-esr dmenu networkmanager picom pipewire pulseaudio btop keepassxc fdisk feh arandr pass gnupg2 clang mpv qimgv ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick
+apt install kitty dolphin firefox-esr dmenu picom pipewire pulseaudio btop keepassxc fdisk feh arandr pass gnupg2 clang mpv qimgv ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick lazygit gpick darktable copyq flameshot pinentry-qt
 ```
 
 ## Install packages from cargo
 - yazi (you have to build it)
-    - dependencies `apt install ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick`
+    - dependencies `ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick`
 ```
 cargo install --force yazi-build
 ```
 
 ## If you want dolphin to detect drives
 ```
-apt install dolpin
 apt install udisks2 udiskie gvfs gvfs-backends polkit-kde-agent-1
+```
+
+## Set up git-cm
+```
+gpg --full-generate-key 
+git config --global credential.credentialStore gpg
+pass init "<type ur id here>"
+```
+
+## Set up tui pinentry for git-cm
+- include `export GPG_TTY=$(tty)` in `.bashrc`
+- instead of doing this you can also copy the `gpg-agent.conf` file included in this directory
+```
+echo "pinentry-program /usr/bin/pinentry-qt" >> ~/.gnupg/gpg-agent.conf
+```
+- restart the agent
+```
+gpgconf --kill gpg-agent
+gpgconf --launch gpg-agent
 ```
 
 ## Speeding-up boot-time

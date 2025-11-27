@@ -5,7 +5,13 @@ picom -b
 # /usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1 &
 # udiskie -t &
 
+flameshot &
+copyq &
 dwmblocks &
+
 ~/dev/config/scripts/linux/homeSecondMonitorSetupI3.sh &
+~/dev/config/scripts/linux/volumeListener.sh &
+
+pactl set-sink-volume @DEFAULT_SINK@ 25%
 
 exec dwm
