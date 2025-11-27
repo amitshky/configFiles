@@ -80,7 +80,7 @@ apt install pass gnupg2 clang nodejs npm python3 python3-venv ffmpeg 7zip jq pop
 
 ## Install rest of the packages
 ```
-apt install btop kitty dolphin firefox-esr keepassxc mpv qimgv lazygit gpick darktable copyq flameshot
+apt install btop kitty dolphin firefox-esr keepassxc mpv qimgv lazygit gpick darktable copyq flameshot unclutter
 ```
 
 ## Install packages from cargo

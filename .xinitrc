@@ -11,6 +11,7 @@ dwmblocks &
 
 ~/dev/config/scripts/linux/homeSecondMonitorSetupI3.sh &
 ~/dev/config/scripts/linux/volumeListener.sh &
+~/dev/config/scripts/linux/hideCursor.sh &
 
 pactl set-sink-volume @DEFAULT_SINK@ 25%
 
