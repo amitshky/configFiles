@@ -1,4 +1,5 @@
 # Things to do after installing debian
+NOTES: checkout `../linux_config/` for some config files that are general to linux.
 
 ```
 apt update
@@ -36,7 +37,8 @@ git clone https://github.com/amitshky/configFiles ~/dev/config
 git clone https://github.com/amitshky/st ~/st
 git clone https://github.com/amitshky/dwm ~/dwm
 git clone https://github.com/amitshky/dwmblocks-async ~/dwmblocks-async
-cp ~/dev/config/.xinitrc ~/
+cp ~/dev/config/linux_config/.xinitrc ~/
+cp ~/dev/config/linux_config/user-dirs.dirs ~/.config/
 ```
 
 ## Configure dwm
