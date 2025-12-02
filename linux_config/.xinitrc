@@ -1,4 +1,4 @@
-feh --bg-scale ~/pictures/wallpaper.jpg
+feh --bg-fill ~/pictures/wallpaper.jpg
 picom -b
 
 # to help dolphin automatically detect drives
