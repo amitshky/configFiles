@@ -12,6 +12,7 @@ apt install xorg stterm neovim vim git build-essential libx11-dev libxft-dev lib
 ```
 
 ## Install nvidia drivers
+- [Reference](https://wiki.debian.org/NvidiaGraphicsDrivers)
 ```
 apt install linux-headers-amd64
 nvim /etc/apt/sources.list
@@ -59,13 +60,10 @@ startx
 
 ## Install jetbrains mono nerd font
 - download jebrains mono nerd font then,
+    - [download link](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/JetBrainsMono.zip)
 ```
-unzip JetBrainsMono-2.304.zip 
-mkdir ~/.fonts
-mkdir ~/.fonts/JetBrainsMono/
-```
-- then move all ttf to .fonts
-```
+mkdir -p ~/.fonts/JetBrainsMono/
+unzip JetBrainsMono.zip -d ~/.fonts/JetBrainsMono/ 
 fc-cache
 ```
 
@@ -91,6 +89,13 @@ apt install btop kitty dolphin firefox-esr keepassxc mpv qimgv lazygit gpick dar
 ```
 cargo install --force yazi-build
 ```
+
+## Install Ueberzugpp to render images in st
+- download from [here](https://software.opensuse.org/download.html?project=home%3Ajustkidding&package=ueberzugpp)
+```
+sudo apt install ./ueberzugpp_<version_latest>_amd64.deb
+```
+
 
 ## If you want dolphin to detect drives
 ```
