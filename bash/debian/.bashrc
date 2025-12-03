@@ -140,17 +140,18 @@ alias wu="cd ~/documents/uniNotesObsidian/"
 # alias cat="bat" # use \cat to override this alias and use the actual cat command
 alias cdwm="cd ~/dwm/; sudo make clean install; cd -;" # compile dwm
 alias cst="cd ~/st/; sudo make clean install; cd -;" # compile st
-alias cdb="cd ~/dwmblocks/; sudo make clean install; cd -;" # compile dwmblocks
+alias cdb="cd ~/dwmblocks-async/; sudo make clean install; cd -;" # compile dwmblocks-async
+alias qi="qimgv"
 
 # alias spotify="flatpak run com.spotify.Client"
 
 # yazi
-# function y() {
-#     local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
-#     yazi "$@" --cwd-file="$tmp"
-#     if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-#         builtin cd -- "$cwd"
-#     fi
-#     rm -f -- "$tmp"
-# }
-# . "$HOME/.cargo/env"
+function y() {
+    local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+    yazi "$@" --cwd-file="$tmp"
+    if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+        builtin cd -- "$cwd"
+    fi
+    rm -f -- "$tmp"
+}
+. "$HOME/.cargo/env"
