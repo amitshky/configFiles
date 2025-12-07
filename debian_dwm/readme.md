@@ -104,6 +104,12 @@ cargo install --force yazi-build
 apt install ./ueberzugpp_<version_latest>_amd64.deb
 ```
 
+## Install lightdm
+```
+apt install lightdm
+```
+- then copy `../linux_config/dwm.desktop` to `/usr/share/xsessions/`
+- and don't forget to change which session lightdm loads when you login
 
 ## If you want dolphin to detect drives
 ```

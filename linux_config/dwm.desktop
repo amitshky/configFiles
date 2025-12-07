@@ -1,0 +1,6 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=dwm-custom
+Comment=Custom dwm session with my startup scripts
+Exec=/home/almostblue/.xinitrc
+Type=XSession
