@@ -76,12 +76,12 @@ esac
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
+    alias dir='dir --color=auto'
+    alias vdir='vdir --color=auto'
 
-    #alias grep='grep --color=auto'
-    #alias fgrep='fgrep --color=auto'
-    #alias egrep='egrep --color=auto'
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
 fi
 
 # colored GCC warnings and errors
@@ -112,6 +112,7 @@ export GPG_TTY=$(tty)
 
 export EDITOR="nvim"
 export VISUAL="nvim"
+export BROWSER="firefox"
 # enable bat to colorize man pages
 # export MANPAGER="sh -c 'awk '\''{ gsub(/\x1B\[[0-9;]*m/, \"\", \$0); gsub(/.\x08/, \"\", \$0); print }'\'' | bat -p -lman'"
 
@@ -138,9 +139,10 @@ alias wd="cd ~/dev/"
 alias wo="cd ~/documents/_Obsidian/"
 alias wu="cd ~/documents/uniNotesObsidian/"
 # alias cat="bat" # use \cat to override this alias and use the actual cat command
-alias cdwm="cd ~/dwm/; sudo make clean install; cd -;" # compile dwm
-alias cst="cd ~/st/; sudo make clean install; cd -;" # compile st
-alias cdb="cd ~/dwmblocks-async/; sudo make clean install; cd -;" # compile dwmblocks-async
+alias cdwm="cd ~/suckless/dwm/; sudo make clean install; cd -;" # compile dwm
+alias cst="cd ~/suckless/st/; sudo make clean install; cd -;" # compile st
+alias cdb="cd ~/suckless/dwmblocks-async/; sudo make clean install; cd -;" # compile dwmblocks-async
+alias cdm="cd ~/suckless/dmenu/; sudo make clean install; cd -;" # compile dmenu
 alias qi="qimgv"
 
 # alias spotify="flatpak run com.spotify.Client"

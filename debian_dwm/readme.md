@@ -8,7 +8,7 @@ apt upgrade
 
 ## install some essential packages
 ```
-apt install xorg stterm neovim vim git build-essential libx11-dev libxft-dev libxinerama-dev libxcb1-dev libxcb-util-dev networkmanager picom dmenu feh arandr pipewire pulseaudio unzip
+apt install xorg neovim vim git build-essential libx11-dev libxft-dev libxinerama-dev libxcb1-dev libxcb-util-dev networkmanager picom feh arandr pipewire pulseaudio unzip
 ```
 
 ## Install nvidia drivers
@@ -29,7 +29,7 @@ apt upgrade
 apt install nvidia-driver firmware-misc-nonfree
 ```
 
-## Download dwm, dwmblocks-async, and st
+## Download dwm, dwmblocks-async, st, and other suckless tools
 - you want to build and install these 
     - run `make clean install` from the directories
 ```
@@ -38,8 +38,15 @@ git clone https://github.com/amitshky/configFiles ~/dev/config
 git clone https://github.com/amitshky/st ~/st
 git clone https://github.com/amitshky/dwm ~/dwm
 git clone https://github.com/amitshky/dwmblocks-async ~/dwmblocks-async
+git clone https://git.suckless.org/dmenu ~/dmenu
+```
+
+## Copy configs
+```
 cp ~/dev/config/linux_config/.xinitrc ~/
 cp ~/dev/config/linux_config/user-dirs.dirs ~/.config/
+cp ~/dev/config/bash/debian/.bashrc ~/
+cp ~/dev/config/bash/debian/.bash_profile ~/
 ```
 
 ## Configure dwm
@@ -47,8 +54,8 @@ cp ~/dev/config/linux_config/user-dirs.dirs ~/.config/
 ```
 cd ~/dwm
 cp config.def.h config.h
-sudo chown -R almostblue@deiban .
-sudo make clean install
+chown -R almostblue@deiban .
+make clean install
 echo "exec dwm" >> ../.xinitrc
 cd ~
 ```
@@ -81,7 +88,7 @@ apt install pass gnupg2 clang nodejs npm python3 python3-venv ffmpeg 7zip jq pop
 ## Install rest of the packages
 - NOTE: `reptyr` - Utility for taking an existing running program and attaching it to a new terminal.
 ```
-apt install btop kitty dolphin firefox-esr keepassxc mpv qimgv lazygit gpick darktable copyq flameshot unclutter reptyr
+apt install btop kitty dolphin firefox-esr keepassxc mpv qimgv lazygit gpick darktable copyq flameshot unclutter reptyr pulsemixer
 ```
 
 ## Install packages from cargo
@@ -94,7 +101,7 @@ cargo install --force yazi-build
 ## Install Ueberzugpp to render images in st
 - download from [here](https://software.opensuse.org/download.html?project=home%3Ajustkidding&package=ueberzugpp)
 ```
-sudo apt install ./ueberzugpp_<version_latest>_amd64.deb
+apt install ./ueberzugpp_<version_latest>_amd64.deb
 ```
 
 
@@ -116,7 +123,7 @@ git config --global credential.credentialStore gpg
 pass init "<type ur id here>"
 ```
 
-### Set up tui pinentry for git-cm
+### Set up pinentry for git-cm
 - include `export GPG_TTY=$(tty)` in `.bashrc`
 - instead of doing this you can also copy the `gpg-agent.conf` file included in this directory
 ```
@@ -130,5 +137,5 @@ gpgconf --launch gpg-agent
 
 ## Speeding-up boot-time
 ```
-sudo systemctl disable NetworkManager-wait-online.service
+systemctl disable NetworkManager-wait-online.service
 ```
