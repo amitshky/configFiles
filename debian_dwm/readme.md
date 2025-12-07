@@ -40,6 +40,11 @@ git clone https://github.com/amitshky/dwm ~/dwm
 git clone https://github.com/amitshky/dwmblocks-async ~/dwmblocks-async
 git clone https://git.suckless.org/dmenu ~/dmenu
 ```
+- compile all the suckless tools
+```
+// go to the directory (if you copy the bashrc file from ../linux_config/ you can just use the aliases)
+make clean install
+```
 
 ## Copy configs
 ```
