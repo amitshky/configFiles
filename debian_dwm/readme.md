@@ -108,6 +108,7 @@ apt install ./ueberzugpp_<version_latest>_amd64.deb
 ```
 apt install lightdm
 ```
+- make `~/.xinitrc` executable
 - then copy `../linux_config/dwm.desktop` to `/usr/share/xsessions/`
 - and don't forget to change which session lightdm loads when you login
 
