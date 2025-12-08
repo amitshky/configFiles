@@ -157,3 +157,7 @@ function y() {
     rm -f -- "$tmp"
 }
 . "$HOME/.cargo/env"
+
+# GRC (Generic Colorizer)
+GRC_ALIASES=true
+[[ -s "/etc/profile.d/grc.sh" ]] && source /etc/grc.sh
