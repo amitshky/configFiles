@@ -160,4 +160,4 @@ function y() {
 
 # GRC (Generic Colorizer)
 GRC_ALIASES=true
-[[ -s "/etc/profile.d/grc.sh" ]] && source /etc/grc.sh
+[[ -s "/etc/profile.d/grc.sh" ]] && source /etc/profile.d/grc.sh
