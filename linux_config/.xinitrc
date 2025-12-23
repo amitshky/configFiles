@@ -1,4 +1,6 @@
-feh --bg-fill ~/pictures/wallpaper.jpg
+#! /usr/bin/env bash
+
+feh --bg-fill ~/pictures/DSC06863_no_watermark.jpg
 picom -b
 
 # to help dolphin automatically detect drives
