@@ -15,7 +15,7 @@ set $alt Mod1
 set $end 115
 
 workspace_layout tabbed
-focus_follows_mouse no
+focus_follows_mouse yes
 
 # kill command resets the split
 bindsym $mod+q kill
@@ -67,7 +67,7 @@ bindsym $mod+$alt+h exec --no-startup-id brightnessctl set 10%-
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec st
 
 # start dmenu (a program launcher)
 # Alt+space
@@ -264,6 +264,7 @@ exec unclutter -idle 1
 exec flameshot
 exec redshift-gtk
 exec xfce4-power-manager
+exec pactl set-sink-volume @DEFAULT_SINK@ 25%
 # exec mate-power-manager
 exec_always source $HOME/dev/configFiles/scripts/linux/hivePerm.sh
 exec_always source $HOME/dev/configFiles/scripts/linux/cleanup.sh
@@ -271,8 +272,8 @@ exec_always source $HOME/dev/configFiles/scripts/linux/cleanup.sh
 
 #### application shortcuts ####
 bindsym ctrl+shift+Escape exec kitty btop
-bindsym $mod+t exec kitty btop
-bindsym $mod+a exec dolphin
+bindsym $mod+t exec st btop
+bindsym $mod+a exec kitty yazi
 bindsym $mod+f exec firefox
 bindsym $mod+n exec kitty nvim
 
@@ -308,7 +309,7 @@ bindsym $mod+p mode $external_mode
 bindsym ctrl+$alt+$mod+Right exec xrandr --output eDP-1 --rotate right
 bindsym ctrl+$alt+$mod+Up exec xrandr --output eDP-1 --rotate normal
 
-bindsym $mod+$alt+c exec $HOME/dev/configFiles/scripts/linux/cleanup.sh
+bindsym $mod+$alt+c exec $HOME/dev/configFiles/scripts/linux/cleanup.sh; exec pactl set-sink-volume @DEFAULT_SINK@ 25%
 
 
 # window setup
