@@ -95,6 +95,11 @@ apt install pass gnupg2 clang nodejs npm python3 python3-venv ffmpeg 7zip jq pop
 ```
 apt install btop kitty dolphin firefox-esr keepassxc mpv qimgv lazygit gpick darktable copyq flameshot unclutter reptyr pulsemixer
 ```
+- NOTE: if you want to change the default terminal dolphin opens, change `~/.config/kdeglobals`
+```
+[General]
+TerminalApplication=st
+```
 
 ## Install packages from cargo
 - yazi (you have to build it)
