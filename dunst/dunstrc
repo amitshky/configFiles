@@ -347,6 +347,7 @@
     timeout = 4
     # Icon for notifications with low urgency
     # default_icon = dialog-information
+    highlight = "#3B7C87" # for progress bar
 
 [urgency_normal]
     frame_color = "#5B8234"
@@ -356,6 +357,7 @@
     override_pause_level = 30
     # Icon for notifications with normal urgency
     # default_icon = dialog-information
+    highlight = "#5B8234" # for progress bar
 
 [urgency_critical]
     frame_color = "#B7472A"
@@ -365,6 +367,7 @@
     override_pause_level = 60
     # Icon for notifications with critical urgency
     # default_icon = dialog-warning
+    highlight = "#B7472A" # for progress bar
 
 # Every section that isn't one of the above is interpreted as a rules to
 # override settings for certain messages.

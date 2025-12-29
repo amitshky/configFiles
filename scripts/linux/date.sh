@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-date '+%F %a %H:%M'
-
 case "$BLOCK_BUTTON" in
     *) ;;
 esac
+
+DATE_STR="$(date '+%F %a %H:%M')"
+echo "$DATE_STR"
