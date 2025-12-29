@@ -8,7 +8,7 @@ apt upgrade
 
 ## install some essential packages
 ```
-apt install xorg neovim vim git build-essential libx11-dev libxft-dev libxinerama-dev libxcb1-dev libx11-xcb-dev libxcb-util-dev networkmanager picom feh arandr pipewire pulseaudio unzip flatpak
+apt install xorg neovim vim git build-essential libx11-dev libxft-dev libxinerama-dev libxcb1-dev libxcb-res0-dev libx11-xcb-dev libxcb-util-dev networkmanager picom feh arandr pipewire pulseaudio unzip flatpak
 ```
 
 ## Install nvidia drivers
