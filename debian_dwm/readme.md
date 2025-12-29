@@ -108,6 +108,17 @@ flatpak install obsidian
 ```
 cargo install --force yazi-build
 ```
+- impala (wifi manager tui)
+    - dependency `iwd` (there could be more)
+```
+cargo install impala
+// then
+nvim /usr/share/dbus-1/services/org.freedesktop.Notifications.service
+// add these
+[D-BUS Service]
+Name=org.freedesktop.Notifications
+Exec=/usr/lib/notification-daemon/notification-daemon
+```
 
 ## Install Ueberzugpp to render images in st
 - download from [here](https://software.opensuse.org/download.html?project=home%3Ajustkidding&package=ueberzugpp)
