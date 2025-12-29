@@ -108,7 +108,7 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 3
+    frame_width = 2
 
     # Defines color of the frame around the notification window.
     frame_color = "#8EC07C"
@@ -227,7 +227,7 @@
     # icon_theme = "Adwaita, breeze"
 
     # Align icons left/right/top/off
-    icon_position = off
+    icon_position = left
 
     # Scale small icons up to this size, set to 0 to disable. Helpful
     # for e.g. small files or high-dpi screens. In case of conflict,
@@ -343,28 +343,28 @@
     # Otherwise the "#" and following would be interpreted as a comment.
     frame_color = "#3B7C87"
     foreground = "#3B7C87"
-    background = "#191311"
+    background = "#202020"
     timeout = 4
     # Icon for notifications with low urgency
-    default_icon = dialog-information
+    # default_icon = dialog-information
 
 [urgency_normal]
     frame_color = "#5B8234"
     foreground = "#5B8234"
-    background = "#191311"
+    background = "#202020"
     timeout = 4
     override_pause_level = 30
     # Icon for notifications with normal urgency
-    default_icon = dialog-information
+    # default_icon = dialog-information
 
 [urgency_critical]
     frame_color = "#B7472A"
     foreground = "#B7472A"
-    background = "#191311"
+    background = "#202020"
     timeout = 0
     override_pause_level = 60
     # Icon for notifications with critical urgency
-    default_icon = dialog-warning
+    # default_icon = dialog-warning
 
 # Every section that isn't one of the above is interpreted as a rules to
 # override settings for certain messages.
