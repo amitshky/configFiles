@@ -24,7 +24,12 @@ case "$BLOCK_BUTTON" in
             charging)
                 notify-send " Battery Charging" "Time to charge: $TIME_TO_FULL" ;;
             discharging)
-                notify-send "🔋 Battery Discharging" "Time to empty: $TIME_TO_EMPTY" ;;
+                if [[ $PERC_NUM -lt 20 ]]; then
+                    notify-send " Battery Discharging" "Time to empty: $TIME_TO_EMPTY\nBattery: $PERCENTAGE" -h int:value:$PERC_NUM -u critical
+                else
+                    notify-send " Battery Discharging" "Time to empty: $TIME_TO_EMPTY\nBattery: $PERCENTAGE" -h int:value:$PERC_NUM -u normal
+                fi
+                ;;
             fully-charged)
                 notify-send "✔ Battery Full" "Battery is fully charged!" ;;
         esac
