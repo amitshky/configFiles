@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-feh --bg-fill ~/pictures/DSC06863_no_watermark.jpg
+feh --bg-fill ~/pictures/\(@chinfongart\)\ charging.jpg
 picom -b
 
 # to help dolphin automatically detect drives
@@ -10,6 +10,7 @@ picom -b
 flameshot &
 copyq &
 dwmblocks &
+syncthing --no-browser &
 
 ~/dev/config/scripts/linux/homeSecondMonitorSetupI3.sh &
 ~/dev/config/scripts/linux/volumeListener.sh &

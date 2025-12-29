@@ -8,7 +8,7 @@ apt upgrade
 
 ## install some essential packages
 ```
-apt install xorg neovim vim git build-essential libx11-dev libxft-dev libxinerama-dev libxcb1-dev libxcb-util-dev networkmanager picom feh arandr pipewire pulseaudio unzip
+apt install xorg neovim vim git build-essential libx11-dev libxft-dev libxinerama-dev libxcb1-dev libx11-xcb-dev libxcb-util-dev networkmanager picom feh arandr pipewire pulseaudio unzip flatpak
 ```
 
 ## Install nvidia drivers
@@ -33,16 +33,17 @@ apt install nvidia-driver firmware-misc-nonfree
 - you want to build and install these 
     - run `make clean install` from the directories
 ```
-mkdir ~/dev/
-git clone https://github.com/amitshky/configFiles ~/dev/config
-git clone https://github.com/amitshky/st ~/st
-git clone https://github.com/amitshky/dwm ~/dwm
-git clone https://github.com/amitshky/dwmblocks-async ~/dwmblocks-async
-git clone https://git.suckless.org/dmenu ~/dmenu
+mkdir ~/{dev,suckless}
+git clone https://amitshky@github.com/amitshky/configFiles ~/dev/config
+git clone https://amitshky@github.com/amitshky/st ~/suckless/st
+git clone https://amitshky@github.com/amitshky/dwm ~/suckless/dwm
+git clone https://amitshky@github.com/amitshky/dwmblocks-async ~/suckless/dwmblocks-async
+git clone https://amitshky@github.com/amitshky/dmenu ~/suckless/dmenu
 ```
 - compile all the suckless tools
 ```
-// go to the directory (if you copy the bashrc file from ../linux_config/ you can just use the aliases)
+// go to the directory (if you copy the bashrc file from ../bash/debian/, you can just use the aliases)
+// see next step ## Copy configs
 make clean install
 ```
 
@@ -52,17 +53,6 @@ cp ~/dev/config/linux_config/.xinitrc ~/
 cp ~/dev/config/linux_config/user-dirs.dirs ~/.config/
 cp ~/dev/config/bash/debian/.bashrc ~/
 cp ~/dev/config/bash/debian/.bash_profile ~/
-```
-
-## Configure dwm
-- NOTE: this is only to show how you should configure dwm
-```
-cd ~/dwm
-cp config.def.h config.h
-chown -R almostblue@deiban .
-make clean install
-echo "exec dwm" >> ../.xinitrc
-cd ~
 ```
 
 ## Start dwm
@@ -93,12 +83,23 @@ apt install pass gnupg2 clang nodejs npm python3 python3-venv ffmpeg 7zip jq pop
 ## Install rest of the packages
 - NOTE: `reptyr` - Utility for taking an existing running program and attaching it to a new terminal.
 ```
-apt install btop kitty dolphin firefox-esr keepassxc mpv qimgv lazygit gpick darktable copyq flameshot unclutter reptyr pulsemixer
+apt install btop kitty dolphin firefox-esr keepassxc mpv qimgv lazygit gpick darktable copyq flameshot unclutter reptyr pulsemixer syncthing
 ```
 - NOTE: if you want to change the default terminal dolphin opens, change `~/.config/kdeglobals`
 ```
 [General]
 TerminalApplication=st
+```
+
+## Install VSCode
+- download the .deb package from [here](https://code.visualstudio.com/docs/setup/linux#_install-vs-code-on-linux)
+```
+apt install ./<file>.deb
+```
+
+## Install flatpak packages
+```
+flatpak install obsidian
 ```
 
 ## Install packages from cargo

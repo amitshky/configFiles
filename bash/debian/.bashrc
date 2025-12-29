@@ -136,8 +136,9 @@ alias lg="lazygit"
 alias t="./tmux.sh"
 alias n="nvim ."
 alias wd="cd ~/dev/"
-alias wo="cd ~/documents/_Obsidian/"
-alias wu="cd ~/documents/uniNotesObsidian/"
+alias wc="cd ~/dev/config/"
+alias wo="cd ~/documents/Obsidian/"
+alias wu="cd ~/documents/notes/"
 # alias cat="bat" # use \cat to override this alias and use the actual cat command
 alias cdwm="cd ~/suckless/dwm/; sudo make clean install; cd -;" # compile dwm
 alias cst="cd ~/suckless/st/; sudo make clean install; cd -;" # compile st
@@ -157,3 +158,7 @@ function y() {
     rm -f -- "$tmp"
 }
 . "$HOME/.cargo/env"
+
+# GRC (Generic Colorizer)
+GRC_ALIASES=true
+[[ -s "/etc/profile.d/grc.sh" ]] && source /etc/profile.d/grc.sh
