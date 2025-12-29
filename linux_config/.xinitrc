@@ -11,6 +11,7 @@ flameshot &
 copyq &
 dwmblocks &
 syncthing --no-browser &
+dunst &
 
 ~/dev/config/scripts/linux/homeSecondMonitorSetupI3.sh &
 ~/dev/config/scripts/linux/volumeListener.sh &
