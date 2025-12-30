@@ -107,7 +107,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH="$PATH:~/.cargo/bin/:/sbin/:"
+export PATH="$PATH:~/.cargo/bin/:/sbin/:/home/almostblue/.local/bin:"
 export GPG_TTY=$(tty)
 
 export EDITOR="nvim"

@@ -8,7 +8,7 @@ apt upgrade
 
 ## install some essential packages
 ```
-apt install xorg neovim vim git build-essential libx11-dev libxft-dev libxinerama-dev libxcb1-dev libxcb-res0-dev libx11-xcb-dev libxcb-util-dev networkmanager picom feh arandr pipewire pulseaudio unzip flatpak
+apt install xorg neovim vim git build-essential libx11-dev libxft-dev libxinerama-dev libxcb1-dev libxcb-res0-dev libx11-xcb-dev libxcb-util-dev networkmanager picom feh arandr pipewire pulseaudio unzip flatpak 
 ```
 
 ## Install nvidia drivers
@@ -69,7 +69,7 @@ unzip JetBrainsMono.zip -d ~/.fonts/JetBrainsMono/
 fc-cache
 ```
 
-## Install rust if you want to
+## Install rust
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 rustup update
@@ -77,13 +77,13 @@ rustup update
 
 ## Install some common dependencies
 ```
-apt install pass gnupg2 clang nodejs npm python3 python3-venv ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick pinentry-qt
+apt install pass gnupg2 clang nodejs npm python3 python3-venv python3-pip ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick pinentry-qt lua5.1  luarocks adwaita-icon-theme adwaita-icon-theme-legacy pipx
 ```
 
 ## Install rest of the packages
 - NOTE: `reptyr` - Utility for taking an existing running program and attaching it to a new terminal.
 ```
-apt install btop dolphin firefox-esr keepassxc mpv qimgv lazygit gpick darktable copyq flameshot unclutter reptyr pulsemixer syncthing adwaita-icon-theme adwaita-icon-theme-legacy dunst
+apt install btop dolphin firefox-esr keepassxc mpv qimgv lazygit gpick darktable copyq flameshot unclutter reptyr pulsemixer syncthing dunst yt-dlp gallery-dl
 ```
 - NOTE: if you want to change the default terminal dolphin opens, change `~/.config/kdeglobals`
 ```
@@ -118,6 +118,11 @@ nvim /usr/share/dbus-1/services/org.freedesktop.Notifications.service
 [D-BUS Service]
 Name=org.freedesktop.Notifications
 Exec=/usr/lib/notification-daemon/notification-daemon
+```
+
+## Install packages from pipx
+```
+pipx install calcure
 ```
 
 ## Install Ueberzugpp to render images in st
