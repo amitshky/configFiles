@@ -144,6 +144,7 @@ alias cdwm="cd ~/suckless/dwm/; sudo make clean install; cd -;" # compile dwm
 alias cst="cd ~/suckless/st/; sudo make clean install; cd -;" # compile st
 alias cdb="cd ~/suckless/dwmblocks-async/; sudo make clean install; cd -;" # compile dwmblocks-async
 alias cdm="cd ~/suckless/dmenu/; sudo make clean install; cd -;" # compile dmenu
+alias csl="cd ~/suckless/slock/; sudo make clean install; cd -;" # compile slock
 alias qi="qimgv"
 
 # alias spotify="flatpak run com.spotify.Client"
