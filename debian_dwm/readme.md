@@ -83,7 +83,7 @@ apt install pass gnupg2 clang nodejs npm python3 python3-venv python3-pip ffmpeg
 ## Install rest of the packages
 - NOTE: `reptyr` - Utility for taking an existing running program and attaching it to a new terminal.
 ```
-apt install btop dolphin firefox-esr keepassxc mpv qimgv lazygit gpick darktable copyq flameshot unclutter reptyr pulsemixer syncthing dunst yt-dlp gallery-dl
+apt install btop dolphin firefox-esr keepassxc mpv qimgv lazygit gpick darktable copyq flameshot unclutter-xfixes reptyr pulsemixer syncthing dunst yt-dlp gallery-dl
 ```
 - NOTE: if you want to change the default terminal dolphin opens, change `~/.config/kdeglobals`
 ```

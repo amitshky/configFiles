@@ -1,5 +1,3 @@
-#! /usr/bin/env bash
+#!/usr/bin/env bash
 
-set -e
-
-unclutter -idle 1
+unclutter-xfixes -idle 1 &
