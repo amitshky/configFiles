@@ -39,9 +39,24 @@ case "$BLOCK_BUTTON" in
     # 3) notify-send "Battery" "Right click detected" ;;   # right click
 esac
 
-# Compare numerically
-if [[ $PERC_NUM -lt 20 ]]; then
+# File to store the last notification timestamp
+NOTIFY_TS_FILE="/tmp/battery_critical_ts"
+
+# Current time in seconds
+NOW=$(date +%s)
+
+# Last notification time (default 0 if file doesn't exist)
+LAST_NOTIFY=$(cat "$NOTIFY_TS_FILE" 2>/dev/null || echo 0)
+
+# Interval (in seconds) to send the critical notification,
+# but this won't send the notification in that exact interval
+# because this script only gets called when dwmblocks sends a signal
+INTERVAL=300
+
+# Send critical notification if conditions met and interval passed
+if [[ $PERC_NUM -lt 20 && $STATE == "discharging" && $((NOW - LAST_NOTIFY)) -ge INTERVAL ]]; then
     notify-send -u critical "Battery critical" "Plug-in the charger!!!"
+    echo "$NOW" > "$NOTIFY_TS_FILE"
 fi
 
 echo "$ICON$PERCENTAGE"
