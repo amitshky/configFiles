@@ -17,6 +17,15 @@ prepend_keymap = [
     { on = [ "g", "w", "l" ], run = "cd /mnt/windows/Users/almostblue/AppData/Local/", desc = "cd to windows drive local appdata" },
     { on = [ "g", "w", "c" ], run = "cd /mnt/windows/Users/almostblue/AppData/Roaming/", desc = "cd to windows drive appdata roaming" },
 
+    # For bootable SSD
+    { on = [ "g", "s", "r" ], run = "cd /mnt/ssd/", desc = "cd to /mnt/ssd/" },
+    { on = [ "g", "s", "r" ], run = "cd /mnt/ssd/home/almostblue/", desc = "cd to /mnt/ssd/home/almostblue/" },
+    { on = [ "g", "s", "d", "d" ], run = "cd /mnt/ssd/home/almostblue/dev", desc = "cd to /mnt/ssd/home/almostblue/dev" },
+    { on = [ "g", "s", "d", "n" ], run = "cd /mnt/ssd/home/almostblue/dev-not-mine", desc = "cd to /mnt/ssd/home/almostblue/dev-not-mine" },
+    { on = [ "g", "s", "o" ], run = "cd /mnt/ssd/home/almostblue/documents", desc = "cd to /mnt/ssd/home/almostblue/documents" },
+    { on = [ "g", "s", "D" ], run = "cd /mnt/ssd/home/almostblue/downloads", desc = "cd to /mnt/ssd/home/almostblue/downloads" },
+    { on = [ "g", "s", "p" ], run = "cd /mnt/ssd/home/almostblue/pictures", desc = "cd to /mnt/ssd/home/almostblue/pictures" },
+
     { on = "<Enter>", run = "plugin smart-enter", desc = "Enter the child directory, or open the file" },
     { on = "o", run = "plugin smart-enter", desc = "Enter the child directory, or open the file" },
     { on = "F", run = "filter --smart", desc = "Filter files" },
