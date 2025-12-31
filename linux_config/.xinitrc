@@ -20,4 +20,5 @@ dunst &
 
 pactl set-sink-volume @DEFAULT_SINK@ 25%
 
+export QT_QPA_PLATFORMTHEME=qt6ct
 exec dwm
