@@ -1,0 +1,6 @@
+[mgr]
+show_hidden = true
+sort_by = "natural"
+
+[tasks]
+image_bound = [0, 0]
