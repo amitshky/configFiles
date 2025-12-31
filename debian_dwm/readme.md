@@ -83,7 +83,7 @@ apt install pass gnupg2 clang nodejs npm python3 python3-venv python3-pip ffmpeg
 
 ## Install rest of the packages
 ```
-apt install btop firefox-esr pcmanfm keepassxc mpv qimgv lazygit gpick darktable copyq flameshot unclutter-xfixes pulsemixer syncthing dunst yt-dlp gallery-dl qbittorrent
+apt install btop firefox-esr pcmanfm keepassxc mpv qimgv lazygit gpick darktable copyq flameshot unclutter-xfixes pulsemixer syncthing dunst yt-dlp gallery-dl qbittorrent qalculate-qt
 ```
 - NOTE: the file manager that I have here is pcmanfm and you can use lxapperane to change the theme of the file manager
 - NOTE: dolphin is not installed
@@ -177,3 +177,8 @@ gpgconf --launch gpg-agent
 ```
 systemctl disable NetworkManager-wait-online.service
 ```
+
+## Color schemes and theme customization
+These might be useful
+- [kde theming](https://www.lorenzobettini.it/2024/08/better-kde-theming-and-styling-in-hyprland/)
+- [qt theming](https://www.hyprflux.dev/features/qt-theming.html#color-schemes)

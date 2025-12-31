@@ -51,11 +51,11 @@ LAST_NOTIFY=$(cat "$NOTIFY_TS_FILE" 2>/dev/null || echo 0)
 # Interval (in seconds) to send the critical notification,
 # but this won't send the notification in that exact interval
 # because this script only gets called when dwmblocks sends a signal
-INTERVAL=300
+INTERVAL=200
 
 # Send critical notification if conditions met and interval passed
 if [[ $PERC_NUM -lt 20 && $STATE == "discharging" && $((NOW - LAST_NOTIFY)) -ge INTERVAL ]]; then
-    notify-send -u critical "Battery critical" "Plug-in the charger!!!"
+    notify-send -u critical "󰀦 Battery critical ($PERCENTAGE)" "Plug-in the charger!!!"
     echo "$NOW" > "$NOTIFY_TS_FILE"
 fi
 
