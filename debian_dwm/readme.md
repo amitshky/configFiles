@@ -182,3 +182,8 @@ systemctl disable NetworkManager-wait-online.service
 These might be useful
 - [kde theming](https://www.lorenzobettini.it/2024/08/better-kde-theming-and-styling-in-hyprland/)
 - [qt theming](https://www.hyprflux.dev/features/qt-theming.html#color-schemes)
+
+## To disable Display power management signal
+```
+xset -dpms
+```
