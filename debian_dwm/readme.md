@@ -78,13 +78,12 @@ rustup update
 
 ## Install some common dependencies
 ```
-apt install pass gnupg2 clang nodejs npm python3 python3-venv python3-pip ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick pinentry-qt lua5.1  luarocks adwaita-icon-theme adwaita-icon-theme-legacy pipx
+apt install pass gnupg2 clang nodejs npm python3 python3-venv python3-pip ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick pinentry-qt lua5.1 luarocks adwaita-icon-theme adwaita-icon-theme-legacy breeze lxappearance qt6ct
 ```
 
 ## Install rest of the packages
-- NOTE: `reptyr` - Utility for taking an existing running program and attaching it to a new terminal.
 ```
-apt install btop firefox-esr keepassxc mpv qimgv lazygit gpick darktable copyq flameshot unclutter-xfixes reptyr pulsemixer syncthing dunst yt-dlp gallery-dl pcmanfm lxappearance breeze
+apt install btop firefox-esr pcmanfm keepassxc mpv qimgv lazygit gpick darktable copyq flameshot unclutter-xfixes pulsemixer syncthing dunst yt-dlp gallery-dl qbittorrent
 ```
 - NOTE: the file manager that I have here is pcmanfm and you can use lxapperane to change the theme of the file manager
 - NOTE: dolphin is not installed
@@ -124,7 +123,9 @@ Exec=/usr/lib/notification-daemon/notification-daemon
 ```
 
 ## Install packages from pipx
+- calcure is a tui calendar
 ```
+apt install pipx
 pipx install calcure
 ```
 
