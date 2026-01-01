@@ -147,6 +147,11 @@ apt install lightdm
 ```
 apt install udisks2 udiskie gvfs gvfs-backends polkit-kde-agent-1
 ```
+- add this to `~/.xinitrc`
+```
+/usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1 &
+udiskie -t &
+```
 
 ## Configure git credential manager
 - download gcm first then run the following

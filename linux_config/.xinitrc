@@ -1,24 +1,22 @@
 #! /usr/bin/env bash
 
-feh --bg-fill ~/pictures/\(@chinfongart\)\ charging.jpg
+feh --bg-fill ~/pictures/DSC06863_no_watermark.jpg
 picom -b
 
-# to help dolphin automatically detect drives
-# /usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1 &
-# udiskie -t &
+mkdir -p $HOME/.local/err
 
-flameshot &
-copyq &
-dwmblocks &
-syncthing --no-browser &
-dunst &
+flameshot >/dev/null 2>$HOME/.local/err/flameshot.log &
+copyq >/dev/null 2>$HOME/.local/err/copyq.log &
+dwmblocks >/dev/null 2>$HOME/.local/err/dwmblocks.log &
+syncthing --no-browser >/dev/null 2>$HOME/.local/err/syncthing.log &
+dunst >/dev/null 2>$HOME/.local/err/dunst.log &
 
-~/dev/config/scripts/linux/homeSecondMonitorSetupI3.sh &
-~/dev/config/scripts/linux/volumeListener.sh &
-~/dev/config/scripts/linux/batterySignal.sh &
-~/dev/config/scripts/linux/hideCursor.sh &
+$HOME/dev/config/scripts/linux/homeSecondMonitorSetupI3.sh &
+$HOME/dev/config/scripts/linux/volumeListener.sh &
+$HOME/dev/config/scripts/linux/batterySignal.sh &
+$HOME/dev/config/scripts/linux/hideCursor.sh &
 
-pactl set-sink-volume @DEFAULT_SINK@ 25%
+pactl set-sink-volume @DEFAULT_SINK@ 30%
+xset -dpms # disable display power management signal
 
-export QT_QPA_PLATFORMTHEME=qt6ct
 exec dwm
