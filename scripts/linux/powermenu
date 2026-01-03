@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-case "$(printf "⏻  Shutdown\n⏾  Sleep\n  Restart\n󰍃  Logout" | dmenu -i -l 4 -c)" in
+case "$(printf "⏻  Shutdown\n⏾  Sleep\n  Restart\n󰍃  Logout" | dmenu -i -l 4 -c -p "power:")" in
   *Shutdown)  systemctl poweroff -i ;;
   *Sleep)     slock systemctl suspend -i ;;
   *Restart)   systemctl reboot -i ;;
