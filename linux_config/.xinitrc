@@ -17,6 +17,4 @@ $HOME/dev/config/scripts/linux/hideCursor.sh &
 pactl set-sink-volume @DEFAULT_SINK@ 30%
 xset -dpms # disable display power management signal
 
-export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
-
 exec dwm

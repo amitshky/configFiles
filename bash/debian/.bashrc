@@ -118,7 +118,6 @@ export BROWSER="firefox"
 export QT_QPA_PLATFORMTHEME=qt6ct
 export PINENTRY_QT_STYLE="$HOME/.config/qt6ct/qss/pintentry-qt.qss"
 export GPG_TTY=$(tty)
-export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 
 # customizing prompt
 git_branch_for_prompt() {
