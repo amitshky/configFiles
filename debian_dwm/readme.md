@@ -85,6 +85,11 @@ apt install pass gnupg2 clang nodejs npm python3 python3-venv python3-pip ffmpeg
 ```
 apt install btop firefox-esr pcmanfm keepassxc mpv qimgv lazygit gpick darktable copyq flameshot unclutter-xfixes pulsemixer syncthing dunst yt-dlp gallery-dl qbittorrent qalculate-qt
 ```
+- NOTE: after installing pcmanfm, also move gtk-3.0 and gtk-4.0 folders to config
+```
+cp ~/dev/config/gtk-3.0/ ~/.config
+cp ~/dev/config/gtk-4.0/ ~/.config
+```
 - NOTE: the file manager that I have here is pcmanfm and you can use lxapperane to change the theme of the file manager
 - NOTE: dolphin is not installed
     - if you want to change the default terminal dolphin opens, change `~/.config/kdeglobals`
