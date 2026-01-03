@@ -78,7 +78,7 @@ rustup update
 
 ## Install some common dependencies
 ```
-apt install pass gnupg2 clang nodejs npm python3 python3-venv python3-pip ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick pinentry-curses lua5.1 luarocks adwaita-icon-theme adwaita-icon-theme-legacy breeze lxappearance qt6ct qalc xclip
+apt install pass gnupg2 clang nodejs npm python3 python3-venv python3-pip ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick pinentry-gtk2 lua5.1 luarocks adwaita-icon-theme adwaita-icon-theme-legacy breeze lxappearance qt6ct qalc xclip
 ```
 
 ## Install rest of the packages
@@ -175,7 +175,7 @@ pass init "<type ur id here>"
 - include `export GPG_TTY=$(tty)` in `.bashrc`
 - instead of doing this you can also copy the `gpg-agent.conf` file included in this directory
 ```
-echo "pinentry-program /usr/bin/pinentry-qt" >> ~/.gnupg/gpg-agent.conf
+echo "pinentry-program /usr/bin/pinentry-gtk-2" >> ~/.gnupg/gpg-agent.conf
 ```
 - restart the agent
 ```
