@@ -88,8 +88,8 @@ apt install btop firefox-esr pcmanfm keepassxc mpv qimgv lazygit gpick darktable
 ```
 - NOTE: after installing pcmanfm, also move gtk-3.0 and gtk-4.0 folders to config
 ```
-cp ~/dev/config/gtk-3.0/ ~/.config
-cp ~/dev/config/gtk-4.0/ ~/.config
+cp ~/dev/config/gtk-3.0/ ~/.config -r
+cp ~/dev/config/gtk-4.0/ ~/.config -r
 ```
 - NOTE: the file manager that I have here is pcmanfm and you can use lxapperane to change the theme of the file manager
 - NOTE: dolphin is not installed
