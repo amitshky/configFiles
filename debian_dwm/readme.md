@@ -78,7 +78,7 @@ rustup update
 
 ## Install some common dependencies
 ```
-apt install pass gnupg2 clang nodejs npm python3 python3-venv python3-pip ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick pinentry-qt lua5.1 luarocks adwaita-icon-theme adwaita-icon-theme-legacy breeze lxappearance qt6ct qalc xclip
+apt install pass gnupg2 clang nodejs npm python3 python3-venv python3-pip ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick pinentry-curses lua5.1 luarocks adwaita-icon-theme adwaita-icon-theme-legacy breeze lxappearance qt6ct qalc xclip
 ```
 
 ## Install rest of the packages
