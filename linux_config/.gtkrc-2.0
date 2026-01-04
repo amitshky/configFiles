@@ -8,7 +8,7 @@ gtk-button-images=0
 
 gtk-cursor-blink-time=1000
 gtk-cursor-blink=1
-gtk-cursor-theme-size=24
+gtk-cursor-theme-size=16
 gtk-cursor-theme-name=Adwaita
 
 gtk-sound-theme-name="ocean"
