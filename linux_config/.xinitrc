@@ -13,8 +13,8 @@ $HOME/dev/config/scripts/linux/homeSecondMonitorSetupI3.sh &
 $HOME/dev/config/scripts/linux/volumeListener.sh &
 $HOME/dev/config/scripts/linux/batterySignal.sh &
 $HOME/dev/config/scripts/linux/hideCursor.sh &
+$HOME/dev/config/scripts/linux/volumeLevel.sh &
 
-pactl set-sink-volume @DEFAULT_SINK@ 30%
 xset -dpms # disable display power management signal
 
 exec dwm
