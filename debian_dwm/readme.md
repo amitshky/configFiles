@@ -88,8 +88,11 @@ apt install btop firefox-esr pcmanfm keepassxc mpv qimgv lazygit gpick darktable
 ```
 - NOTE: after installing pcmanfm, also move gtk-3.0 and gtk-4.0 folders to config
 ```
-cp ~/dev/config/gtk-3.0/ ~/.config -r
-cp ~/dev/config/gtk-4.0/ ~/.config -r
+cp ~/dev/config/linux_config/gtk-3.0/ ~/.config -r
+cp ~/dev/config/linux_config/gtk-4.0/ ~/.config -r
+
+# also do this for pinentry-gtk-2
+cp ~/dev/config/linux_config/.gtkrc-2.0 ~/
 ```
 - NOTE: the file manager that I have here is pcmanfm and you can use lxapperane to change the theme of the file manager
 - NOTE: dolphin is not installed
@@ -120,9 +123,9 @@ cargo install --force yazi-build
     - dependency `iwd` (there could be more)
 ```
 cargo install impala
-// then
+# then
 nvim /usr/share/dbus-1/services/org.freedesktop.Notifications.service
-// add these
+# add these
 [D-BUS Service]
 Name=org.freedesktop.Notifications
 Exec=/usr/lib/notification-daemon/notification-daemon
