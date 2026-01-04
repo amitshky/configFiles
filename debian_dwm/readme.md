@@ -78,7 +78,7 @@ rustup update
 
 ## Install some common dependencies
 ```
-apt install pass gnupg2 clang nodejs npm python3 python3-venv python3-pip ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick pinentry-gtk2 pinentry-tty lua5.1 luarocks adwaita-icon-theme adwaita-icon-theme-legacy breeze lxappearance qt6ct qalc xclip
+apt install pass gnupg2 clang nodejs npm python3 python3-venv python3-pip ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick pinentry-gtk2 pinentry-tty lua5.1 luarocks adwaita-icon-theme adwaita-icon-theme-legacy breeze-icon-theme lxappearance qt6ct qalc xclip
 ```
 - NOTE: there is both pinentry-gtk2 and pinentry-tty, you can switch using the script `$HOME/dev/config/scripts/linux/pinetrySwitch.sh`
 

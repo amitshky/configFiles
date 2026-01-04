@@ -12,5 +12,5 @@ gtk-cursor-theme-size=24
 gtk-cursor-theme-name=Adwaita
 
 gtk-sound-theme-name="ocean"
-gtk-icon-theme-name=HighContrast
+gtk-icon-theme-name=breeze-dark
 gtk-font-name="Sans 10"
