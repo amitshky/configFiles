@@ -8,7 +8,7 @@ apt upgrade
 
 ## install some essential packages
 ```
-apt install xorg neovim vim git build-essential libx11-dev libxft-dev libxinerama-dev libxcb1-dev libxcb-res0-dev libx11-xcb-dev libxcb-util-dev libxrandr-dev networkmanager picom feh arandr pipewire pulseaudio unzip flatpak ntfs-3g
+apt install xorg neovim vim git build-essential libx11-dev libxft-dev libxinerama-dev libxcb1-dev libxcb-res0-dev libx11-xcb-dev libxcb-util-dev libxrandr-dev networkmanager picom feh arandr pipewire pulseaudio unzip flatpak ntfs-3g pipewire-audio-client-libraries wireplumber bluez
 ```
 
 ## Install nvidia drivers
@@ -79,7 +79,7 @@ rustup update
 
 ## Install some common dependencies
 ```
-apt install pass gnupg2 clang nodejs npm python3 python3-venv python3-pip ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick pinentry-gtk2 pinentry-tty lua5.1 luarocks adwaita-icon-theme adwaita-icon-theme-legacy breeze-icon-theme lxappearance qt6ct qalc xclip libavcodec-extra
+apt install pass gnupg2 clang nodejs npm python3 python3-venv python3-pip ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick pinentry-gtk2 pinentry-tty lua5.1 luarocks adwaita-icon-theme adwaita-icon-theme-legacy breeze-icon-theme lxappearance qt6ct qalc xclip libavcodec-extra breeze
 ```
 - NOTE: there is both pinentry-gtk2 and pinentry-tty, you can switch using the script `$HOME/dev/config/scripts/linux/pinetrySwitch.sh`
 
@@ -96,11 +96,26 @@ cp ~/dev/config/linux_config/gtk-4.0/ ~/.config -r
 cp ~/dev/config/linux_config/.gtkrc-2.0 ~/
 ```
 - NOTE: the file manager that I have here is pcmanfm and you can use lxapperane to change the theme of the file manager
-- NOTE: dolphin is not installed
-    - if you want to change the default terminal dolphin opens, change `~/.config/kdeglobals`
+
+### If you want to install dolphin
+- if you want to install dolphin, also install udisks2
+    - you can query other devices (drives)
+```
+apt install dolphin udisks2 kde-cli-tools polkit-kde-agent-1
+```
+- add this to `~/.xinitrc`
+```
+/usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1 &
+```
+- if you want to change the default terminal dolphin opens, change `~/.config/kdeglobals`
 ```
 [General]
 TerminalApplication=st
+```
+- for application menu
+```
+mkdir -p ~/.config/menus
+cp ~/dev/config/linux_config/applications.menu ~/.config/menus/
 ```
 
 ## Install VSCode
@@ -153,16 +168,6 @@ apt install lightdm
 - then copy `../linux_config/dwm.desktop` to `/usr/share/xsessions/`
 - and don't forget to change which session lightdm loads when you login
 
-## If you want dolphin to detect drives
-```
-apt install udisks2 udiskie gvfs gvfs-backends polkit-kde-agent-1
-```
-- add this to `~/.xinitrc`
-```
-/usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1 &
-udiskie -t &
-```
-
 ## Configure git credential manager
 - download gcm first then run the following
 ```
@@ -201,4 +206,11 @@ These might be useful
 ## To disable Display power management signal
 ```
 xset -dpms
+```
+
+## Remove unnecessary packages
+- with these packages, some applications like localsend and dolphin were slow to startup and would freeze (more like there would be a transparent window when they started)
+```
+apt purge xdg-desktop-portal-gtk xdg-desktop-portal-kde
+apt autoremove
 ```
