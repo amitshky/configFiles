@@ -214,3 +214,13 @@ xset -dpms
 apt purge xdg-desktop-portal-gtk xdg-desktop-portal-kde
 apt autoremove
 ```
+
+## To install Tor browser
+- download from [here](https://packages.debian.org/search?keywords=torbrowser-launcher)
+```
+# verify the hash
+echo "<sha256 hash> <torbrowser>.deb" | sha256sum -c -
+
+# install
+apt install <torbrowser>.deb
+```
