@@ -176,9 +176,8 @@ pass init "<type ur id here>"
 
 ### Set up pinentry for git-cm
 - include `export GPG_TTY=$(tty)` in `.bashrc`
-- instead of doing this you can also copy the `gpg-agent.conf` file included in this directory
 ```
-echo "pinentry-program /usr/bin/pinentry-gtk-2" >> ~/.gnupg/gpg-agent.conf
+cp ~/dev/config/linux_config/gpg-agent.conf ~/.gnupg/gpg-agent.conf
 ```
 - restart the agent
 ```
