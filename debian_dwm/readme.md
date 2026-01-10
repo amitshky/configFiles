@@ -85,7 +85,7 @@ apt install pass gnupg2 clang nodejs npm python3 python3-venv python3-pip ffmpeg
 
 ## Install rest of the packages
 ```
-apt install btop firefox-esr pcmanfm keepassxc mpv qimgv lazygit gpick darktable copyq flameshot unclutter-xfixes pulsemixer syncthing dunst yt-dlp gallery-dl qbittorrent qalculate-qt okular
+apt install btop firefox-esr pcmanfm keepassxc mpv qimgv lazygit gpick darktable copyq flameshot unclutter-xfixes pulsemixer syncthing dunst yt-dlp gallery-dl qbittorrent qalculate-qt okular calcurse
 ```
 - NOTE: after installing pcmanfm, also move gtk-3.0 and gtk-4.0 folders to config
 ```
@@ -145,13 +145,6 @@ nvim /usr/share/dbus-1/services/org.freedesktop.Notifications.service
 [D-BUS Service]
 Name=org.freedesktop.Notifications
 Exec=/usr/lib/notification-daemon/notification-daemon
-```
-
-## Install packages from pipx
-- calcure is a tui calendar
-```
-apt install pipx
-pipx install calcure
 ```
 
 ## Install Ueberzugpp to render images in st
