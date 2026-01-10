@@ -17,11 +17,11 @@ if [[ -n "$selected" ]]; then
         flatpak run "$selected" &
     else
         case "$selected" in
-          *Shutdown)  systemctl poweroff -i ;;
-          *Sleep)     slock systemctl suspend -i ;;
-          *Restart)   systemctl reboot -i ;;
-          *Logout)    pkill dwm ;;
-          *)          $selected &>/dev/null & ;;
+            *Shutdown)  systemctl poweroff -i ;;
+            *Sleep)     slock systemctl suspend -i ;;
+            *Restart)   systemctl reboot -i ;;
+            *Logout)    pkill dwm ;;
+            *)          $selected &>/dev/null & ;;
         esac
     fi
 fi
