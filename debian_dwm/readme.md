@@ -202,8 +202,10 @@ xset -dpms
 
 ## Remove unnecessary packages
 - with these packages, some applications like localsend and dolphin were slow to startup and would freeze (more like there would be a transparent window when they started)
+- [see issue](https://github.com/flatpak/xdg-desktop-portal/issues/1032)
 ```
-apt purge xdg-desktop-portal-gtk xdg-desktop-portal-kde
+# apt purge xdg-desktop-portal-gtk xdg-desktop-portal-kde xdg-desktop-portal-lxqt
+apt purge xdg-desktop-portal*
 apt autoremove
 ```
 
