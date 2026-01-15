@@ -54,6 +54,7 @@ cp ~/dev/config/linux_config/.xinitrc ~/
 cp ~/dev/config/linux_config/.Xresources ~/
 cp ~/dev/config/linux_config/.profile ~/
 cp ~/dev/config/linux_config/user-dirs.dirs ~/.config/
+cp ~/dev/config/linux_config/mimeapps.list ~/.config/
 cp ~/dev/config/bash/debian/.bashrc ~/
 cp ~/dev/config/bash/debian/.bash_profile ~/
 ```
