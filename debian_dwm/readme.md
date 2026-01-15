@@ -219,3 +219,12 @@ echo "<sha256 hash> <torbrowser>.deb" | sha256sum -c -
 # install
 apt install <torbrowser>.deb
 ```
+
+## To update default applications
+- change `~/.config/mimeapps.list` then
+- or you can also use command `xdg-mime default nemo.desktop inode/directory` (this will make nemo the default file manager)
+```sh
+update-desktop-database $HOME/.local/share/applications/
+```
+
+
