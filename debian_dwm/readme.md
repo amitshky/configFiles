@@ -52,6 +52,7 @@ make clean install
 ```
 cp ~/dev/config/linux_config/.xinitrc ~/
 cp ~/dev/config/linux_config/.Xresources ~/
+cp ~/dev/config/linux_config/.profile ~/
 cp ~/dev/config/linux_config/user-dirs.dirs ~/.config/
 cp ~/dev/config/bash/debian/.bashrc ~/
 cp ~/dev/config/bash/debian/.bash_profile ~/
@@ -79,13 +80,13 @@ rustup update
 
 ## Install some common dependencies
 ```
-apt install pass gnupg2 clang clang-tools nodejs npm python3 python3-venv python3-pip ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick pinentry-gtk2 pinentry-tty lua5.1 luarocks adwaita-icon-theme adwaita-icon-theme-legacy breeze-icon-theme lxappearance qt6ct qalc xclip libavcodec-extra breeze gnome-themes-extra
+apt install pass gnupg2 clang clang-tools nodejs npm python3 python3-venv python3-pip ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick pinentry-gtk2 pinentry-tty lua5.1 luarocks adwaita-icon-theme adwaita-icon-theme-legacy breeze-icon-theme lxappearance qt5ct qalc xclip libavcodec-extra breeze gnome-themes-extra
 ```
 - NOTE: there is both pinentry-gtk2 and pinentry-tty, you can switch using the script `$HOME/dev/config/scripts/linux/pinetrySwitch.sh`
 
 ## Install rest of the packages
 ```
-apt install btop firefox-esr pcmanfm keepassxc mpv qimgv lazygit gpick darktable copyq flameshot unclutter-xfixes pulsemixer syncthing dunst yt-dlp gallery-dl qbittorrent qalculate-qt okular calcurse libreoffice libreoffice-gtk3
+apt install btop firefox-esr pcmanfm keepassxc mpv qimgv lazygit gpick darktable copyq flameshot unclutter-xfixes pulsemixer syncthing dunst yt-dlp gallery-dl qbittorrent qalculate-qt okular calcurse libreoffice libreoffice-gtk3 ark krename valgrind
 ```
 - NOTE: after installing pcmanfm, also move gtk-3.0 and gtk-4.0 folders to config
 ```
@@ -97,7 +98,7 @@ cp ~/dev/config/linux_config/.gtkrc-2.0 ~/
 ```
 - NOTE: the file manager that I have here is pcmanfm and you can use lxapperane to change the theme of the file manager
 
-### If you want to install dolphin
+### If you want to install dolphin using apt (I recommend using flatpak)
 - if you want to install dolphin, also install udisks2
     - you can query other devices (drives)
 ```
@@ -126,7 +127,7 @@ apt install ./<file>.deb
 
 ## Install flatpak packages
 ```
-flatpak install obsidian
+flatpak install obsidian dolphin
 ```
 
 ## Install packages from cargo

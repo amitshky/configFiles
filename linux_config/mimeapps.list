@@ -1,0 +1,20 @@
+[Default Applications]
+image/jpeg=qimgv.desktop
+application/x-xbel=nvim.desktop
+image/png=qimgv.desktop
+image/gif=qimgv.desktop
+application/pdf=okularApplication_pdf.desktop
+application/json=nvim.desktop
+inode/directory=pcmanfm.desktop
+x-directory/normal=pcmanfm.desktop
+x-content/unix-software=pcmanfm-autorun-software.desktop
+
+[Added Associations]
+image/jpeg=qimgv.desktop;display-im7.q16.desktop;
+application/pdf=okularApplication_pdf.desktop;firefox-esr.desktop;
+application/x-core=nvim.desktop;
+application/x-xbel=nvim.desktop;
+image/png=qimgv.desktop;
+image/gif=qimgv.desktop;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-startcenter.desktop;
+application/json=nvim.desktop;
