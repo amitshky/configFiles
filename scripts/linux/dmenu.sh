@@ -24,7 +24,7 @@ if [[ -n "$selected" ]]; then
             *Sleep)     slock systemctl suspend -i ;;
             *Restart)   systemctl reboot -i ;;
             *Logout)    pkill dwm ;;
-            Spotify)    firefox --new-window open.spotify.com ;;
+            Spotify)    firefox --new-window open.spotify.com --class firetify;;
             *)          $selected &>/dev/null & ;;
         esac
     fi

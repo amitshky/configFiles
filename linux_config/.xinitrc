@@ -11,6 +11,7 @@ dunst &
 
 $HOME/dev/config/scripts/linux/homeSecondMonitorSetupI3.sh &
 $HOME/dev/config/scripts/linux/volumeSignal.sh &
+$HOME/dev/config/scripts/linux/brightnessSignal.sh &
 $HOME/dev/config/scripts/linux/batterySignal.sh &
 $HOME/dev/config/scripts/linux/hideCursor.sh &
 $HOME/dev/config/scripts/linux/volumeLevel.sh &
