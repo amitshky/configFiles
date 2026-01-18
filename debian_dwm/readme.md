@@ -59,11 +59,6 @@ cp ~/dev/config/bash/debian/.bashrc ~/
 cp ~/dev/config/bash/debian/.bash_profile ~/
 ```
 
-## Start dwm
-```
-startx
-```
-
 ## Install jetbrains mono nerd font
 - download jebrains mono nerd font then,
     - [download link](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/JetBrainsMono.zip)
@@ -81,13 +76,13 @@ rustup update
 
 ## Install some common dependencies
 ```
-apt install pass gnupg2 clang clang-tools nodejs npm python3 python3-venv python3-pip ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick pinentry-gtk2 pinentry-tty lua5.1 luarocks adwaita-icon-theme adwaita-icon-theme-legacy breeze-icon-theme lxappearance qt5ct qalc xclip libavcodec-extra breeze gnome-themes-extra
+apt install pass gnupg2 clang clang-tools nodejs npm python3-venv python3-pip python-is-python3 ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick pinentry-gtk2 pinentry-tty lua5.1 luarocks adwaita-icon-theme adwaita-icon-theme-legacy breeze-icon-theme lxappearance qt5ct qalc xclip libavcodec-extra breeze gnome-themes-extra
 ```
 - NOTE: there is both pinentry-gtk2 and pinentry-tty, you can switch using the script `$HOME/dev/config/scripts/linux/pinetrySwitch.sh`
 
 ## Install rest of the packages
 ```
-apt install btop firefox-esr pcmanfm keepassxc mpv qimgv lazygit gpick darktable copyq flameshot unclutter-xfixes pulsemixer syncthing dunst yt-dlp gallery-dl qbittorrent qalculate-qt okular calcurse libreoffice libreoffice-gtk3 ark krename valgrind
+apt install btop firefox-esr pcmanfm keepassxc mpv qimgv lazygit gpick darktable copyq flameshot unclutter-xfixes pulsemixer syncthing dunst yt-dlp gallery-dl qbittorrent qalculate-qt okular calcurse libreoffice libreoffice-gtk3 ark krename valgrind mkvtoolnix mkvtoolnix-gui
 ```
 - NOTE: after installing pcmanfm, also move gtk-3.0 and gtk-4.0 folders to config
 ```
@@ -128,7 +123,7 @@ apt install ./<file>.deb
 
 ## Install flatpak packages
 ```
-flatpak install obsidian dolphin
+flatpak install obsidian dolphin protonvpn
 ```
 
 ## Install packages from cargo
