@@ -8,7 +8,7 @@ apt full-upgrade
 
 ## install some essential packages
 ```
-apt install xorg neovim vim git build-essential libx11-dev libxft-dev libxinerama-dev libxcb1-dev libxcb-res0-dev libx11-xcb-dev libxcb-util-dev libxrandr-dev network-manager picom feh arandr pipewire pulseaudio unzip flatpak ntfs-3g pipewire-audio-client-libraries wireplumber bluez playerctl brightnessctl
+apt install xorg neovim vim git build-essential libx11-dev libxft-dev libxinerama-dev libxcb1-dev libxcb-res0-dev libx11-xcb-dev libxcb-util-dev libxrandr-dev network-manager picom feh arandr pipewire pulseaudio unzip flatpak ntfs-3g pipewire-audio-client-libraries wireplumber bluez playerctl brightnessctl tmux
 ```
 
 ## Install nvidia drivers
@@ -38,8 +38,8 @@ mkdir /mnt/{hdd,ssd,windows,camera}
 git clone https://amitshky@github.com/amitshky/configFiles ~/dev/config
 git clone https://amitshky@github.com/amitshky/st ~/suckless/st
 git clone https://amitshky@github.com/amitshky/dwm ~/suckless/dwm
-git clone https://amitshky@github.com/amitshky/dwmblocks-async ~/suckless/dwmblocks-async
 git clone https://amitshky@github.com/amitshky/dmenu ~/suckless/dmenu
+git clone https://amitshky@github.com/amitshky/dwmblocks-async ~/suckless/dwmblocks-async
 git clone https://amitshky@github.com/amitshky/slock ~/suckless/slock
 ```
 - compile all the suckless tools
@@ -180,6 +180,7 @@ dpkg -i gcm-linux_amd64.2.6.1.deb
 ```
 gpg --full-generate-key 
 git config --global credential.credentialStore gpg
+git config --global credential.helper manager
 pass init "<type ur id here>"
 ```
 
@@ -193,12 +194,6 @@ cp ~/dev/config/linux_config/gpg-agent.conf ~/.gnupg/gpg-agent.conf
 gpgconf --kill gpg-agent
 gpgconf --launch gpg-agent
 ```
-
-### Config git to use gcm
-```
-git config --global credential.helper manager
-```
-
 
 ## Speeding-up boot-time
 ```

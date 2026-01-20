@@ -9,7 +9,10 @@ dwmblocks &
 syncthing --no-browser &
 dunst &
 
-$HOME/dev/config/scripts/linux/homeSecondMonitorSetupI3.sh &
+# for dolphin
+/usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1 &
+
+$HOME/dev/config/scripts/linux/use_external_monitor.sh &
 $HOME/dev/config/scripts/linux/volumeSignal.sh &
 $HOME/dev/config/scripts/linux/brightnessSignal.sh &
 $HOME/dev/config/scripts/linux/batterySignal.sh &
