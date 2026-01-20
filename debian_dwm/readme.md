@@ -187,7 +187,7 @@ pass init "<type ur id here>"
 ### Set up pinentry for git-cm
 - include `export GPG_TTY=$(tty)` in `.bashrc`
 ```
-cp ~/dev/config/linux_config/gpg-agent.conf ~/.gnupg/gpg-agent.conf
+cp ~/dev/config/linux_config/gpg-agent.conf ~/.gnupg/
 ```
 - restart the agent
 ```
