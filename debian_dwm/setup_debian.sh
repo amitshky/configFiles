@@ -54,3 +54,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 rustup update
 # install yazi
 cargo install --force yazi-build
+
+# this just freezes dolphin and other apps when they start so remove them
+sudo apt purge xdg-desktop-portal*
+sudo apt autoremove
