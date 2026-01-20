@@ -150,14 +150,24 @@ Exec=/usr/lib/notification-daemon/notification-daemon
 ```
 apt install ./ueberzugpp_<version_latest>_amd64.deb
 ```
+- Or you can do this for Debian 13
+```
+echo 'deb http://download.opensuse.org/repositories/home:/justkidding/Debian_13/ /' | sudo tee /etc/apt/sources.list.d/home:justkidding.list
+curl -fsSL https://download.opensuse.org/repositories/home:justkidding/Debian_13/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_justkidding.gpg > /dev/null
+apt update
+apt install ueberzugpp
+```
 
 ## Install lightdm
-```
-apt install lightdm
-```
 - make `~/.xinitrc` executable
 - then copy `../linux_config/dwm.desktop` to `/usr/share/xsessions/`
 - and don't forget to change which session lightdm loads when you login
+```
+apt install lightdm
+chmod +x ~/.xinitrc
+cp ~/dev/config/linux_config/dwm.desktop /usr/share/xsessions/
+```
+
 
 ## Configure git credential manager
 - download gcm first then run the following
@@ -183,6 +193,12 @@ cp ~/dev/config/linux_config/gpg-agent.conf ~/.gnupg/gpg-agent.conf
 gpgconf --kill gpg-agent
 gpgconf --launch gpg-agent
 ```
+
+### Config git to use gcm
+```
+git config --global credential.helper manager
+```
+
 
 ## Speeding-up boot-time
 ```
