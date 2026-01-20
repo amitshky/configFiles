@@ -8,7 +8,7 @@ apt full-upgrade
 
 ## install some essential packages
 ```
-apt install xorg neovim vim git build-essential libx11-dev libxft-dev libxinerama-dev libxcb1-dev libxcb-res0-dev libx11-xcb-dev libxcb-util-dev libxrandr-dev network-manager picom feh arandr pipewire pulseaudio unzip flatpak ntfs-3g pipewire-audio-client-libraries wireplumber bluez playerctl brightnessctl tmux
+apt install xorg neovim vim git build-essential libx11-dev libxft-dev libxinerama-dev libxcb1-dev libxcb-res0-dev libx11-xcb-dev libxcb-util-dev libxrandr-dev network-manager picom feh arandr pipewire pulseaudio unzip flatpak ntfs-3g pipewire-audio-client-libraries wireplumber bluez playerctl brightnessctl tmux rfkill
 ```
 
 ## Install nvidia drivers
@@ -114,6 +114,38 @@ TerminalApplication=st
 ```
 mkdir -p ~/.config/menus
 cp ~/dev/config/linux_config/applications.menu ~/.config/menus/
+```
+
+## Setup Network Manager
+```
+nvim /etc/network/interfaces
+
+# then remove/comment the line
+# The primary network interface
+allow-hotplug wlp0s20f3
+iface wlp0s20f3 inet dhcp
+	wpa-ssid <wifi_name>
+ 	wpa-psk  <wifi_password>
+
+# then
+sudo nvim /etc/NetworkManager/NetworkManager.conf
+
+# change managed to true
+[main]
+plugins=ifupdown,keyfile
+
+[ifupdown]
+managed=true
+
+# stop the service and remove cache
+sudo systemctl stop NetworkManager
+sudo rm -rf /var/lib/NetworkManager/*
+
+# check if interface is up
+sudo ip link set wlp0s20f3 up
+
+# start the service
+sudo systemctl start NetworkManager
 ```
 
 ## Install VSCode
