@@ -3,12 +3,12 @@ NOTES: checkout `../linux_config/` for some config files that are general to lin
 
 ```
 apt update
-apt upgrade
+apt full-upgrade
 ```
 
 ## install some essential packages
 ```
-apt install xorg neovim vim git build-essential libx11-dev libxft-dev libxinerama-dev libxcb1-dev libxcb-res0-dev libx11-xcb-dev libxcb-util-dev libxrandr-dev networkmanager picom feh arandr pipewire pulseaudio unzip flatpak ntfs-3g pipewire-audio-client-libraries wireplumber bluez playerctl brightnessctl
+apt install xorg neovim vim git build-essential libx11-dev libxft-dev libxinerama-dev libxcb1-dev libxcb-res0-dev libx11-xcb-dev libxcb-util-dev libxrandr-dev network-manager picom feh arandr pipewire pulseaudio unzip flatpak ntfs-3g pipewire-audio-client-libraries wireplumber bluez playerctl brightnessctl
 ```
 
 ## Install nvidia drivers
@@ -33,7 +33,8 @@ apt install nvidia-driver firmware-misc-nonfree
 - you want to build and install these 
     - run `make clean install` from the directories
 ```
-mkdir ~/{dev,suckless}
+mkdir ~/{dev,suckless,.config}
+mkdir /mnt/{hdd,ssd,windows,camera}
 git clone https://amitshky@github.com/amitshky/configFiles ~/dev/config
 git clone https://amitshky@github.com/amitshky/st ~/suckless/st
 git clone https://amitshky@github.com/amitshky/dwm ~/suckless/dwm
@@ -82,7 +83,7 @@ apt install pass gnupg2 clang clang-tools nodejs npm python3-venv python3-pip py
 
 ## Install rest of the packages
 ```
-apt install btop firefox-esr pcmanfm keepassxc mpv qimgv lazygit gpick darktable copyq flameshot unclutter-xfixes pulsemixer syncthing dunst yt-dlp gallery-dl qbittorrent qalculate-qt okular calcurse libreoffice libreoffice-gtk3 ark krename valgrind mkvtoolnix mkvtoolnix-gui
+apt install btop firefox-esr pcmanfm keepassxc mpv qimgv lazygit gpick darktable copyq flameshot unclutter-xfixes pulsemixer syncthing dunst yt-dlp gallery-dl qbittorrent qalculate-qt okular calcurse libreoffice libreoffice-gtk3 ark krename valgrind mkvtoolnix mkvtoolnix-gui bear
 ```
 - NOTE: after installing pcmanfm, also move gtk-3.0 and gtk-4.0 folders to config
 ```
@@ -92,9 +93,9 @@ cp ~/dev/config/linux_config/gtk-4.0/ ~/.config -r
 # also do this for pinentry-gtk-2
 cp ~/dev/config/linux_config/.gtkrc-2.0 ~/
 ```
-- NOTE: the file manager that I have here is pcmanfm and you can use lxapperane to change the theme of the file manager
+- NOTE: the file manager that I have here is pcmanfm and you can use lxapperance to change the theme of the file manager
 
-### If you want to install dolphin using apt (I recommend using flatpak)
+### If you want to install dolphin using apt
 - if you want to install dolphin, also install udisks2
     - you can query other devices (drives)
 ```
@@ -123,7 +124,7 @@ apt install ./<file>.deb
 
 ## Install flatpak packages
 ```
-flatpak install obsidian dolphin protonvpn
+flatpak install obsidian protonvpn
 ```
 
 ## Install packages from cargo
@@ -160,6 +161,7 @@ apt install lightdm
 
 ## Configure git credential manager
 - download gcm first then run the following
+    - [v2.6.1](https://github.com/git-ecosystem/git-credential-manager/releases/download/v2.6.1/gcm-linux_amd64.2.6.1.deb)
 ```
 dpkg -i gcm-linux_amd64.2.6.1.deb 
 ```
@@ -208,6 +210,7 @@ apt autoremove
 
 ## To install Tor browser
 - download from [here](https://packages.debian.org/search?keywords=torbrowser-launcher)
+    - [UK mirror: 0.3.7-3-amd64](http://ftp.uk.debian.org/debian/pool/contrib/t/torbrowser-launcher/torbrowser-launcher_0.3.7-3_amd64.deb)
 ```
 # verify the hash
 echo "<sha256 hash> <torbrowser>.deb" | sha256sum -c -
